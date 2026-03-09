@@ -1,20 +1,25 @@
 ---
-import type { Lang } from '../i18n';
-import { getTranslations } from '../i18n';
+import type {Lang} from "../i18n";
+import {getTranslations} from "../i18n";
 
-import thailandFlag from '../assets/flags/thailand.svg';
-import ukFlag from '../assets/flags/uk.svg';
+import thailandFlag from "../assets/flags/th.svg";
+import ukFlag from "../assets/flags/en.svg";
+import {cn} from "../lib/utils";
 
 interface Props {
   lang: Lang;
 }
 
-const { lang } = Astro.props;
+const {lang} = Astro.props;
 const t = getTranslations(lang);
 
-const currentFlag = lang === 'th' ? thailandFlag : ukFlag;
-const altFlag = lang === 'th' ? ukFlag : thailandFlag;
-const altHref = lang === 'th' ? '/en' : '/';
+const currentFlag = lang === "th" ? thailandFlag : ukFlag;
+const altFlag = lang === "th" ? ukFlag : thailandFlag;
+const altHref = lang === "th" ? "/en" : "/";
+
+const buildFlag = (locale: string) => {
+  return <img src={currentFlag.src} alt="" class="h-auto w-[30px] object-cover" />;
+};
 ---
 
 <div class="hidden items-center gap-0 tablet:flex">
@@ -27,12 +32,16 @@ const altHref = lang === 'th' ? '/en' : '/';
     <button class="px-5 py-2 text-[15px] font-semibold text-primary hover:text-nav-hover">
       {t.nav.services}
     </button>
-    <div class="pointer-events-none absolute top-full left-0 z-50 min-w-[280px] overflow-hidden rounded-xl border-2 border-primary bg-white opacity-0 shadow-lg transition-opacity group-hover:pointer-events-auto group-hover:opacity-100">
-      {t.nav.servicesDropdown.map((item) => (
-        <a href="#" class="block px-5 py-2.5 text-sm text-primary no-underline hover:bg-gray-50">
-          {item.label}
-        </a>
-      ))}
+    <div
+      class="pointer-events-none absolute top-full left-0 z-50 min-w-[280px] overflow-hidden rounded-xl border-2 border-primary bg-white opacity-0 shadow-lg transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
+    >
+      {
+        t.nav.servicesDropdown.map(item => (
+          <a href="#" class="block px-5 py-2.5 text-sm text-primary no-underline hover:bg-gray-50">
+            {item.label}
+          </a>
+        ))
+      }
     </div>
   </div>
 
@@ -41,12 +50,16 @@ const altHref = lang === 'th' ? '/en' : '/';
     <a href="#" class="px-5 py-2 text-[15px] font-semibold text-primary no-underline hover:text-nav-hover">
       {t.nav.visa}
     </a>
-    <div class="pointer-events-none absolute top-full left-0 z-50 min-w-[220px] overflow-hidden rounded-xl border-2 border-primary bg-white opacity-0 shadow-lg transition-opacity group-hover:pointer-events-auto group-hover:opacity-100">
-      {t.nav.visaDropdown.map((item) => (
-        <a href="#" class="block px-5 py-2.5 text-sm text-primary no-underline hover:bg-gray-50">
-          {item.label}
-        </a>
-      ))}
+    <div
+      class="pointer-events-none absolute top-full left-0 z-50 min-w-[220px] overflow-hidden rounded-xl border-2 border-primary bg-white opacity-0 shadow-lg transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
+    >
+      {
+        t.nav.visaDropdown.map(item => (
+          <a href="#" class="block px-5 py-2.5 text-sm text-primary no-underline hover:bg-gray-50">
+            {item.label}
+          </a>
+        ))
+      }
     </div>
   </div>
 
@@ -60,11 +73,20 @@ const altHref = lang === 'th' ? '/en' : '/';
   <!-- Language Switcher -->
   <div class="group relative ml-2">
     <button class="flex items-center">
-      <img src={currentFlag.src} alt="" class="h-auto w-[30px] object-contain" />
+      <img src={currentFlag.src} alt="" class="h-auto w-[30px] object-cover" />
     </button>
-    <div class="pointer-events-none absolute top-full right-0 z-50 mt-1 flex flex-col items-center gap-2 rounded-lg bg-white p-2 opacity-0 shadow-lg transition-opacity group-hover:pointer-events-auto group-hover:opacity-100">
-      <a href={altHref}>
-        <img src={altFlag.src} alt="" class="h-auto w-[30px] object-contain" />
+    <div
+      class={cn(
+        "flex flex-col",
+        "absolute top-full right-0 z-50",
+        "items-center",
+        "w-[30px] h-auto",
+        "mt-3",
+        "pointer-events-none rounded-lg  opacity-0 shadow-lg transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
+      )}
+    >
+      <a href={altHref} class="block size-full h-auto w-[30px]">
+        <img src={altFlag.src} alt="" class="size-full object-cover" />
       </a>
     </div>
   </div>
