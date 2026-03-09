@@ -1,0 +1,56 @@
+---
+import type {Lang} from "../../../../i18n";
+import {getTranslations} from "../../../../i18n";
+import {cn} from "../../../../lib/utils";
+import heroWoman from "../../../../assets/hero-woman.png";
+import HeroBannerTestimonial from "./HeroBannerTestimonial.astro";
+
+interface Props {
+  lang: Lang;
+}
+
+const {lang} = Astro.props;
+const t = getTranslations(lang);
+---
+
+<section class="flex justify-center mt-16">
+  <div class={cn("flex flex-col md:flex-row", "w-full max-w-[940px]", "items-center justify-center md:justify-between", "px-5 py-0", "gap-8")}>
+    <!-- Text Content -->
+    <div class="flex-1 items-center justify-center md:items-start md:justify-between">
+      <h1
+        class={cn(
+          "font-calsans text-[40px]",
+          "self-center text-center md:text-left",
+          "bg-clip-text leading-none text-royal-blue",
+          "max-[991px]:text-[40px] max-[991px]:leading-[44px]",
+          "max-[479px]:text-center max-[479px]:text-[30px]",
+          "max-[479px]:leading-[37px]"
+        )}
+        style="background-color: #3b282800; background-image: linear-gradient(67deg, var(--color-primary) 33%, #6f8aaa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;"
+      >
+        <Fragment set:html={t.hero.title.toUpperCase()} />
+      </h1>
+
+      <p class="text-primary text-center md:text-left mt-6 text-lg">
+        {t.hero.description}
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex mt-9 flex gap-3 items-center justify-center md:justify-start">
+        <a href="#footer" class="inline-block rounded-[4px] bg-primary px-6 py-3 text-center leading-5 text-white no-underline hover:opacity-90">
+          {t.hero.ctaPrimary}
+        </a>
+        <a href="#services-container" class="inline-block rounded-[4px] border border-primary bg-transparent px-6 py-3 text-center leading-5 text-primary no-underline hover:bg-primary/5">
+          {t.hero.ctaSecondary}
+        </a>
+      </div>
+
+      <HeroBannerTestimonial lang={lang} />
+    </div>
+
+    <!-- Hero Image (hidden on mobile) -->
+    <div class="w-[380px] shrink-0 max-[991px]:w-[256px] hidden md:block">
+      <img src={heroWoman.src} alt="An illustration representing a VISA agent happy to help her customers." class="block w-full" loading="lazy" />
+    </div>
+  </div>
+</section>

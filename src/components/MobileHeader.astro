@@ -1,16 +1,21 @@
 ---
-import type { Lang } from '../i18n';
-import { getTranslations } from '../i18n';
-
-import thailandFlag from '../assets/flags/th.svg';
-import ukFlag from '../assets/flags/en.svg';
+import type {Lang} from "../i18n";
+import {getTranslations} from "../i18n";
 
 interface Props {
   lang: Lang;
 }
 
-const { lang } = Astro.props;
+const {lang} = Astro.props;
 const t = getTranslations(lang);
+
+import thailandFlag from "../assets/flags/th.svg";
+import ukFlag from "../assets/flags/en.svg";
+
+export const buildFlag = (locale: Lang, className: string = "") => {
+  const flag = locale === "th" ? thailandFlag : ukFlag;
+  return `<img src="${flag.src}" alt="" class="${className}" />`;
+};
 ---
 
 <!-- Mobile Menu Panel (toggled by hamburger in Navbar) -->
@@ -26,11 +31,13 @@ const t = getTranslations(lang);
       <span class="transition-transform">&#9662;</span>
     </button>
     <div class="mobile-dropdown-content ml-4 hidden border-l-2 border-primary pl-3">
-      {t.nav.servicesDropdown.map((item) => (
-        <a href="#" class="block py-1.5 text-sm text-primary no-underline">
-          {item.label}
-        </a>
-      ))}
+      {
+        t.nav.servicesDropdown.map(item => (
+          <a href="#" class="block py-1.5 text-sm text-primary no-underline">
+            {item.label}
+          </a>
+        ))
+      }
     </div>
   </div>
 
@@ -41,11 +48,13 @@ const t = getTranslations(lang);
       <span class="transition-transform">&#9662;</span>
     </button>
     <div class="mobile-dropdown-content ml-4 hidden border-l-2 border-primary pl-3">
-      {t.nav.visaDropdown.map((item) => (
-        <a href="#" class="block py-1.5 text-sm text-primary no-underline">
-          {item.label}
-        </a>
-      ))}
+      {
+        t.nav.visaDropdown.map(item => (
+          <a href="#" class="block py-1.5 text-sm text-primary no-underline">
+            {item.label}
+          </a>
+        ))
+      }
     </div>
   </div>
 
@@ -59,43 +68,43 @@ const t = getTranslations(lang);
   <!-- Language Switcher Mobile -->
   <div class="mt-2 flex gap-3 border-t border-border-light pt-3">
     <a href="/">
-      <img src={thailandFlag.src} alt="Thai" class="h-auto w-[30px] object-contain" />
+      <Fragment set:html={buildFlag("th", "h-auto w-[30px] object-contain")} />
     </a>
     <a href="/en">
-      <img src={ukFlag.src} alt="English" class="h-auto w-[30px] object-contain" />
+      <Fragment set:html={buildFlag("en", "h-auto w-[30px] object-contain")} />
     </a>
   </div>
 </div>
 
 <script>
   // Mobile menu toggle
-  const btn = document.getElementById('mobile-menu-btn');
-  const menu = document.getElementById('mobile-menu');
-  const top = document.getElementById('hamburger-top');
-  const mid = document.getElementById('hamburger-mid');
-  const bot = document.getElementById('hamburger-bot');
+  const btn = document.getElementById("mobile-menu-btn");
+  const menu = document.getElementById("mobile-menu");
+  const top = document.getElementById("hamburger-top");
+  const mid = document.getElementById("hamburger-mid");
+  const bot = document.getElementById("hamburger-bot");
 
-  btn?.addEventListener('click', () => {
-    const isOpen = !menu?.classList.contains('hidden');
-    menu?.classList.toggle('hidden');
+  btn?.addEventListener("click", () => {
+    const isOpen = !menu?.classList.contains("hidden");
+    menu?.classList.toggle("hidden");
     if (!isOpen) {
-      top?.classList.add('translate-y-2', 'rotate-45');
-      mid?.classList.add('opacity-0');
-      bot?.classList.add('-translate-y-2', '-rotate-45');
+      top?.classList.add("translate-y-2", "rotate-45");
+      mid?.classList.add("opacity-0");
+      bot?.classList.add("-translate-y-2", "-rotate-45");
     } else {
-      top?.classList.remove('translate-y-2', 'rotate-45');
-      mid?.classList.remove('opacity-0');
-      bot?.classList.remove('-translate-y-2', '-rotate-45');
+      top?.classList.remove("translate-y-2", "rotate-45");
+      mid?.classList.remove("opacity-0");
+      bot?.classList.remove("-translate-y-2", "-rotate-45");
     }
   });
 
   // Mobile dropdown toggles
-  document.querySelectorAll('.mobile-dropdown-toggle').forEach((toggle) => {
-    toggle.addEventListener('click', () => {
+  document.querySelectorAll(".mobile-dropdown-toggle").forEach(toggle => {
+    toggle.addEventListener("click", () => {
       const content = toggle.nextElementSibling;
-      const arrow = toggle.querySelector('span');
-      content?.classList.toggle('hidden');
-      arrow?.classList.toggle('rotate-180');
+      const arrow = toggle.querySelector("span");
+      content?.classList.toggle("hidden");
+      arrow?.classList.toggle("rotate-180");
     });
   });
 </script>

@@ -2,8 +2,6 @@
 import type {Lang} from "../i18n";
 import {getTranslations} from "../i18n";
 
-import thailandFlag from "../assets/flags/th.svg";
-import ukFlag from "../assets/flags/en.svg";
 import {cn} from "../lib/utils";
 
 interface Props {
@@ -13,12 +11,15 @@ interface Props {
 const {lang} = Astro.props;
 const t = getTranslations(lang);
 
-const currentFlag = lang === "th" ? thailandFlag : ukFlag;
-const altFlag = lang === "th" ? ukFlag : thailandFlag;
+const altLang: Lang = lang === "th" ? "en" : "th";
 const altHref = lang === "th" ? "/en" : "/";
 
-const buildFlag = (locale: string) => {
-  return <img src={currentFlag.src} alt="" class="h-auto w-[30px] object-cover" />;
+import thailandFlag from "../assets/flags/th.svg";
+import ukFlag from "../assets/flags/en.svg";
+
+export const buildFlag = (locale: Lang) => {
+  const flag = locale === "th" ? thailandFlag : ukFlag;
+  return `<img src="${flag.src}" alt="" class="h-auto w-full object-cover rounded-sm" />`;
 };
 ---
 
@@ -71,9 +72,9 @@ const buildFlag = (locale: string) => {
   </a>
 
   <!-- Language Switcher -->
-  <div class="group relative ml-2">
-    <button class="flex items-center">
-      <img src={currentFlag.src} alt="" class="h-auto w-[30px] object-cover" />
+  <div class="group relative ml-2 w-[30px]">
+    <button class="flex items-center cursor-pointer">
+      <Fragment set:html={buildFlag(lang)} />
     </button>
     <div
       class={cn(
@@ -81,12 +82,12 @@ const buildFlag = (locale: string) => {
         "absolute top-full right-0 z-50",
         "items-center",
         "w-[30px] h-auto",
-        "mt-3",
-        "pointer-events-none rounded-lg  opacity-0 shadow-lg transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
+        "pt-3",
+        "pointer-events-none opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
       )}
     >
-      <a href={altHref} class="block size-full h-auto w-[30px]">
-        <img src={altFlag.src} alt="" class="size-full object-cover" />
+      <a href={altHref} class="block size-full h-auto w-full">
+        <Fragment set:html={buildFlag(altLang)} />
       </a>
     </div>
   </div>
