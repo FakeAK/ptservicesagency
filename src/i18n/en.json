@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "title": "PT Services - VISA, Travel & Service Agency in Thailand",
+    "description": "Service agency based in Bangkok specialized in visa assistance, travel planning, flight tickets booking, accomodations booking, and immigration procedures."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "visa": "Visa",
+    "contact": "Contact",
+    "blog": "Blog",
+    "servicesDropdown": [
+      { "label": "90-Day Report in Bangkok", "href": "/services/90-day-report-thailand" },
+      { "label": "90-Day Report in Pathum Thani", "href": "/services/90-day-report-service-pathum-thani-thailand" },
+      { "label": "90-Day Report in Samut Prakan", "href": "/services/90-day-report-service-samut-prakan-thailand" },
+      { "label": "TDAC Form Filling", "href": "/services/tdac" },
+      { "label": "TM30 Update & Notification", "href": "/services/tm30" },
+      { "label": "Thai Driving License Renewal", "href": "/services/renew-thai-driver-license-service" },
+      { "label": "Document Translation and Consular Legalization for Marriage Registration", "href": "/services/marriage-registration-translation-service" }
+    ],
+    "visaDropdown": [
+      { "label": "\uD83C\uDDF9\uD83C\uDDED Thailand Visa", "href": "/visa/thailand" },
+      { "label": "\uD83C\uDDEA\uD83C\uDDFA Schengen Visa", "href": "/visa/europe/schengen" },
+      { "label": "\uD83C\uDDEC\uD83C\uDDE7 UK Visa", "href": "/visa/europe/uk" },
+      { "label": "\uD83C\uDDFA\uD83C\uDDF8 USA Visa", "href": "/visa/usa" },
+      { "label": "\uD83C\uDDEB\uD83C\uDDF7 France Visa", "href": "/visa/europe/france" },
+      { "label": "\uD83C\uDDE9\uD83C\uDDEA Germany Visa", "href": "/visa/europe/germany" },
+      { "label": "\uD83C\uDDEA\uD83C\uDDF8 Spain Visa", "href": "/visa/europe/spain" },
+      { "label": "\uD83C\uDDEE\uD83C\uDDF9 Italy Visa", "href": "/visa/europe/italy" },
+      { "label": "\uD83C\uDDE7\uD83C\uDDEA Belgium Visa", "href": "/visa/europe/belgium" }
+    ]
+  },
+  "hero": {
+    "title": "ONE-STOP SERVICES AGENCY",
+    "description": "We are an agency specialized in visa and immigration assistance, travel planning, and personalized support in Bangkok, Thailand.",
+    "ctaPrimary": "Contact us",
+    "ctaSecondary": "Discover our services",
+    "testimonialQuote": "This agency helped my girlfriend get her schengen visa for our summer holiday and service was top notch.",
+    "testimonialAuthor": "One of our happy clients"
+  },
+  "visa": {
+    "heading": "Visa assistance",
+    "description": "Getting a visa can be a tough process and visa refusal costs not only time but also money. Our agency is specialized in visa procedures and can help you to get your visa. Whether you need a tourist, business, student, or work visa, we provide expert and comprehensive assistance. Our expert team ensures that you meet all the requirements, handles all the paperwork, prepares you for embassy interviews, and deals with the embassies for you. We streamline the visa acquisition process, making it faster and easier for you.",
+    "guaranteeTitle": "PT Services Guarantee",
+    "guaranteeText": "If your visa application is denied, we will issue a full refund of our service fee.",
+    "seeMore": "See more"
+  },
+  "immigration": {
+    "heading": "Immigration assistance",
+    "description": "When in a foreign country, immigration rules can be intimidating and complex, and failing to comply with those rules can have tremendous consequences. This is where an agency can be useful to help you complete your immigration procedures correctly. Our agency specializes in assisting foreigners with their immigration processes, from the essential 90-Day report in Thailand to more complex immigration procedures. Our team ensures compliance with local regulations, handles the paperwork, and manages communication with immigration authorities on your behalf."
+  },
+  "services": {
+    "heading": "We Also Provide",
+    "items": [
+      {
+        "title": "90-Day Report for Foreigners",
+        "description": "We provide an extra convenient 90-Day report service for foreigners in Thailand. We charge between THB 1,000 and THB 1,500 depending on how far our agents need to come pickup your documents from the Asok area in Bangkok.",
+        "link": "/thailand-90-days-report",
+        "linkText": "Learn more"
+      },
+      {
+        "title": "Hospital Accompaniment",
+        "description": "If you need someone to accompany you or someone else to the hospital, we can assign an agent who will take care of the patient throughout the day. Our agent can transport the patients to the hospital, stay by their side, handle all necessary paperwork, and transport the persons back to their residence after the visit."
+      },
+      {
+        "title": "Bank procedures assistance",
+        "description": "Do you need help opening a bank account in Thailand? Whether you're a Thai national or a foreigner, we can help you get your banking set up quickly and easily. Count on our expertise to guide you through every step."
+      },
+      {
+        "title": "Travel Planning",
+        "description": "If you don't want to spend time planning your trip, you can delegate this to our professional team. We take care of booking your flights, accommodations, and train tickets, and we can also guide you in selecting travel insurance that fits your journey."
+      },
+      {
+        "title": "Personal assistant",
+        "description": "Do you need any assistance and to delegate some tasks on a weekly or monthly basis? We can assign one or more of our personal assistants to you. With a personal assistant you will get more time for your family or business and you will reduce your mental load."
+      },
+      {
+        "title": "Do you need a specific service?",
+        "description": "If you need help for any paperwork, such as renewing a Thai driver license, getting a police certificate or on any task that can be delegated, our team can help. Contact us and we will do our best to help you."
+      }
+    ]
+  },
+  "testimonials": {
+    "heading": "What Our Clients Think About Us",
+    "items": [
+      {
+        "quote": "This agency helped my girlfriend get her schengen visa for our summer holiday and service was top notch.",
+        "author": "Mateusz T.",
+        "rating": 5
+      },
+      {
+        "quote": "Very professional and efficient service. They handled all the paperwork for my 90-day report perfectly.",
+        "author": "Arthur K.",
+        "rating": 5
+      },
+      {
+        "quote": "Excellent service! They helped me with my visa application and everything went smoothly. Highly recommended!",
+        "author": "Callie I.",
+        "rating": 5
+      },
+      {
+        "quote": "Great experience with PT Services. They made the immigration process so much easier for me.",
+        "author": "Filla L.",
+        "rating": 5
+      },
+      {
+        "quote": "Very helpful team. They guided me through the entire visa process step by step.",
+        "author": "Verified Client",
+        "rating": 5
+      },
+      {
+        "quote": "Professional service and very responsive. They answered all my questions quickly.",
+        "author": "Krearam N.",
+        "rating": 5
+      },
+      {
+        "quote": "I highly recommend PT Services for anyone needing visa assistance in Thailand.",
+        "author": "Jack R.",
+        "rating": 5
+      },
+      {
+        "quote": "Outstanding service from start to finish. Will definitely use them again for future visa needs.",
+        "author": "Richard R.",
+        "rating": 5
+      }
+    ]
+  },
+  "blog": {
+    "heading": "Latest Blog",
+    "posts": [
+      {
+        "title": "What is the Thailand Digital Arrival Card (TDAC) and how to fill it?",
+        "date": "30/04/2025",
+        "excerpt": "Learn what the Thailand Digital Arrival Card (TDAC) is, why it's required for travelers, and how to easily fill it out before entering Thailand.",
+        "href": "/blog/thailand-tdac",
+        "image": "tdac"
+      },
+      {
+        "title": "Are DTV Holders Required To Submit The 90-Day Report?",
+        "date": "28/02/2025",
+        "excerpt": "Do holders of the Destination Thailand Visa (DTV) need to submit a 90-day report when staying in Thailand for more than 90 days?",
+        "href": "/blog/do-dtv-visa-holders-need-to-file-the-90-report",
+        "image": "dtv-90-day"
+      },
+      {
+        "title": "How To Obtain A Schengen VISA In Thailand",
+        "date": "19/06/2024",
+        "excerpt": "Discover in this article how PT Services can help you get your Schengen VISA to travel in Europe.",
+        "href": "/how-to-get-schengen-visa-in-thailand",
+        "image": "schengen-visa"
+      },
+      {
+        "title": "90-Day Report For Foreigners In Thailand",
+        "date": "08/06/2024",
+        "excerpt": "Discover in this article what is the 90 days report, how to do it and how PT Services can help you by doing it on your behalf.",
+        "href": "/thailand-90-days-report",
+        "image": "immigration-office"
+      }
+    ]
+  },
+  "footer": {
+    "contactTitle": "Contact",
+    "hours": "Monday \u2014 Saturday, 9am \u2014 6pm",
+    "email": "pt.servicesagency@gmail.com",
+    "lineId": "@ptservicesagency",
+    "whatsapp": "+66 90 980 8369",
+    "facebookName": "PT Services Agency",
+    "instagramHandle": "pt.servicesagency",
+    "lineQrText": "Scan the QR code to talk to us for free on LINE.",
+    "messengerQrText": "Scan the QR code to talk to us for free on Messenger.",
+    "lineTapText": "Tap here to start talking with us for free on LINE.",
+    "messengerTapText": "Tap here to start talking with us for free on Messenger.",
+    "copyright": "PT Services \u00a9 Copyright 2025. All Rights Reserved. PT Services is not a law firm."
+  }
+}

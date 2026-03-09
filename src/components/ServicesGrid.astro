@@ -1,0 +1,56 @@
+---
+import type { Lang } from '../i18n';
+import { getTranslations } from '../i18n';
+import ServiceCard from './ServiceCard.astro';
+
+import immigrationOfficer from '../assets/immigration-officer.png';
+import hospitalAccompaniment from '../assets/hospital-accompaniment.png';
+import bank from '../assets/bank.png';
+import flight from '../assets/flight.png';
+import personalAssistant from '../assets/personal-assistant.png';
+import specificService from '../assets/specific-service.png';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = getTranslations(lang);
+
+const serviceImages = [
+  immigrationOfficer,
+  hospitalAccompaniment,
+  bank,
+  flight,
+  personalAssistant,
+  specificService,
+];
+
+const serviceAlts = [
+  'An immigration officer.',
+  'An agent accompanying someone at hospital.',
+  'An illustration of a bank.',
+  'An illustration of a flight.',
+  'An illustration of a personal assistant.',
+  'An illustration of a specific service.',
+];
+---
+
+<div class="flex flex-col items-center">
+  <h2 class="mb-5 mt-0 text-center text-[28px] font-bold text-primary">
+    {t.services.heading}
+  </h2>
+  <div class="mt-3 grid w-full max-w-[940px] grid-cols-2 gap-4 max-[479px]:grid-cols-1">
+    {t.services.items.map((item, i) => (
+      <ServiceCard
+        title={item.title}
+        description={item.description}
+        imageSrc={serviceImages[i].src}
+        imageAlt={serviceAlts[i]}
+        link={item.link}
+        linkText={item.linkText}
+        lang={lang}
+      />
+    ))}
+  </div>
+</div>

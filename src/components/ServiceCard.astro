@@ -1,0 +1,37 @@
+---
+import type { Lang } from '../i18n';
+import { getLocalizedPath } from '../i18n';
+
+interface Props {
+  title: string;
+  description: string;
+  imageSrc: string;
+  imageAlt: string;
+  link?: string;
+  linkText?: string;
+  lang: Lang;
+}
+
+const { title, description, imageSrc, imageAlt, link, linkText, lang } = Astro.props;
+---
+
+<div class="flex flex-col items-start rounded-xl bg-card-bg p-3">
+  <div class="flex w-full items-center justify-start gap-3">
+    <h3 class="m-0 flex-1 text-xl text-primary">{title}</h3>
+    <img
+      src={imageSrc}
+      alt={imageAlt}
+      class="h-16 w-16 rounded-lg object-cover"
+      loading="lazy"
+    />
+  </div>
+  <p class="mb-0 pt-3 text-[15px]">{description}</p>
+  {link && linkText && (
+    <a
+      href={getLocalizedPath(link, lang)}
+      class="mt-2 font-semibold text-primary no-underline hover:underline"
+    >
+      {linkText}
+    </a>
+  )}
+</div>

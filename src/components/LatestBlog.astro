@@ -1,0 +1,46 @@
+---
+import type { Lang } from '../i18n';
+import { getTranslations } from '../i18n';
+import BlogCard from './BlogCard.astro';
+
+import tdac from '../assets/blog/tdac.webp';
+import dtv90day from '../assets/blog/dtv-90-day.webp';
+import schengenVisa from '../assets/blog/schengen-visa.jpg';
+import immigrationOffice from '../assets/blog/immigration-office.jpg';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = getTranslations(lang);
+
+const blogImages: Record<string, ImageMetadata> = {
+  'tdac': tdac,
+  'dtv-90-day': dtv90day,
+  'schengen-visa': schengenVisa,
+  'immigration-office': immigrationOffice,
+};
+---
+
+<section class="flex flex-col items-center justify-center bg-white">
+  <div class="mx-auto flex max-w-[940px] flex-col items-start justify-center px-5 max-[479px]:px-3">
+    <h2 class="mb-0 mt-0 text-left text-[28px] font-bold text-primary" style="font-family: Montserrat, sans-serif;">
+      {t.blog.heading}
+    </h2>
+
+    <div class="mt-0 grid max-w-[940px] grid-cols-2 gap-4 place-items-stretch-center row-gap-12 max-[479px]:grid-cols-1 max-[479px]:gap-6">
+      {t.blog.posts.map((post) => (
+        <BlogCard
+          title={post.title}
+          date={post.date}
+          excerpt={post.excerpt}
+          imageSrc={blogImages[post.image]?.src || ''}
+          imageAlt={post.title}
+          href={post.href}
+          lang={lang}
+        />
+      ))}
+    </div>
+  </div>
+</section>

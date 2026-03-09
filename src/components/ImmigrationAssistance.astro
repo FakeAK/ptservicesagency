@@ -1,0 +1,30 @@
+---
+import type { Lang } from '../i18n';
+import { getTranslations } from '../i18n';
+
+import immigrationWoman from '../assets/immigration-woman.jpg';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = getTranslations(lang);
+---
+
+<div class="flex gap-0 max-[991px]:flex-col max-[991px]:items-start">
+  <img
+    src={immigrationWoman.src}
+    alt="A woman in an immigration office."
+    class="w-auto max-w-[50%] rounded-lg object-cover max-[991px]:max-w-full"
+    loading="lazy"
+  />
+  <div class="mt-6 ml-3 flex flex-1 flex-col max-[991px]:mt-6 max-[991px]:ml-0">
+    <h2 class="mb-3 mt-0 text-[28px] font-bold capitalize text-primary">
+      {t.immigration.heading}
+    </h2>
+    <p class="mb-0 text-lg text-justify">
+      {t.immigration.description}
+    </p>
+  </div>
+</div>
