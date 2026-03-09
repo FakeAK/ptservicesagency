@@ -1,24 +1,18 @@
 ---
 import type { Lang } from '../i18n';
-import { getTranslations, getLocalizedPath } from '../i18n';
 
 import logo from '../assets/logo.png';
-import thailandFlag from '../assets/flags/thailand.svg';
-import ukFlag from '../assets/flags/uk.svg';
+import DesktopHeader from './DesktopHeader.astro';
+import MobileHeader from './MobileHeader.astro';
 
 interface Props {
   lang: Lang;
 }
 
 const { lang } = Astro.props;
-const t = getTranslations(lang);
-
-const currentFlag = lang === 'th' ? thailandFlag : ukFlag;
-const altFlag = lang === 'th' ? ukFlag : thailandFlag;
-const altHref = lang === 'th' ? '/en' : '/';
 ---
 
-<nav class="fixed top-0 left-0 right-0 z-50 border-b border-border-light bg-white py-3">
+<nav class="border-b border-border-light bg-white py-3">
   <div class="mx-auto flex max-w-[940px] items-center justify-between px-5">
     <!-- Logo -->
     <a href="#" class="flex items-center gap-3 no-underline">
@@ -26,59 +20,8 @@ const altHref = lang === 'th' ? '/en' : '/';
       <span class="font-heading text-xl font-bold text-primary">PT SERVICES</span>
     </a>
 
-    <!-- Desktop Nav (hidden below 992px) -->
-    <div class="hidden items-center gap-0 tablet:flex">
-      <a href="#" class="px-5 py-2 text-[15px] font-semibold text-primary no-underline hover:text-nav-hover">
-        {t.nav.home}
-      </a>
-
-      <!-- Services Dropdown -->
-      <div class="group relative">
-        <button class="px-5 py-2 text-[15px] font-semibold text-primary hover:text-nav-hover">
-          {t.nav.services}
-        </button>
-        <div class="pointer-events-none absolute top-full left-0 z-50 min-w-[280px] overflow-hidden rounded-xl border-2 border-primary bg-white opacity-0 shadow-lg transition-opacity group-hover:pointer-events-auto group-hover:opacity-100">
-          {t.nav.servicesDropdown.map((item) => (
-            <a href="#" class="block px-5 py-2.5 text-sm text-primary no-underline hover:bg-gray-50">
-              {item.label}
-            </a>
-          ))}
-        </div>
-      </div>
-
-      <!-- Visa Dropdown -->
-      <div class="group relative">
-        <a href="#" class="px-5 py-2 text-[15px] font-semibold text-primary no-underline hover:text-nav-hover">
-          {t.nav.visa}
-        </a>
-        <div class="pointer-events-none absolute top-full left-0 z-50 min-w-[220px] overflow-hidden rounded-xl border-2 border-primary bg-white opacity-0 shadow-lg transition-opacity group-hover:pointer-events-auto group-hover:opacity-100">
-          {t.nav.visaDropdown.map((item) => (
-            <a href="#" class="block px-5 py-2.5 text-sm text-primary no-underline hover:bg-gray-50">
-              {item.label}
-            </a>
-          ))}
-        </div>
-      </div>
-
-      <a href="#" class="px-5 py-2 text-[15px] font-semibold text-primary no-underline hover:text-nav-hover">
-        {t.nav.contact}
-      </a>
-      <a href="#" class="px-5 py-2 text-[15px] font-semibold text-primary no-underline hover:text-nav-hover">
-        {t.nav.blog}
-      </a>
-
-      <!-- Language Switcher -->
-      <div class="group relative ml-2">
-        <button class="flex items-center">
-          <img src={currentFlag.src} alt="" class="h-[30px] w-[30px]" />
-        </button>
-        <div class="pointer-events-none absolute top-full right-0 z-50 mt-1 flex flex-col items-center gap-2 rounded-lg bg-white p-2 opacity-0 shadow-lg transition-opacity group-hover:pointer-events-auto group-hover:opacity-100">
-          <a href={altHref}>
-            <img src={altFlag.src} alt="" class="h-[30px] w-[30px]" />
-          </a>
-        </div>
-      </div>
-    </div>
+    <!-- Desktop Navigation -->
+    <DesktopHeader lang={lang} />
 
     <!-- Mobile Hamburger (visible below 992px) -->
     <button
@@ -93,89 +36,5 @@ const altHref = lang === 'th' ? '/en' : '/';
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden border-t border-border-light bg-white px-5 py-4 tablet:hidden">
-    <a href="#" class="block py-2 text-[15px] font-semibold text-primary no-underline">
-      {t.nav.home}
-    </a>
-
-    <!-- Services -->
-    <div>
-      <button class="mobile-dropdown-toggle flex w-full items-center justify-between py-2 text-[15px] font-semibold text-primary">
-        {t.nav.services}
-        <span class="transition-transform">&#9662;</span>
-      </button>
-      <div class="mobile-dropdown-content ml-4 hidden border-l-2 border-primary pl-3">
-        {t.nav.servicesDropdown.map((item) => (
-          <a href="#" class="block py-1.5 text-sm text-primary no-underline">
-            {item.label}
-          </a>
-        ))}
-      </div>
-    </div>
-
-    <!-- Visa -->
-    <div>
-      <button class="mobile-dropdown-toggle flex w-full items-center justify-between py-2 text-[15px] font-semibold text-primary">
-        {t.nav.visa}
-        <span class="transition-transform">&#9662;</span>
-      </button>
-      <div class="mobile-dropdown-content ml-4 hidden border-l-2 border-primary pl-3">
-        {t.nav.visaDropdown.map((item) => (
-          <a href="#" class="block py-1.5 text-sm text-primary no-underline">
-            {item.label}
-          </a>
-        ))}
-      </div>
-    </div>
-
-    <a href="#" class="block py-2 text-[15px] font-semibold text-primary no-underline">
-      {t.nav.contact}
-    </a>
-    <a href="#" class="block py-2 text-[15px] font-semibold text-primary no-underline">
-      {t.nav.blog}
-    </a>
-
-    <!-- Language Switcher Mobile -->
-    <div class="mt-2 flex gap-3 border-t border-border-light pt-3">
-      <a href="/">
-        <img src={thailandFlag.src} alt="Thai" class="h-[30px] w-[30px]" />
-      </a>
-      <a href="/en">
-        <img src={ukFlag.src} alt="English" class="h-[30px] w-[30px]" />
-      </a>
-    </div>
-  </div>
+  <MobileHeader lang={lang} />
 </nav>
-
-<script>
-  // Mobile menu toggle
-  const btn = document.getElementById('mobile-menu-btn');
-  const menu = document.getElementById('mobile-menu');
-  const top = document.getElementById('hamburger-top');
-  const mid = document.getElementById('hamburger-mid');
-  const bot = document.getElementById('hamburger-bot');
-
-  btn?.addEventListener('click', () => {
-    const isOpen = !menu?.classList.contains('hidden');
-    menu?.classList.toggle('hidden');
-    if (!isOpen) {
-      top?.classList.add('translate-y-2', 'rotate-45');
-      mid?.classList.add('opacity-0');
-      bot?.classList.add('-translate-y-2', '-rotate-45');
-    } else {
-      top?.classList.remove('translate-y-2', 'rotate-45');
-      mid?.classList.remove('opacity-0');
-      bot?.classList.remove('-translate-y-2', '-rotate-45');
-    }
-  });
-
-  // Mobile dropdown toggles
-  document.querySelectorAll('.mobile-dropdown-toggle').forEach((toggle) => {
-    toggle.addEventListener('click', () => {
-      const content = toggle.nextElementSibling;
-      const arrow = toggle.querySelector('span');
-      content?.classList.toggle('hidden');
-      arrow?.classList.toggle('rotate-180');
-    });
-  });
-</script>

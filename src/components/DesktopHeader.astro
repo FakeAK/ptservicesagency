@@ -1,0 +1,71 @@
+---
+import type { Lang } from '../i18n';
+import { getTranslations } from '../i18n';
+
+import thailandFlag from '../assets/flags/thailand.svg';
+import ukFlag from '../assets/flags/uk.svg';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = getTranslations(lang);
+
+const currentFlag = lang === 'th' ? thailandFlag : ukFlag;
+const altFlag = lang === 'th' ? ukFlag : thailandFlag;
+const altHref = lang === 'th' ? '/en' : '/';
+---
+
+<div class="hidden items-center gap-0 tablet:flex">
+  <a href="#" class="px-5 py-2 text-[15px] font-semibold text-primary no-underline hover:text-nav-hover">
+    {t.nav.home}
+  </a>
+
+  <!-- Services Dropdown -->
+  <div class="group relative">
+    <button class="px-5 py-2 text-[15px] font-semibold text-primary hover:text-nav-hover">
+      {t.nav.services}
+    </button>
+    <div class="pointer-events-none absolute top-full left-0 z-50 min-w-[280px] overflow-hidden rounded-xl border-2 border-primary bg-white opacity-0 shadow-lg transition-opacity group-hover:pointer-events-auto group-hover:opacity-100">
+      {t.nav.servicesDropdown.map((item) => (
+        <a href="#" class="block px-5 py-2.5 text-sm text-primary no-underline hover:bg-gray-50">
+          {item.label}
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <!-- Visa Dropdown -->
+  <div class="group relative">
+    <a href="#" class="px-5 py-2 text-[15px] font-semibold text-primary no-underline hover:text-nav-hover">
+      {t.nav.visa}
+    </a>
+    <div class="pointer-events-none absolute top-full left-0 z-50 min-w-[220px] overflow-hidden rounded-xl border-2 border-primary bg-white opacity-0 shadow-lg transition-opacity group-hover:pointer-events-auto group-hover:opacity-100">
+      {t.nav.visaDropdown.map((item) => (
+        <a href="#" class="block px-5 py-2.5 text-sm text-primary no-underline hover:bg-gray-50">
+          {item.label}
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <a href="#" class="px-5 py-2 text-[15px] font-semibold text-primary no-underline hover:text-nav-hover">
+    {t.nav.contact}
+  </a>
+  <a href="#" class="px-5 py-2 text-[15px] font-semibold text-primary no-underline hover:text-nav-hover">
+    {t.nav.blog}
+  </a>
+
+  <!-- Language Switcher -->
+  <div class="group relative ml-2">
+    <button class="flex items-center">
+      <img src={currentFlag.src} alt="" class="h-auto w-[30px] object-contain" />
+    </button>
+    <div class="pointer-events-none absolute top-full right-0 z-50 mt-1 flex flex-col items-center gap-2 rounded-lg bg-white p-2 opacity-0 shadow-lg transition-opacity group-hover:pointer-events-auto group-hover:opacity-100">
+      <a href={altHref}>
+        <img src={altFlag.src} alt="" class="h-auto w-[30px] object-contain" />
+      </a>
+    </div>
+  </div>
+</div>
