@@ -6,7 +6,7 @@ author: "PT Services Agency"
 excerpt: "Foreigners who entered Thailand on or after May 1, 2025, must now include their TDAC Arrival Card Number when submitting the 90-day report (TM.47)."
 slug: "tdac-for-90-day-report"
 image: "tdac-review"
-heroAlt: "A review of PT Services Agency"
+heroAlt: "Screenshot of the TDAC form for 90-day reporting in Thailand"
 lang: "en"
 ---
 
