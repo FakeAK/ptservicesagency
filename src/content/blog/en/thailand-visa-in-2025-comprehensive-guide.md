@@ -1,5 +1,5 @@
 ---
-title: "Which Thailand Visa Choose in 2025? Comprehensive Guide For Foreigners"
+title: "Which Thailand visa choose in 2025? Comprehensive guide for foreigners"
 date: 2025-08-16
 excerpt: "Read this guide and discover, according to your situation and your goal, which Thailand visa would be the best for you in 2025."
 slug: "thailand-visa-in-2025-comprehensive-guide"

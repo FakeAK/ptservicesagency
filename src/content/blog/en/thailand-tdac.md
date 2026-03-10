@@ -10,6 +10,8 @@ lang: "en"
 
 Thailand has officially launched the Thailand Digital Arrival Card (TDAC), replacing the traditional paper-based TM6 form for all foreign nationals entering the country by air, land, or sea. Effective from May 1, 2025, this mandatory digital system is part of Thailand's initiative to modernize its immigration procedures, enhance border security, and streamline the entry process for travelers. Learn in this article what is it, when and how to submit it.
 
+***
+
 ## What is the Thailand Digital Arrival Card (TDAC)?
 
 The Thailand Digital Arrival Card (TDAC) is an online system that replaces the traditional paper arrival card (also known as TM6). It is designed to facilitate faster and more secure entry into Thailand, while also enhancing public health management. The TDAC applies to all travelers entering the country by land, air, or sea. The TDAC collects essential information such as personal details, passport data, travel itinerary, accommodation address in Thailand, and a basic health declaration. This data is integrated with Thailand's biometric database, allowing for more efficient security screening at immigration checkpoints.
