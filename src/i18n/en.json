@@ -10,9 +10,7 @@
     "contact": "Contact",
     "blog": "Blog",
     "servicesDropdown": [
-      {"label": "90-Day Report in Bangkok", "href": "/services/90-day-report-thailand"},
-      {"label": "90-Day Report in Pathum Thani", "href": "/services/90-day-report-service-pathum-thani-thailand"},
-      {"label": "90-Day Report in Samut Prakan", "href": "/services/90-day-report-service-samut-prakan-thailand"},
+      {"label": "90-Day Report", "href": "/services/90-day-report-thailand"},
       {"label": "TDAC Form Filling", "href": "/services/tdac"},
       {"label": "TM30 Update & Notification", "href": "/services/tm30"},
       {"label": "Thai Driving License Renewal", "href": "/services/renew-thai-driver-license-service"},
@@ -117,5 +115,246 @@
     "lineTapText": "Tap here to start talking with us for free on LINE.",
     "messengerTapText": "Tap here to start talking with us for free on Messenger.",
     "copyright": "PT Services \u00a9 Copyright 2025. All Rights Reserved. PT Services is not a law firm."
+  },
+  "servicePages": {
+    "ninetyDayReport": {
+      "meta": {
+        "title": "90-Day Report Service in Thailand – Bangkok, Pathum Thani & Samut Prakan - PT Services Agency",
+        "description": "Professional 90-day report service in Bangkok, Pathum Thani and Samut Prakan. Our staff picks up your passport, completes the report at immigration, and returns your documents the same day."
+      },
+      "title": "90-Day Report Service in Thailand",
+      "features": ["Convenient — door-to-door document pickup and delivery", "Fast — completed within a single business day", "Affordable — transparent pricing with no hidden fees", "Fully legal — handled by experienced professionals"],
+      "documentsHeading": "Documents Required",
+      "documentsIntro": "Our staff only need the following documents to complete the 90-day report on your behalf:",
+      "documents": [
+        "Your original passport",
+        "A signed copy of your passport (for the power of attorney)",
+        "TM.30 form (you can send a digital file if available)",
+        "Power of attorney form (our staff will bring it for you to sign during document pickup)"
+      ],
+      "priceHeading": "Pricing",
+      "priceIntro": "Our service fee depends on your location. Transparent pricing with no hidden fees.",
+      "priceTable": [
+        {"province": "Bangkok", "price": "1,500 THB"},
+        {"province": "Pathum Thani", "price": "2,000 THB"},
+        {"province": "Samut Prakan", "price": "2,000 THB"}
+      ],
+      "priceTableHeaderProvince": "Service Area",
+      "priceTableHeaderPrice": "Service Fee",
+      "faqHeading": "Frequently Asked Questions",
+      "faq": [
+        {
+          "question": "How do I book your service?",
+          "answer": "You can book our service simply by contacting us. We will agree on a date and a time for our staff to pick up your documents at your residence and return them once the 90-day report is completed."
+        },
+        {
+          "question": "Do I need to pay in advance?",
+          "answer": "In most cases, no upfront payment is required. You pay only when our staff returns your documents after completing the 90-day report. However, we may sometimes request a small deposit in advance to secure your appointment and prevent no-shows."
+        },
+        {
+          "question": "Do I need to go to the immigration office?",
+          "answer": "No, there is no need for you to visit the immigration office. Our staff handles the entire process for you. We only need a few documents: your original passport, a signed passport copy, TM.30 form, and a power of attorney form (which we bring for you to sign during pickup)."
+        },
+        {
+          "question": "How long does the 90-day reporting process take?",
+          "answer": "Our staff picks up your documents in the morning, completes the 90-day report at the immigration office, and returns your passport along with the official receipt by the afternoon. The entire process is completed within the same business day."
+        },
+        {
+          "question": "How much does the 90-Day report service cost?",
+          "answer": "Our service fee depends on your location:<br/><br/>• <strong>Bangkok</strong>: 1,000 – 1,500 THB<br/>• <strong>Pathum Thani</strong>: 1,500 – 2,000 THB<br/>• <strong>Samut Prakan</strong>: 1,500 – 2,000 THB<br/><br/>The exact price depends on where our staff needs to pick up and return your documents."
+        },
+        {
+          "question": "Which areas do you cover?",
+          "answer": "We currently provide our 90-day report service in <strong>Bangkok</strong>, <strong>Pathum Thani</strong>, and <strong>Samut Prakan</strong>."
+        }
+      ]
+    },
+    "tdac": {
+      "meta": {
+        "title": "TDAC Form Filling Service - PT Services Agency",
+        "description": "Thailand Digital Arrival Card (TDAC) form filling service. We prepare your TDAC in advance and deliver it online before your trip. Only 300 THB per person."
+      },
+      "title": "Thailand Digital Arrival Card (TDAC) Form Filling Service For Entry Into Thailand",
+      "intro": "Avoid wasting time queuing at the airport! Let us prepare your Thailand Digital Arrival Card (TDAC) in advance and deliver it to you online before your trip.\n\nOur service is designed to be:",
+      "features": [
+        "<strong>Easy</strong> – Just tell us your travel date, and we'll handle the rest",
+        "<strong>Fast</strong> – Receive your completed TDAC form quickly and hassle-free",
+        "<strong>Affordable</strong> – Quality service at a friendly price"
+      ],
+      "priceHeading": "Price",
+      "priceContent": "We charge a service fee of <strong>300 THB per person</strong>.",
+      "faqHeading": "Frequently Asked Questions (FAQs)",
+      "faq": [
+        {
+          "question": "How do I use your service?",
+          "answer": "Simply contact us, provide your travel details (flight date and basic information), and we will handle the TDAC form for you. You'll receive the completed form online before your departure."
+        },
+        {
+          "question": "Do I need to pay in advance?",
+          "answer": "Yes, the full payment of <strong>300 THB per person</strong> is required in advance to confirm your booking and begin processing your TDAC form."
+        },
+        {
+          "question": "How long does it take to complete the TDAC?",
+          "answer": "Normally, we will send you the completed TDAC form within <strong>1–3 hours</strong> after we receive all the required information from you (this may vary slightly depending on the time of day and current workload)."
+        },
+        {
+          "question": "How much does the TDAC form filling service cost?",
+          "answer": "Our service fee is <strong>300 THB per person</strong>."
+        }
+      ]
+    },
+    "tm30": {
+      "meta": {
+        "title": "TM30 Notification & Update Service in Bangkok - PT Services Agency",
+        "description": "Professional TM30 residence notification and update service in Bangkok. Online TM30 filing from 300 THB, TM30 updates from 1,000 THB. Fast, legal and reliable."
+      },
+      "title": "TM30 Update & Notification Service",
+      "intro": "<strong>TM30 Residence Notification</strong> is a mandatory residence reporting requirement for all foreigners staying in Thailand under immigration law. The resident or property owner must notify the Immigration Bureau within 24 hours of moving to a new address to keep the residence information accurate and up-to-date.\n\n<strong>Our TM30 Notification & Update Service is designed to meet every foreigner's need in Thailand:</strong>",
+      "features": [
+        "Fast and convenient service that professionally handles your TM30 notification and updates, minimizing hassle and saving you time",
+        "Fully compliant with Thai immigration laws, ensuring your safety and the reliability of the process",
+        "Comprehensive support for foreigners of all nationalities residing in Thailand",
+        "Complete service from document preparation to submitting your TM30 report to the Immigration Bureau",
+        "Close guidance and consultation throughout the entire TM30 notification process, answering your questions promptly"
+      ],
+      "documentsOnlineHeading": "Documents Required for Online TM30 Submission",
+      "documentsOnlineIntro": "To ensure your TM30 residence notification through the Thai Immigration Bureau's online system is fast, accurate, and complete, foreigners residing in Thailand must prepare the following essential documents:",
+      "documentsOnline": [
+        "A clear photo or scanned copy of the resident's passport information page.",
+        "A clear photo or scanned copy of the latest entry stamp into Thailand.",
+        "A clear photo or scanned copy of the visa page or e-visa file.",
+        "A copy of the house registration or condominium document showing the current residence address.",
+        "A copy of the ID card of the property owner or the person responsible for the residence.",
+        "Contact phone number of the person submitting the notification.",
+        "Power of attorney document (if authorizing someone else to act on your behalf)."
+      ],
+      "documentsUpdateHeading": "Documents Required for TM30 Residence Update",
+      "documentsUpdateIntro": "In case of any changes to your residence information or other details, please prepare the following documents for TM30 update:",
+      "documentsUpdate": [
+        "Notification Form (TM30)",
+        "Copy of ID card or passport of householder, the owner or the possessor of a dwelling place, certified as a true copy.",
+        "A certified true copy of the house registration, lease agreement, or sales contract.",
+        "Passports of all foreigners residing at the same address.",
+        "If the TM30 update is submitted late, a fine ranging from 800 to 2,000 THB may apply. Fines can be paid directly to immigration officers at the Immigration Office."
+      ],
+      "priceHeading": "Service Fee",
+      "priceItems": [
+        "<strong>Online TM30 Residence Notification – Only 300 THB</strong><br/>Enjoy fast, convenient, and fully legal TM30 residence notification online with our expert service at just 300 THB.",
+        "<strong>TM30 Residence Update – Comprehensive Service for 1,000 THB</strong><br/>We provide a full-service TM30 residence update for 1,000 THB. Please note, this fee does not include any fines for late submission, which must be paid directly to immigration officers at the Immigration Office."
+      ],
+      "faqHeading": "Frequently Asked Questions (FAQ)",
+      "faq": [
+        {
+          "question": "How can I use your services?",
+          "answer": "Simply contact us and let us know your needs whether it's TM30 online residence notification within 24 hours or TM30 residence update. The professional team at PT Services is ready to assist you quickly and accurately.<br/><br/><strong>For online TM30 residence notification within 24 hours,</strong> simply submit the required documents to us as instructed, and receive your TM30 notification receipt within 1–3 hours.<br/><br/><strong>For TM30 residence updates,</strong> submit your updated documents to us. Our staff will arrange a convenient appointment to collect the documents at your address and proceed with the update."
+        },
+        {
+          "question": "Do I need to pay in advance?",
+          "answer": "<strong>For TM30 online residence notification within 24 hours,</strong> we require full prepayment of 300 THB per person to confirm your booking and begin processing your notification quickly and accurately.<br/><br/><strong>For TM30 residence updates,</strong> we require a prepayment deposit of 500 THB per person to confirm your booking and begin preparing your documents for a complete and accurate residence update."
+        },
+        {
+          "question": "How long does TM30 residence notification and update take?",
+          "answer": "<strong>For TM30 online residence notification within 24 hours,</strong> once you submit all required documents, the PT Services team will complete the notification and send you the residence notification receipt within 1–3 hours for your convenience and speed.<br/><br/><strong>For TM30 residence updates,</strong> processing time depends on the number of visitors at the Immigration Office, but generally takes about 1–2 hours to complete on-site."
+        },
+        {
+          "question": "What are the service fees for TM30 residence notification and update?",
+          "answer": "Our online TM30 residence notification service within 24 hours is available for just <strong>300 THB</strong> per person, providing fast and convenient assistance for foreigners residing in Thailand. For TM30 residence updates, we offer a comprehensive and fully compliant service at <strong>1,000 THB</strong> per person, including professional guidance throughout the entire process."
+        }
+      ]
+    },
+    "driverLicense": {
+      "meta": {
+        "title": "Thai Driving License Application & Renewal for Foreigners in Bangkok - PT Services Agency",
+        "description": "Thai driving license application and renewal service for foreigners in Bangkok. Complete end-to-end service from 4,000 to 6,500 THB including vehicle for driving test."
+      },
+      "title": "Thai Driving License Application & Renewal Services in Bangkok for Foreigners – Convenient, Fast and Fully Legal",
+      "intro": "If you are a foreigner living in Bangkok and need to renew a Thai driving license or apply for a Thai driving license for the first time, whether for a car or motorcycle, our service is here to make the entire process simple, convenient and stress-free.\n\nFor those applying for a Thai driving license for the first time, we take care of every step from eligibility checks and preparation of all required documents to advance appointment booking with the Department of Land Transport, as well as guidance and on-site support on the day of application. You don't need to worry about complicated procedures or communication with officials.\n\nFor Thai driving license renewals, we help reduce delays and hassle by handling document preparation, verification and appointment scheduling efficiently.\n\nOur professional team provides a complete, end-to-end service, ensuring that every step is handled legally and correctly, so you can drive in Thailand with confidence, safety, and peace of mind.",
+      "docsFirstTimeHeading": "Documents Required for Foreigners Applying for a Thai Driving License (First-Time Application)",
+      "docsFirstTime": [
+        "Passport (Copy of the personal information page/Copy of the latest visa page/Copy of the most recent Thailand entry stamp page)",
+        "Proof of Residence Notification (TM30)",
+        "Latest 90-Day Report (TM47)",
+        "Certificate of Residence in Thailand",
+        "Medical Certificate",
+        "Foreign Driving License (if applicable)"
+      ],
+      "docsRenewalHeading": "Documents Required for Foreigners to Renew a Thai Driving License",
+      "docsRenewal": [
+        "Passport (Copy of the personal information page/Copy of the latest visa page/Copy of the most recent Thailand entry stamp page)",
+        "Current Thai Driving License",
+        "Proof of Residence Notification (TM30)",
+        "Latest 90-Day Report (TM47)",
+        "Certificate of Residence in Thailand",
+        "Medical Certificate",
+        "Proof of Training Completion"
+      ],
+      "priceHeading": "Thai Driving License Application & Renewal Service Fees for Foreigners",
+      "priceIntro": "Our service fees range from THB 4,000 to THB 6,500.\nThis price includes all processing and handling, so you don't need to worry about any hidden or additional charges. Everything is clearly covered to ensure a smooth, transparent and stress-free experience.",
+      "priceIncludes": [
+        "Full-Service Assistance & End-to-End Processing Fee",
+        "Vehicle Provided for the Driving Test",
+        "Medical Certificate Fee",
+        "Driving License Fee at the Department of Land Transport"
+      ],
+      "priceNote": "Note that the Residence Certificate is not included.",
+      "faqHeading": "Frequently Asked Questions (FAQ)",
+      "faq": [
+        {
+          "question": "How can I book your service?",
+          "answer": "You can easily book our Thai driving license application or renewal service by simply contacting us and informing us of your request. After that, please send photos of your existing driving license or available documents for our team to conduct a preliminary review.<br/><br/>Once the information is verified, we will provide a clear summary of the service fees, explain the process step by step, and take care of you throughout the entire procedure until completion. Every step is handled legally, efficiently and professionally, ensuring a smooth experience while saving you valuable time with complete peace of mind."
+        },
+        {
+          "question": "Do I need to make a payment in advance?",
+          "answer": "Yes. Full payment is required before the process begins so our team can immediately proceed with document preparation, training arrangements and appointment booking with the Department of Land Transport."
+        },
+        {
+          "question": "How long does it take to apply for a new Thai driving license or renew an existing one?",
+          "answer": "For a first-time Thai driving license application, the process generally takes around 2 working days, depending on successfully passing the required theory exams and driving tests as stipulated by the Department of Land Transport.<br/><br/>For Thai driving license renewal, the process can usually be completed within 1 day, provided that all required documents are complete. Our team closely manages and coordinates every step to ensure the process is fast, legally compliant and efficient, helping you save as much time as possible while avoiding unnecessary complications."
+        },
+        {
+          "question": "Which areas does this service cover?",
+          "answer": "This service is available for <strong>foreigners residing in Bangkok</strong> and nearby areas."
+        }
+      ]
+    },
+    "marriageTranslation": {
+      "meta": {
+        "title": "Document Translation & Consular Legalization for Marriage Registration in Thailand - PT Services Agency",
+        "description": "Professional document translation and consular legalization service for marriage registration in Thailand. Fixed fee of 5,500 THB. Certified translators, MFA legalization."
+      },
+      "title": "Document Translation and Consular Legalization Service for Marriage Registration in Thailand",
+      "intro": "If you are planning to marry a Thai citizen or register your marriage in Thailand, preparing the correct documents is a crucial step. Our all-in-one service covers every stage of the process:",
+      "introFeatures": [
+        "<strong>Professional Document Translation</strong> (English–Thai / Thai–English / other languages) by certified translators",
+        "<strong>Consular Legalization</strong> Certified signature verification from the Department of Consular Affairs, Ministry of Foreign Affairs",
+        "<strong>Expert Guidance & Document Review</strong> Ensuring your paperwork meets all requirements for a smooth marriage registration process in Thailand"
+      ],
+      "suitableHeading": "Perfect For:",
+      "suitableItems": [
+        "Foreigners who wish to register their marriage with a Thai citizen",
+        "Couples who need to submit foreign-issued documents for use in Thailand",
+        "Those who require accurate translation and legalization of documents in compliance with Thai government procedures"
+      ],
+      "processHeading": "Our Service Process",
+      "processItems": [
+        "Verify the original documents and ensure their accuracy",
+        "Translate by a professional translator with a certified signature on the translation",
+        "Submit the documents for consular legalization at the Department of Consular Affairs",
+        "Return the legalized documents to the client, ready for use"
+      ],
+      "priceHeading": "Document Translation and Consular Legalization Service Fee",
+      "priceContent": "A fixed service fee of <strong>5,500 THB</strong> covers professional document translation and consular legalization by the Ministry of Foreign Affairs for marriage registration in Thailand. This all-inclusive price includes every step from certified professional translation and thorough document verification to completing the legalization process in full compliance with official Thai government standards.",
+      "tipsHeading": "Tips for Using Our Document Translation & Consular Legalization Service for a Smooth and Fast Process",
+      "tipsContent": "For a smooth and efficient experience with our <strong>document translation and consular legalization service</strong> for marriage registration in Thailand, we recommend booking your appointment at least <strong>2–3 weeks in advance</strong>. This allows our team to secure a timeslot with the Department of Consular Affairs, Ministry of Foreign Affairs, within the required timeframe.\n\nOnce all documents are complete and ready for processing, the legalization procedure takes approximately <strong>7–10 business days</strong>. You can be confident that your documents will be properly legalized in full compliance with official Thai government procedures ready for immediate use in your marriage registration.",
+      "ctaHeading": "Let Us Handle Every Step for You",
+      "ctaContent": "Simply contact us and let us know you need our document translation and consular legalization service for marriage registration we'll take care of everything from start to finish with a seamless, all-in-one process:",
+      "ctaSteps": [
+        "Contact us and share your requirements",
+        "Make the payment and schedule a document handover with our staff",
+        "Submit your documents for review and processing",
+        "Receive your translated and fully legalized documents within 7–10 business days"
+      ],
+      "ctaFooter": "With our service, you can be confident that your paperwork will be accurate, fully compliant with official Thai government standards, and ready to use immediately without the hassle of handling the process yourself."
+    }
   }
 }

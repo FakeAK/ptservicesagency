@@ -8,6 +8,12 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://www.ptservicesagency.com',
   trailingSlash: 'never',
+  redirects: {
+    '/services/90-day-report-service-pathum-thani-thailand': '/services/90-day-report-thailand',
+    '/services/90-day-report-service-samut-prakan-thailand': '/services/90-day-report-thailand',
+    '/en/services/90-day-report-service-pathum-thani-thailand': '/en/services/90-day-report-thailand',
+    '/en/services/90-day-report-service-samut-prakan-thailand': '/en/services/90-day-report-thailand',
+  },
   integrations: [
     react(),
     sitemap({

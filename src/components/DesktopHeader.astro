@@ -39,7 +39,7 @@ export const buildFlag = (locale: Lang) => {
     >
       {
         t.nav.servicesDropdown.map(item => (
-          <a href="#" class="block px-5 py-2.5 text-sm text-primary no-underline hover:bg-gray-50">
+          <a href={getLocalizedPath(item.href, lang)} class="block px-5 py-2.5 text-sm text-primary no-underline hover:bg-gray-50">
             {item.label}
           </a>
         ))
@@ -57,7 +57,7 @@ export const buildFlag = (locale: Lang) => {
     >
       {
         t.nav.visaDropdown.map(item => (
-          <a href="#" class="block px-5 py-2.5 text-sm text-primary no-underline hover:bg-gray-50">
+          <a href={getLocalizedPath(item.href, lang)} class="block px-5 py-2.5 text-sm text-primary no-underline hover:bg-gray-50">
             {item.label}
           </a>
         ))
