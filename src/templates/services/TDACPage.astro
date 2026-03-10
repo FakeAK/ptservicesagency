@@ -5,7 +5,6 @@ import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import FAQAccordion from '../../components/FAQAccordion.astro';
-import CTAButtons from '../../components/CTAButtons.astro';
 
 interface Props { lang: Lang; }
 
@@ -53,7 +52,6 @@ const breadcrumbJsonLd = {
       <div class="mt-4 text-body-text leading-relaxed" set:html={s.priceContent} />
     </section>
     <FAQAccordion heading={s.faqHeading} items={s.faq} />
-    <CTAButtons lang={lang} />
   </main>
   <Footer lang={lang} />
 </Layout>
