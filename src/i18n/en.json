@@ -92,6 +92,12 @@
   "blog": {
     "heading": "Latest Blog"
   },
+  "contactPage": {
+    "metaTitle": "PT Services - Contact Us",
+    "metaDescription": "Contact PT Services in Bangkok for visa assistance, immigration services, travel planning, and more. We are open Monday to Saturday, 9 AM to 6 PM.",
+    "heading": "Contact us",
+    "subtitle": "We are open from Monday to Saturday, 9 AM to 6 PM (UTC+7)."
+  },
   "notFound": {
     "title": "Page not found",
     "heading": "404",
