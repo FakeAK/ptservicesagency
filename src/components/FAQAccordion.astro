@@ -1,0 +1,39 @@
+---
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  heading: string;
+  items: FAQItem[];
+}
+
+const { heading, items } = Astro.props;
+---
+
+<section class="mt-12">
+  <h2 class="font-calsans text-2xl text-primary">{heading}</h2>
+  <div class="mt-6 divide-y divide-border-light border-t border-b border-border-light">
+    {
+      items.map((item) => (
+        <details class="group">
+          <summary class="flex cursor-pointer items-center justify-between gap-4 py-4 text-base font-semibold text-primary select-none [&::-webkit-details-marker]:hidden list-none">
+            <span>{item.question}</span>
+            <svg
+              class="size-5 shrink-0 text-primary transition-transform group-open:rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+          </summary>
+          <div class="pb-4 text-body-text leading-relaxed" set:html={item.answer} />
+        </details>
+      ))
+    }
+  </div>
+</section>

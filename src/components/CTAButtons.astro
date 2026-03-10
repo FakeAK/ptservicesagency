@@ -1,0 +1,34 @@
+---
+import type { Lang } from '../i18n';
+import { getTranslations } from '../i18n';
+import lineLogo from '../assets/line-logo.svg';
+import messengerLogo from '../assets/messenger-logo.svg';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = getTranslations(lang);
+---
+
+<div class="mt-10 flex flex-col gap-3 sm:flex-row">
+  <a
+    href="https://lin.ee/95zA7Kl"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="flex flex-1 items-center gap-3 rounded-xl border-2 border-primary bg-white px-5 py-3 no-underline transition-shadow hover:shadow-md"
+  >
+    <img src={lineLogo.src} alt="LINE" class="size-10 shrink-0" loading="lazy" />
+    <p class="text-sm font-semibold text-primary">{t.footer.lineTapText}</p>
+  </a>
+  <a
+    href="http://m.me/322623954270790"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="flex flex-1 items-center gap-3 rounded-xl border-2 border-primary bg-white px-5 py-3 no-underline transition-shadow hover:shadow-md"
+  >
+    <img src={messengerLogo.src} alt="Messenger" class="size-10 shrink-0" loading="lazy" />
+    <p class="text-sm font-semibold text-primary">{t.footer.messengerTapText}</p>
+  </a>
+</div>
