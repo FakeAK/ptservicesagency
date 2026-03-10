@@ -10,18 +10,18 @@ heroAlt: "รายงานตัว 90 วันสำหรับผู้ถ
 lang: "th"
 ---
 
-A few months ago, Thailand has introduced a new VISA called the "Destination Thailand Visa" (DTV), a program that lets travelers and long-term visitors stay in the country for up to five years. To keep the visa active holders can choose between two options: either extend the visa every 180 days and then leave and re-enter after 365 days, or simply depart and return every 180 days throughout the five-year period. But are DTV visa holders required to file a 90-Day report?
+เมื่อไม่กี่เดือนที่ผ่านมา ประเทศไทยได้เปิดตัววีซ่าประเภทใหม่ที่เรียกว่า "Destination Thailand Visa" (DTV) ซึ่งเป็นโครงการที่อนุญาตให้นักท่องเที่ยวและผู้พำนักระยะยาวสามารถอยู่ในประเทศได้นานถึง 5 ปี เพื่อรักษาสถานะวีซ่าให้ยังคงใช้ได้ ผู้ถือวีซ่าสามารถเลือกระหว่างสองทางเลือก: ต่ออายุวีซ่าทุก 180 วัน จากนั้นเดินทางออกและกลับเข้ามาใหม่หลังจาก 365 วัน หรือเพียงแค่เดินทางออกและกลับเข้ามาทุก 180 วันตลอดระยะเวลา 5 ปี แต่ผู้ถือวีซ่า DTV จำเป็นต้องยื่นรายงานตัว 90 วันหรือไม่?
 
-## What is the DTV?
+## วีซ่า DTV คืออะไร?
 
-The Destination Thailand Visa (VISA) has been introduced and many new people are now residents in Thailand under this visa program. It is a tourist visa allowing foreigners to stay in the country for up to 5 years. Foreigners under this visa can either extend their visa when approaching 180 days in the country for up to one year and then have to leave and re-enter for another year OR leave the country and re-enter every 180 days for a maximum period of 5 years.
+วีซ่า Destination Thailand Visa (DTV) ได้รับการเปิดตัวแล้ว และมีผู้คนจำนวนมากที่พำนักอยู่ในประเทศไทยภายใต้โครงการวีซ่านี้ วีซ่า DTV เป็นวีซ่าประเภทท่องเที่ยวที่อนุญาตให้ชาวต่างชาติพำนักอยู่ในประเทศได้นานสูงสุด 5 ปี ชาวต่างชาติที่ถือวีซ่านี้สามารถเลือกต่ออายุวีซ่าเมื่อใกล้ครบ 180 วันในประเทศ โดยต่อได้สูงสุด 1 ปี จากนั้นต้องเดินทางออกและกลับเข้ามาใหม่เพื่อเริ่มปีถัดไป หรือเลือกเดินทางออกนอกประเทศและกลับเข้ามาใหม่ทุก 180 วัน ตลอดระยะเวลาสูงสุด 5 ปี
 
-## Do DTV visa holders need to file a 90-Day Report?
+## ผู้ถือวีซ่า DTV จำเป็นต้องยื่นรายงานตัว 90 วันหรือไม่?
 
-The DTV still being considered as a tourist visa, yes, DTV visa holders are required to file every 90-Day reports if they plan to stay more than 90-Day in the country. Forgetting to file a 90-day report on time can lead to a fine of 2,000 THB. If you are caught by authorities before reporting, the fine can increase to 4,000 THB with an additional fine not exceeding 200 THB for each day which passes until the law is complied with. This fine has to be paid in person at the immigration office and result in not only a loss of 2,000 THB but also a loss of a few hours.
+เนื่องจากวีซ่า DTV ยังถือว่าเป็นวีซ่าประเภทท่องเที่ยว คำตอบคือ **ใช่** ผู้ถือวีซ่า DTV จำเป็นต้องยื่นรายงานตัวทุก 90 วัน หากมีแผนจะพำนักอยู่ในประเทศไทยเกิน 90 วัน การลืมยื่นรายงานตัว 90 วันตามกำหนดเวลาอาจถูกปรับ 2,000 บาท หากถูกเจ้าหน้าที่ตรวจพบก่อนที่จะไปรายงานตัว ค่าปรับอาจเพิ่มขึ้นเป็น 4,000 บาท พร้อมค่าปรับเพิ่มเติมไม่เกินวันละ 200 บาทจนกว่าจะปฏิบัติตามกฎหมาย ค่าปรับนี้ต้องชำระด้วยตนเองที่สำนักงานตรวจคนเข้าเมือง ซึ่งไม่เพียงแต่เสียเงิน 2,000 บาท แต่ยังเสียเวลาหลายชั่วโมงอีกด้วย
 
-## How PT Services can help you
+## PT Services ช่วยคุณได้อย่างไร
 
-At PT Services, we offer a premium and seamless 90-Day report service where you have nothing to do. 90-Day reports in person usually takes one full day to complete in Bangkok as the Chaengwatthana immigration office is far from the city center.
+ที่ PT Services เราให้บริการรายงานตัว 90 วันแบบพรีเมียมและไร้ความยุ่งยาก โดยคุณไม่ต้องทำอะไรเลย การยื่นรายงานตัว 90 วันด้วยตัวเองมักใช้เวลาเกือบทั้งวันในกรุงเทพฯ เนื่องจากสำนักงานตรวจคนเข้าเมืองแจ้งวัฒนะอยู่ไกลจากใจกลางเมือง
 
-Instead of spending an entire day at the Chaengwatthana immigration office, our expert agents pick up your passport and documents directly from your location. We then file your 90-Day report at the immigration office and return your passport along with the receipt the same day. You can find more details [by clicking here](/services/90-day-report-thailand) or you can contact us with the information below directly.
+แทนที่จะเสียเวลาทั้งวันที่สำนักงานตรวจคนเข้าเมืองแจ้งวัฒนะ เจ้าหน้าที่ผู้เชี่ยวชาญของเราจะไปรับหนังสือเดินทางและเอกสารของคุณถึงที่พัก จากนั้นเราจะยื่นรายงานตัว 90 วันที่สำนักงานตรวจคนเข้าเมืองให้ และนำหนังสือเดินทางพร้อมใบเสร็จกลับมาส่งคืนให้คุณในวันเดียวกัน คุณสามารถดูรายละเอียดเพิ่มเติมได้ [โดยคลิกที่นี่](/services/90-day-report-thailand) หรือติดต่อเราโดยตรงผ่านข้อมูลด้านล่าง
