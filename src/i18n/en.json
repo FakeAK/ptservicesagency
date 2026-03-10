@@ -123,7 +123,7 @@
         "description": "Professional 90-day report service in Bangkok, Pathum Thani and Samut Prakan. Our staff picks up your passport, completes the report at immigration, and returns your documents the same day."
       },
       "title": "90-Day Report Service in Thailand",
-      "features": ["Convenient — door-to-door document pickup and delivery", "Fast — completed within a single business day", "Affordable — transparent pricing with no hidden fees", "Fully legal — handled by experienced professionals"],
+      "featuresText": "Our team handles everything from start to finish. A staff member picks up your passport directly at your residence, completes the 90-day report at the immigration office on your behalf, and returns your documents the same day. The process is fully legal, fast, and affordable, with transparent pricing and no hidden fees. We currently serve foreigners living in <strong>Bangkok</strong>, <strong>Pathum Thani</strong>, and <strong>Samut Prakan</strong>.",
       "documentsHeading": "Documents Required",
       "documentsIntro": "Our staff only need the following documents to complete the 90-day report on your behalf:",
       "documents": [
@@ -133,7 +133,7 @@
         "Power of attorney form (our staff will bring it for you to sign during document pickup)"
       ],
       "priceHeading": "Pricing",
-      "priceIntro": "Our service fee depends on your location. Transparent pricing with no hidden fees.",
+      "priceIntro": "Our service fee depends on your location. Our pricing is transparent with no hidden fees.",
       "priceTable": [
         {"province": "Bangkok", "price": "1,500 THB"},
         {"province": "Pathum Thani", "price": "2,000 THB"},
