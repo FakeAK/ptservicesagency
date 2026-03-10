@@ -1,6 +1,6 @@
 ---
 import type {Lang} from "../i18n";
-import {getTranslations} from "../i18n";
+import {getTranslations, getLocalizedPath} from "../i18n";
 
 interface Props {
   lang: Lang;
@@ -62,10 +62,10 @@ export const buildFlag = (locale: Lang, className: string = "") => {
     </div>
   </div>
 
-  <a href={`${lang === 'th' ? '' : '/en'}/contact`} class="block py-2 text-[15px] font-semibold text-primary no-underline">
+  <a href={getLocalizedPath('/contact', lang)} class="block py-2 text-[15px] font-semibold text-primary no-underline">
     {t.nav.contact}
   </a>
-  <a href={`${lang === 'th' ? '' : '/en'}/blog`} class="block py-2 text-[15px] font-semibold text-primary no-underline">
+  <a href={getLocalizedPath('/blog', lang)} class="block py-2 text-[15px] font-semibold text-primary no-underline">
     {t.nav.blog}
   </a>
 

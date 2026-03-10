@@ -1,6 +1,6 @@
 ---
 import type {Lang} from "../i18n";
-import {getTranslations} from "../i18n";
+import {getTranslations, getLocalizedPath} from "../i18n";
 
 import {cn} from "../lib/utils";
 
@@ -65,10 +65,10 @@ export const buildFlag = (locale: Lang) => {
     </div>
   </div>
 
-  <a href={`${lang === 'th' ? '' : '/en'}/contact`} class="px-5 py-2 text-[15px] font-semibold text-primary no-underline hover:text-nav-hover">
+  <a href={getLocalizedPath('/contact', lang)} class="px-5 py-2 text-[15px] font-semibold text-primary no-underline hover:text-nav-hover">
     {t.nav.contact}
   </a>
-  <a href={`${lang === 'th' ? '' : '/en'}/blog`} class="px-5 py-2 text-[15px] font-semibold text-primary no-underline hover:text-nav-hover">
+  <a href={getLocalizedPath('/blog', lang)} class="px-5 py-2 text-[15px] font-semibold text-primary no-underline hover:text-nav-hover">
     {t.nav.blog}
   </a>
 
