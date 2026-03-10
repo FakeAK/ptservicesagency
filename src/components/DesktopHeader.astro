@@ -3,6 +3,7 @@ import type {Lang} from "../i18n";
 import {getTranslations, getLocalizedPath} from "../i18n";
 
 import {cn} from "../lib/utils";
+import NavDropdown from "./NavDropdown.astro";
 
 interface Props {
   lang: Lang;
@@ -29,41 +30,8 @@ export const buildFlag = (locale: Lang) => {
     {t.nav.home}
   </a>
 
-  <!-- Services Dropdown -->
-  <div class="group relative">
-    <button class="px-5 py-2 text-[15px] font-semibold text-primary hover:text-nav-hover">
-      {t.nav.services}
-    </button>
-    <div
-      class="pointer-events-none absolute top-full left-0 z-50 min-w-[280px] overflow-hidden rounded-xl border-2 border-primary bg-white opacity-0 shadow-lg transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
-    >
-      {
-        t.nav.servicesDropdown.map(item => (
-          <a href={getLocalizedPath(item.href, lang)} class="block px-5 py-2.5 text-sm text-primary no-underline hover:bg-gray-50">
-            {item.label}
-          </a>
-        ))
-      }
-    </div>
-  </div>
-
-  <!-- Visa Dropdown -->
-  <div class="group relative">
-    <a href="#" class="px-5 py-2 text-[15px] font-semibold text-primary no-underline hover:text-nav-hover">
-      {t.nav.visa}
-    </a>
-    <div
-      class="pointer-events-none absolute top-full left-0 z-50 min-w-[220px] overflow-hidden rounded-xl border-2 border-primary bg-white opacity-0 shadow-lg transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
-    >
-      {
-        t.nav.visaDropdown.map(item => (
-          <a href={getLocalizedPath(item.href, lang)} class="block px-5 py-2.5 text-sm text-primary no-underline hover:bg-gray-50">
-            {item.label}
-          </a>
-        ))
-      }
-    </div>
-  </div>
+  <NavDropdown label={t.nav.services} items={t.nav.servicesDropdown} lang={lang} />
+  <NavDropdown label={t.nav.visa} items={t.nav.visaDropdown} lang={lang} minWidth="220px" />
 
   <a href={getLocalizedPath('/contact', lang)} class="px-5 py-2 text-[15px] font-semibold text-primary no-underline hover:text-nav-hover">
     {t.nav.contact}
