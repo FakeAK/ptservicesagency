@@ -1,5 +1,5 @@
 ---
-title: "Which Thailand visa choose in 2025? Comprehensive guide for foreigners"
+title: "Which Thailand visa to choose in 2025? Comprehensive guide for foreigners"
 date: 2025-08-16
 updatedDate: 2025-08-16
 author: "PT Services Agency"
