@@ -1,6 +1,7 @@
 ---
 import type { Lang } from '../../../i18n';
 import { getTranslations, getLocalizedPath } from '../../../i18n';
+import { Button } from '../../../components/ui/Button';
 
 import visaMan from '../../../assets/visa-man.jpg';
 
@@ -45,12 +46,9 @@ const t = getTranslations(lang);
 
     <!-- See More Button -->
     <div class="mt-6">
-      <a
-        href={getLocalizedPath('/visa', lang)}
-        class="inline-block w-full rounded-[4px] bg-primary bg-gradient-to-r from-primary from-25% to-primary-btn-gradient py-3 text-center text-white no-underline hover:opacity-90"
-      >
+      <Button href={getLocalizedPath('/visa', lang)} variant="secondary" className="w-full">
         {t.visa.seeMore}
-      </a>
+      </Button>
     </div>
   </div>
 </div>

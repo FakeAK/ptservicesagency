@@ -2,6 +2,7 @@
 import type {Lang} from "../../../../i18n";
 import {getTranslations} from "../../../../i18n";
 import {cn} from "../../../../lib/utils";
+import {Button} from "../../../../components/ui/Button";
 import heroWoman from "../../../../assets/hero-woman.png";
 import HeroBannerTestimonial from "./HeroBannerTestimonial.astro";
 
@@ -37,12 +38,12 @@ const t = getTranslations(lang);
 
       <!-- CTA Buttons -->
       <div class="flex mt-9 flex gap-3 items-center justify-center md:justify-start">
-        <a href="#footer" class="inline-block rounded-[4px] bg-primary px-6 py-3 text-center leading-5 text-white no-underline hover:opacity-90">
+        <Button href="#footer" variant="primary">
           {t.hero.ctaPrimary}
-        </a>
-        <a href="#services-container" class="inline-block rounded-[4px] border border-primary bg-transparent px-6 py-3 text-center leading-5 text-primary no-underline hover:bg-primary/5">
+        </Button>
+        <Button href="#services-container" variant="outline">
           {t.hero.ctaSecondary}
-        </a>
+        </Button>
       </div>
 
       <HeroBannerTestimonial lang={lang} />
