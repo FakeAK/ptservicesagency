@@ -90,37 +90,7 @@
     "heading": "What People Think About Us"
   },
   "blog": {
-    "heading": "Latest Blog",
-    "posts": [
-      {
-        "title": "What is the Thailand Digital Arrival Card (TDAC) and how to fill it?",
-        "date": "30/04/2025",
-        "excerpt": "Learn what the Thailand Digital Arrival Card (TDAC) is, why it's required for travelers, and how to easily fill it out before entering Thailand.",
-        "href": "/blog/thailand-tdac",
-        "image": "tdac"
-      },
-      {
-        "title": "Are DTV Holders Required To Submit The 90-Day Report?",
-        "date": "28/02/2025",
-        "excerpt": "Do holders of the Destination Thailand Visa (DTV) need to submit a 90-day report when staying in Thailand for more than 90 days?",
-        "href": "/blog/do-dtv-visa-holders-need-to-file-the-90-report",
-        "image": "dtv-90-day"
-      },
-      {
-        "title": "How To Obtain A Schengen VISA In Thailand",
-        "date": "19/06/2024",
-        "excerpt": "Discover in this article how PT Services can help you get your Schengen VISA to travel in Europe.",
-        "href": "/how-to-get-schengen-visa-in-thailand",
-        "image": "schengen-visa"
-      },
-      {
-        "title": "90-Day Report For Foreigners In Thailand",
-        "date": "08/06/2024",
-        "excerpt": "Discover in this article what is the 90 days report, how to do it and how PT Services can help you by doing it on your behalf.",
-        "href": "/thailand-90-days-report",
-        "image": "immigration-office"
-      }
-    ]
+    "heading": "Latest Blog"
   },
   "footer": {
     "contactTitle": "Contact",

@@ -20,7 +20,7 @@ export const buildFlag = (locale: Lang, className: string = "") => {
 
 <!-- Mobile Menu Panel (toggled by hamburger in Navbar) -->
 <div id="mobile-menu" class="hidden border-t border-border-light bg-white px-5 py-4 tablet:hidden">
-  <a href="#" class="block py-2 text-[15px] font-semibold text-primary no-underline">
+  <a href={lang === 'th' ? '/' : '/en'} class="block py-2 text-[15px] font-semibold text-primary no-underline">
     {t.nav.home}
   </a>
 
@@ -61,7 +61,7 @@ export const buildFlag = (locale: Lang, className: string = "") => {
   <a href="#" class="block py-2 text-[15px] font-semibold text-primary no-underline">
     {t.nav.contact}
   </a>
-  <a href="#" class="block py-2 text-[15px] font-semibold text-primary no-underline">
+  <a href={`${lang === 'th' ? '' : '/en'}/blog/`} class="block py-2 text-[15px] font-semibold text-primary no-underline">
     {t.nav.blog}
   </a>
 

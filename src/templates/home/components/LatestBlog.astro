@@ -1,26 +1,21 @@
 ---
-import type {Lang} from "../../../i18n";
-import {getTranslations} from "../../../i18n";
-import BlogCard from "../../../components/BlogCard.astro";
-
-import tdac from "../../../assets/blog/tdac.webp";
-import dtv90day from "../../../assets/blog/dtv-90-day.webp";
-import schengenVisa from "../../../assets/blog/schengen-visa.jpg";
-import immigrationOffice from "../../../assets/blog/immigration-office.jpg";
+import { getCollection } from 'astro:content';
+import type { Lang } from '../../../i18n';
+import { getTranslations } from '../../../i18n';
+import BlogCard from '../../../components/BlogCard.astro';
+import { blogImages } from '../../../lib/blogImages';
 
 interface Props {
   lang: Lang;
 }
 
-const {lang} = Astro.props;
+const { lang } = Astro.props;
 const t = getTranslations(lang);
 
-const blogImages: Record<string, ImageMetadata> = {
-  tdac: tdac,
-  "dtv-90-day": dtv90day,
-  "schengen-visa": schengenVisa,
-  "immigration-office": immigrationOffice
-};
+const allPosts = await getCollection('blog', ({ data }) => data.lang === lang);
+const posts = allPosts
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 4);
 ---
 
 <section class="flex flex-col items-center justify-center gap-6 mx-auto max-w-[940px]">
@@ -28,7 +23,21 @@ const blogImages: Record<string, ImageMetadata> = {
     {t.blog.heading}
   </h2>
 
-  <div class="grid max-w-[940px] grid-cols-2 gap-4 place-items-stretch-center row-gap-12 max-[479px]:grid-cols-1 max-[479px]:gap-6">
-    {t.blog.posts.map(post => <BlogCard title={post.title} date={post.date} excerpt={post.excerpt} imageSrc={blogImages[post.image]?.src || ""} imageAlt={post.title} href={post.href} lang={lang} />)}
+  <div class="grid max-w-[940px] grid-cols-2 gap-x-4 gap-y-12 max-[479px]:grid-cols-1 max-[479px]:gap-6">
+    {posts.map(post => (
+      <BlogCard
+        title={post.data.title}
+        date={post.data.date.toLocaleDateString(lang === 'th' ? 'th-TH' : 'en-GB', {
+          day: '2-digit',
+          month: '2-digit',
+          year: 'numeric',
+        })}
+        excerpt={post.data.excerpt}
+        imageSrc={blogImages[post.data.image]?.src || ''}
+        imageAlt={post.data.heroAlt}
+        href={`/blog/${post.data.slug}`}
+        lang={lang}
+      />
+    ))}
   </div>
 </section>

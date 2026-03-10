@@ -1,0 +1,59 @@
+---
+import type {Lang} from "../../i18n";
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../../components/Navbar.astro";
+import Footer from "../../components/Footer.astro";
+import {blogImages} from "../../lib/blogImages";
+
+interface Props {
+  title: string;
+  date: Date;
+  excerpt: string;
+  image: string;
+  heroAlt: string;
+  lang: Lang;
+}
+
+const {title, date, excerpt, image, heroAlt, lang} = Astro.props;
+
+const heroImage = blogImages[image];
+
+const formattedDate = date.toLocaleDateString(lang === "th" ? "th-TH" : "en-GB", {
+  day: "2-digit",
+  month: "long",
+  year: "numeric"
+});
+---
+
+<Layout title={`${title} - PT Services`} description={excerpt} lang={lang}>
+  <Navbar lang={lang} />
+
+  <article class="mx-auto mt-12 max-w-[940px] px-5 mb-12">
+    {heroImage && <img src={heroImage.src} alt={heroAlt} class="mb-8 w-full rounded-4xl object-cover aspect-16/9" />}
+
+    <div class="flex flex-col gap-2">
+      <h1 class="font-bold leading-tighter text-primary text-3xl md:text-4xl">
+        {title}
+      </h1>
+
+      <p class="mb-8 text-sm text-primary/60">{formattedDate}</p>
+    </div>
+
+    <div
+      class="prose prose-lg max-w-none text-body-text
+      prose-headings:text-primary prose-headings:font-bold
+      prose-h2:mt-10 prose-h2:mb-4 prose-h2:text-2xl
+      prose-h3:mt-8 prose-h3:mb-3 prose-h3:text-xl
+      prose-p:mb-4 prose-p:leading-7
+      prose-a:text-royal-blue prose-a:underline
+      prose-strong:text-primary
+      prose-ul:my-4 prose-ul:pl-6 prose-li:mb-2
+      prose-ol:my-4 prose-ol:pl-6
+      prose-img:rounded-lg prose-img:my-6"
+    >
+      <slot />
+    </div>
+  </article>
+
+  <Footer lang={lang} />
+</Layout>

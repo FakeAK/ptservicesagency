@@ -61,7 +61,7 @@ const {quote, author, rating, source, sourceURL, image, date} = Astro.props;
   <div class="flex mt-3 items-center gap-2">
     {
       image ? (
-        <img src={image} alt={author} class={cn("size-10 object-cover", source !== "Google" && "rounded-full")} loading="lazy" />
+        <img src={image} alt={author} class={cn("size-10 object-cover drag-none", source !== "Google" && "rounded-full")} loading="lazy" />
       ) : (
         <div class="flex size-9 items-center justify-center rounded-full bg-primary text-sm font-bold text-white">{author.charAt(0)}</div>
       )

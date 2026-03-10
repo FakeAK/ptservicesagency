@@ -1,0 +1,55 @@
+---
+import { getCollection } from 'astro:content';
+import type { Lang } from '../../i18n';
+import { getTranslations } from '../../i18n';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import { blogImages } from '../../lib/blogImages';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = getTranslations(lang);
+
+const allPosts = await getCollection('blog', ({ data }) => data.lang === lang);
+const posts = allPosts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const title = lang === 'en' ? 'Blog - PT Services Agency' : 'บล็อก - PT Services Agency';
+const description = lang === 'en'
+  ? 'Read our latest articles about Thailand visas, immigration, and travel tips.'
+  : 'อ่านบทความล่าสุดเกี่ยวกับวีซ่าไทย การตรวจคนเข้าเมือง และเคล็ดลับการเดินทาง';
+---
+
+<Layout title={title} description={description} lang={lang}>
+  <Navbar lang={lang} />
+
+  <main class="mx-auto mt-16 max-w-[940px] px-5 pb-24">
+    <h1 class="mb-10 text-center text-4xl font-bold text-primary">
+      {t.blog.heading}
+    </h1>
+
+    <div class="grid grid-cols-2 gap-x-4 gap-y-12 max-[479px]:grid-cols-1 max-[479px]:gap-6">
+      {posts.map(post => (
+        <BlogCard
+          title={post.data.title}
+          date={post.data.date.toLocaleDateString(lang === 'th' ? 'th-TH' : 'en-GB', {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric',
+          })}
+          excerpt={post.data.excerpt}
+          imageSrc={blogImages[post.data.image]?.src || ''}
+          imageAlt={post.data.heroAlt}
+          href={`/blog/${post.data.slug}`}
+          lang={lang}
+        />
+      ))}
+    </div>
+  </main>
+
+  <Footer lang={lang} />
+</Layout>

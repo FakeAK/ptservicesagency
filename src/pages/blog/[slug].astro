@@ -1,0 +1,26 @@
+---
+import { getCollection, render } from 'astro:content';
+import BlogArticlePage from '../../templates/blog/BlogArticlePage.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => data.lang === 'th');
+  return posts.map(post => ({
+    params: { slug: post.data.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<BlogArticlePage
+  title={post.data.title}
+  date={post.data.date}
+  excerpt={post.data.excerpt}
+  image={post.data.image}
+  heroAlt={post.data.heroAlt}
+  lang="th"
+>
+  <Content />
+</BlogArticlePage>
