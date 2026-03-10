@@ -17,11 +17,11 @@ const { title, description, imageSrc, imageAlt, link, linkText, lang } = Astro.p
 
 <div class="flex flex-col items-start rounded-xl bg-card-bg p-3">
   <div class="flex w-full items-center justify-start gap-3">
-    <h3 class="m-0 flex-1 text-xl text-primary">{title}</h3>
+    <h3 class="m-0 flex-1 text-lg text-primary font-semibold">{title}</h3>
     <img
       src={imageSrc}
       alt={imageAlt}
-      class="h-16 w-16 rounded-lg object-cover"
+      class="size-10 rounded-lg object-contain"
       loading="lazy"
     />
   </div>

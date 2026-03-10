@@ -4,9 +4,6 @@ import { getTranslations } from '../../../i18n';
 import ServiceCard from '../../../components/ServiceCard.astro';
 
 import immigrationOfficer from '../../../assets/immigration-officer.png';
-import hospitalAccompaniment from '../../../assets/hospital-accompaniment.png';
-import bank from '../../../assets/bank.png';
-import flight from '../../../assets/flight.png';
 import personalAssistant from '../../../assets/personal-assistant.png';
 import specificService from '../../../assets/specific-service.png';
 
@@ -19,18 +16,18 @@ const t = getTranslations(lang);
 
 const serviceImages = [
   immigrationOfficer,
-  hospitalAccompaniment,
-  bank,
-  flight,
+  immigrationOfficer,
+  immigrationOfficer,
+  specificService,
   personalAssistant,
   specificService,
 ];
 
 const serviceAlts = [
   'An immigration officer.',
-  'An agent accompanying someone at hospital.',
-  'An illustration of a bank.',
-  'An illustration of a flight.',
+  'An illustration of a driving license renewal.',
+  'An illustration of TM.30 form filing.',
+  'An illustration of document translation services.',
   'An illustration of a personal assistant.',
   'An illustration of a specific service.',
 ];

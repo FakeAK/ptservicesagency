@@ -54,29 +54,35 @@
     "items": [
       {
         "title": "90-Day Report for Foreigners",
-        "description": "We provide an extra convenient 90-Day report service for foreigners in Thailand. We charge between THB 1,000 and THB 1,500 depending on how far our agents need to come pickup your documents from the Asok area in Bangkok.",
+        "description": "We provide an extra convenient 90-Day report service for foreigners in Thailand. Our agents come pick up your documents directly at your home, do the 90 day report on your behalf and return your passport with the report receipt within 24 hours.",
         "link": "/thailand-90-days-report",
         "linkText": "Learn more"
       },
       {
-        "title": "Hospital Accompaniment",
-        "description": "If you need someone to accompany you or someone else to the hospital, we can assign an agent who will take care of the patient throughout the day. Our agent can transport the patients to the hospital, stay by their side, handle all necessary paperwork, and transport the persons back to their residence after the visit."
+        "title": "Driving License Renewal",
+        "description": "Need to renew your Thai driving license? Our team handles the entire renewal process for you, from document preparation to submission at the Department of Land Transport (DLT). Save yourself the hassle and let our experienced agents take care of it.",
+        "link": "/services/renew-thai-driver-license-service",
+        "linkText": "Learn more"
       },
       {
-        "title": "Bank procedures assistance",
-        "description": "Do you need help opening a bank account in Thailand? Whether you're a Thai national or a foreigner, we can help you get your banking set up quickly and easily. Count on our expertise to guide you through every step."
+        "title": "TM.30 Update and Notification",
+        "description": "The TM.30 is a notification of residence that must be filed for foreign nationals staying in Thailand. We handle the entire TM.30 filing and update process for you, ensuring compliance with Thai immigration regulations and helping you avoid potential fines or complications.",
+        "link": "/services/tm30",
+        "linkText": "Learn more"
       },
       {
-        "title": "Travel Planning",
-        "description": "If you don't want to spend time planning your trip, you can delegate this to our professional team. We take care of booking your flights, accommodations, and train tickets, and we can also guide you in selecting travel insurance that fits your journey."
+        "title": "Document Translation and Consular Legalization for Marriage Registration",
+        "description": "Planning to register your marriage in Thailand? We provide certified document translation and consular legalization services to ensure all your documents meet the legal requirements for marriage registration in Thailand.",
+        "link": "/services/marriage-registration-translation-service",
+        "linkText": "Learn more"
       },
       {
         "title": "Personal assistant",
-        "description": "Do you need any assistance and to delegate some tasks on a weekly or monthly basis? We can assign one or more of our personal assistants to you. With a personal assistant you will get more time for your family or business and you will reduce your mental load."
+        "description": "Do you need any assistance and to delegate some tasks on a weekly or monthly basis? We can assign one or more of our personal assistants to you. With a personal assistant you will get more time for your family or business and you will reduce your work load."
       },
       {
         "title": "Do you need a specific service?",
-        "description": "If you need help for any paperwork, such as renewing a Thai driver license, getting a police certificate or on any task that can be delegated, our team can help. Contact us and we will do our best to help you."
+        "description": "If you need help for any paperwork, such as getting a police certificate or any task that can be delegated, our team can help. Contact us and we will do our best to help you."
       }
     ]
   },

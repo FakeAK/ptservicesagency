@@ -5,7 +5,7 @@ const buttonVariants = cva(
   // Base styles shared by all variants
   [
     "inline-flex items-center justify-center",
-    "rounded-md text-center leading-5 no-underline",
+    "rounded-md border border-transparent text-center leading-5 no-underline",
     "cursor-pointer transition-colors",
     "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50",
     "disabled:pointer-events-none disabled:opacity-50",
@@ -17,7 +17,7 @@ const buttonVariants = cva(
         secondary:
           "bg-gradient-to-r from-primary from-25% to-primary-btn-gradient text-white hover:opacity-90",
         outline:
-          "border border-primary bg-transparent text-primary hover:bg-primary/5",
+          "border-primary bg-transparent text-primary hover:bg-primary/5",
         ghost: "bg-transparent text-primary hover:bg-primary/5",
       },
       size: {
