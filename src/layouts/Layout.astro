@@ -29,7 +29,7 @@ const canonicalUrl = `${siteUrl}${currentPath}`;
 // Build alternate URLs for hreflang
 let altPath: string;
 if (lang === 'th') {
-  altPath = `/en${currentPath}`;
+  altPath = `/en${currentPath}`.replace(/\/$/, '');
 } else {
   altPath = currentPath.replace(/^\/en/, '') || '/';
 }

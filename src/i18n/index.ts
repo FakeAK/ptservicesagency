@@ -17,5 +17,5 @@ export function getLangFromUrl(url: URL): Lang {
 
 export function getLocalizedPath(path: string, lang: Lang): string {
   if (lang === 'th') return path;
-  return `/en${path}`;
+  return `/en${path}`.replace(/\/$/, '');
 }
