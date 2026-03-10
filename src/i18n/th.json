@@ -140,6 +140,12 @@
   "blog": {
     "heading": "บล็อกล่าสุด"
   },
+  "notFound": {
+    "title": "ไม่พบหน้าที่ค้นหา",
+    "heading": "404",
+    "message": "ขออภัย ไม่พบหน้าที่คุณกำลังค้นหา หน้านี้อาจถูกลบหรือย้ายไปแล้ว",
+    "backHome": "กลับสู่หน้าหลัก"
+  },
   "footer": {
     "contactTitle": "ติดต่อเรา",
     "hours": "Monday — Saturday, 9am — 6pm",

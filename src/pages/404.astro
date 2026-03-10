@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import { getLangFromUrl, getTranslations } from '../i18n';
+
+const lang = getLangFromUrl(Astro.url);
+const t = getTranslations(lang);
+const homeHref = lang === 'th' ? '/' : '/en';
+---
+
+<Layout
+  title={t.notFound.title}
+  description={t.notFound.message}
+  lang={lang}
+  noIndex
+>
+  <Navbar lang={lang} />
+
+  <main class="mx-auto flex min-h-[60vh] max-w-[940px] flex-col items-center justify-center px-5 py-24 text-center">
+    <!-- 404 number -->
+    <p class="font-calsans text-[8rem] leading-none font-bold text-primary/10 sm:text-[10rem]">
+      {t.notFound.heading}
+    </p>
+
+    <!-- Message -->
+    <h1 class="mt-2 text-3xl font-bold text-primary sm:text-4xl">
+      {t.notFound.title}
+    </h1>
+    <p class="mt-4 max-w-md text-lg text-body-text">
+      {t.notFound.message}
+    </p>
+
+    <!-- Back to homepage button -->
+    <a
+      href={homeHref}
+      class="mt-8 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-semibold text-primary-foreground no-underline transition-opacity hover:opacity-90"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+      </svg>
+      {t.notFound.backHome}
+    </a>
+  </main>
+
+  <Footer lang={lang} />
+</Layout>

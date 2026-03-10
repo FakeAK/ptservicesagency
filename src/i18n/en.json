@@ -92,6 +92,12 @@
   "blog": {
     "heading": "Latest Blog"
   },
+  "notFound": {
+    "title": "Page not found",
+    "heading": "404",
+    "message": "Sorry, the page you are looking for doesn't exist or has been moved.",
+    "backHome": "Back to homepage"
+  },
   "footer": {
     "contactTitle": "Contact",
     "hours": "Monday \u2014 Saturday, 9am \u2014 6pm",
