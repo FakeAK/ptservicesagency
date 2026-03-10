@@ -37,7 +37,7 @@ const publishedISO = date.toISOString();
 const modifiedISO = updatedDate ? updatedDate.toISOString() : publishedISO;
 
 // SEO: Canonical URL for this article
-const articlePath = lang === "th" ? `/blog/${slug}/` : `/en/blog/${slug}/`;
+const articlePath = lang === "th" ? `/blog/${slug}` : `/en/blog/${slug}`;
 const canonicalUrl = `${siteUrl}${articlePath}`;
 
 // SEO: JSON-LD BlogPosting structured data

@@ -7,7 +7,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.ptservicesagency.com',
-  trailingSlash: 'always',
+  trailingSlash: 'never',
   integrations: [
     react(),
     sitemap({
