@@ -87,49 +87,7 @@
     ]
   },
   "testimonials": {
-    "heading": "What Our Clients Think About Us",
-    "items": [
-      {
-        "quote": "This agency helped my girlfriend get her schengen visa for our summer holiday and service was top notch.",
-        "author": "Mateusz T.",
-        "rating": 5
-      },
-      {
-        "quote": "Very professional and efficient service. They handled all the paperwork for my 90-day report perfectly.",
-        "author": "Arthur K.",
-        "rating": 5
-      },
-      {
-        "quote": "Excellent service! They helped me with my visa application and everything went smoothly. Highly recommended!",
-        "author": "Callie I.",
-        "rating": 5
-      },
-      {
-        "quote": "Great experience with PT Services. They made the immigration process so much easier for me.",
-        "author": "Filla L.",
-        "rating": 5
-      },
-      {
-        "quote": "Very helpful team. They guided me through the entire visa process step by step.",
-        "author": "Verified Client",
-        "rating": 5
-      },
-      {
-        "quote": "Professional service and very responsive. They answered all my questions quickly.",
-        "author": "Krearam N.",
-        "rating": 5
-      },
-      {
-        "quote": "I highly recommend PT Services for anyone needing visa assistance in Thailand.",
-        "author": "Jack R.",
-        "rating": 5
-      },
-      {
-        "quote": "Outstanding service from start to finish. Will definitely use them again for future visa needs.",
-        "author": "Richard R.",
-        "rating": 5
-      }
-    ]
+    "heading": "What Our Clients Think About Us"
   },
   "blog": {
     "heading": "Latest Blog",

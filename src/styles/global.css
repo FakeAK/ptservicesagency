@@ -20,7 +20,8 @@
   --color-royal-blue: #1f6fff;
   --color-orchid: #b75dda;
   --color-lime-green: #5ec045;
-  --color-card-bg: #eeeef6;
+  --color-card-bg: #ffffff;
+  --color-border: #eeeeee;
   --color-nav-hover: #2d2a4a;
   --color-border-light: #eeeeee;
   --color-footer-text: #a0a0a0;
@@ -40,7 +41,7 @@ body {
   font-size: 15px;
   line-height: 23px;
   color: var(--color-body-text);
-  background-color: #fff;
+  background-color: #fcfcfc;
   height: 100%;
   margin: 0;
 }
