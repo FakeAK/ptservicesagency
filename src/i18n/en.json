@@ -10,24 +10,24 @@
     "contact": "Contact",
     "blog": "Blog",
     "servicesDropdown": [
-      { "label": "90-Day Report in Bangkok", "href": "/services/90-day-report-thailand" },
-      { "label": "90-Day Report in Pathum Thani", "href": "/services/90-day-report-service-pathum-thani-thailand" },
-      { "label": "90-Day Report in Samut Prakan", "href": "/services/90-day-report-service-samut-prakan-thailand" },
-      { "label": "TDAC Form Filling", "href": "/services/tdac" },
-      { "label": "TM30 Update & Notification", "href": "/services/tm30" },
-      { "label": "Thai Driving License Renewal", "href": "/services/renew-thai-driver-license-service" },
-      { "label": "Document Translation and Consular Legalization for Marriage Registration", "href": "/services/marriage-registration-translation-service" }
+      {"label": "90-Day Report in Bangkok", "href": "/services/90-day-report-thailand"},
+      {"label": "90-Day Report in Pathum Thani", "href": "/services/90-day-report-service-pathum-thani-thailand"},
+      {"label": "90-Day Report in Samut Prakan", "href": "/services/90-day-report-service-samut-prakan-thailand"},
+      {"label": "TDAC Form Filling", "href": "/services/tdac"},
+      {"label": "TM30 Update & Notification", "href": "/services/tm30"},
+      {"label": "Thai Driving License Renewal", "href": "/services/renew-thai-driver-license-service"},
+      {"label": "Document Translation and Consular Legalization for Marriage Registration", "href": "/services/marriage-registration-translation-service"}
     ],
     "visaDropdown": [
-      { "label": "\uD83C\uDDF9\uD83C\uDDED Thailand Visa", "href": "/visa/thailand" },
-      { "label": "\uD83C\uDDEA\uD83C\uDDFA Schengen Visa", "href": "/visa/europe/schengen" },
-      { "label": "\uD83C\uDDEC\uD83C\uDDE7 UK Visa", "href": "/visa/europe/uk" },
-      { "label": "\uD83C\uDDFA\uD83C\uDDF8 USA Visa", "href": "/visa/usa" },
-      { "label": "\uD83C\uDDEB\uD83C\uDDF7 France Visa", "href": "/visa/europe/france" },
-      { "label": "\uD83C\uDDE9\uD83C\uDDEA Germany Visa", "href": "/visa/europe/germany" },
-      { "label": "\uD83C\uDDEA\uD83C\uDDF8 Spain Visa", "href": "/visa/europe/spain" },
-      { "label": "\uD83C\uDDEE\uD83C\uDDF9 Italy Visa", "href": "/visa/europe/italy" },
-      { "label": "\uD83C\uDDE7\uD83C\uDDEA Belgium Visa", "href": "/visa/europe/belgium" }
+      {"label": "\uD83C\uDDF9\uD83C\uDDED Thailand Visa", "href": "/visa/thailand"},
+      {"label": "\uD83C\uDDEA\uD83C\uDDFA Schengen Visa", "href": "/visa/europe/schengen"},
+      {"label": "\uD83C\uDDEC\uD83C\uDDE7 UK Visa", "href": "/visa/europe/uk"},
+      {"label": "\uD83C\uDDFA\uD83C\uDDF8 USA Visa", "href": "/visa/usa"},
+      {"label": "\uD83C\uDDEB\uD83C\uDDF7 France Visa", "href": "/visa/europe/france"},
+      {"label": "\uD83C\uDDE9\uD83C\uDDEA Germany Visa", "href": "/visa/europe/germany"},
+      {"label": "\uD83C\uDDEA\uD83C\uDDF8 Spain Visa", "href": "/visa/europe/spain"},
+      {"label": "\uD83C\uDDEE\uD83C\uDDF9 Italy Visa", "href": "/visa/europe/italy"},
+      {"label": "\uD83C\uDDE7\uD83C\uDDEA Belgium Visa", "href": "/visa/europe/belgium"}
     ]
   },
   "hero": {
@@ -87,7 +87,7 @@
     ]
   },
   "testimonials": {
-    "heading": "What Our Clients Think About Us"
+    "heading": "What People Think About Us"
   },
   "blog": {
     "heading": "Latest Blog",
