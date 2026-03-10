@@ -9,6 +9,10 @@ interface Props {
 const {lang} = Astro.props;
 const t = getTranslations(lang);
 
+const currentPath = Astro.url.pathname;
+const thHref = lang === "th" ? currentPath : currentPath.replace(/^\/en/, "") || "/";
+const enHref = lang === "en" ? currentPath : `/en${currentPath}`;
+
 import thailandFlag from "../assets/flags/th.svg";
 import ukFlag from "../assets/flags/en.svg";
 
@@ -67,10 +71,10 @@ export const buildFlag = (locale: Lang, className: string = "") => {
 
   <!-- Language Switcher Mobile -->
   <div class="mt-2 flex gap-3 border-t border-border-light pt-3">
-    <a href="/">
+    <a href={thHref}>
       <Fragment set:html={buildFlag("th", "h-auto w-[30px] object-contain")} />
     </a>
-    <a href="/en">
+    <a href={enHref}>
       <Fragment set:html={buildFlag("en", "h-auto w-[30px] object-contain")} />
     </a>
   </div>

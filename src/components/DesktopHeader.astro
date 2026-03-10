@@ -12,7 +12,8 @@ const {lang} = Astro.props;
 const t = getTranslations(lang);
 
 const altLang: Lang = lang === "th" ? "en" : "th";
-const altHref = lang === "th" ? "/en" : "/";
+const currentPath = Astro.url.pathname;
+const altHref = lang === "th" ? `/en${currentPath}` : currentPath.replace(/^\/en/, "") || "/";
 
 import thailandFlag from "../assets/flags/th.svg";
 import ukFlag from "../assets/flags/en.svg";
