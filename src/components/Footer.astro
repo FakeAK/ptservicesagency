@@ -21,7 +21,7 @@ const t = getTranslations(lang);
     <div class="flex gap-6 max-[479px]:flex-col">
       <!-- Logo -->
       <div class="shrink-0">
-        <img src={logoSrc.src} alt="The logo of PT Services" class="h-20" loading="lazy" />
+        <img src={logoSrc.src} alt="The logo of PT Services" class="h-20 drag-none" loading="lazy" />
       </div>
 
       <!-- Contact Info -->
@@ -111,7 +111,7 @@ const t = getTranslations(lang);
         <!-- LINE QR -->
         <div class="flex w-full flex-col items-center rounded-md border border-primary bg-white p-2.5" style="height: 300px;">
           <div class="flex items-center gap-2">
-            <img src={lineLogo.src} alt="LINE" class="size-10" loading="lazy" />
+            <img src={lineLogo.src} alt="LINE" class="size-10 drag-none" loading="lazy" />
             <p class="text-sm text-primary leading-4">{t.footer.lineQrText}</p>
           </div>
           <img src={lineQrCode.src} alt="LINE QR Code" class="mt-2 size-full drag-none" loading="lazy" />
@@ -119,7 +119,7 @@ const t = getTranslations(lang);
         <!-- Messenger QR -->
         <div class="flex w-full flex-col items-center rounded-md border border-primary bg-white p-2.5" style="height: 300px;">
           <div class="flex items-center gap-2">
-            <img src={messengerLogo.src} alt="Messenger" class="size-10" loading="lazy" />
+            <img src={messengerLogo.src} alt="Messenger" class="size-10 drag-none" loading="lazy" />
             <p class="text-sm text-primary leading-4">{t.footer.messengerQrText}</p>
           </div>
           <img src={messengerQrCode.src} alt="Messenger QR Code" class="mt-2 size-full p-2 drag-none" loading="lazy" />
