@@ -130,14 +130,15 @@
         "Your original passport",
         "A signed copy of your passport (for the power of attorney)",
         "TM.30 form (you can send a digital file if available)",
+        "TDAC (Thai Digital Arrival Card)",
         "Power of attorney form (our staff will bring it for you to sign during document pickup)"
       ],
       "priceHeading": "Pricing",
       "priceIntro": "Our service fee depends on your location. Our pricing is transparent with no hidden fees.",
       "priceTable": [
         {"province": "Bangkok", "price": "1,500 THB"},
-        {"province": "Pathum Thani", "price": "2,000 THB"},
-        {"province": "Samut Prakan", "price": "2,000 THB"}
+        {"province": "Pathum Thani", "price": "1,500 - 2,000 THB"},
+        {"province": "Samut Prakan", "price": "1,500 - 2,000 THB"}
       ],
       "priceTableHeaderProvince": "Service Area",
       "priceTableHeaderPrice": "Service Fee",
