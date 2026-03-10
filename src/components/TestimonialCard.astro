@@ -11,16 +11,17 @@ interface Props {
   source: TestimonialSource;
   sourceURL: string;
   image?: string;
+  date?: string;
 }
 
-const {quote, author, rating, source, sourceURL, image} = Astro.props;
+const {quote, author, rating, source, sourceURL, image, date} = Astro.props;
 ---
 
 <a
   href={sourceURL}
   target="_blank"
   rel="noopener noreferrer"
-  class={cn("flex flex-col", "relative cursor-pointer rounded-xl", "bg-card-bg", "border border-border", "p-5", "transition-shadow hover:shadow-sm")}
+  class={cn("flex flex-col", "relative cursor-pointer rounded-xl", "bg-card-bg", "border border-border", "p-5", "transition-shadow duration-300 ease-in-out hover:shadow-[0_2px_8px_rgba(0,0,0,0.06)]")}
 >
   <!-- Source logo (top-right) -->
   <div class="absolute right-4 top-4">
@@ -60,19 +61,20 @@ const {quote, author, rating, source, sourceURL, image} = Astro.props;
   <div class="flex mt-3 items-center gap-2">
     {
       image ? (
-        <img src={image} alt={author} class="size-10 rounded-full object-cover" loading="lazy" />
+        <img src={image} alt={author} class={cn("size-10 object-cover", source !== "Google" && "rounded-full")} loading="lazy" />
       ) : (
         <div class="flex size-9 items-center justify-center rounded-full bg-primary text-sm font-bold text-white">{author.charAt(0)}</div>
       )
     }
     <div class="flex flex-col space-y-[-2px]">
-      <span class="text-sm font-semibold text-black">{author}</span>
-      <span class="text-xs font-medium text-muted-foreground">8 Aug 2026</span>
+      <div class="flex items-center gap-0.5">
+        <span class="text-sm font-semibold text-black">{author}</span>
+        <Icon name="checkmark" class="size-5 text-green-700" />
+      </div>
+
+      {date && <span class="text-xs font-medium text-muted-foreground">{date}</span>}
     </div>
 
-    <div class="flex items-center gap-1">
-      <Icon name="checkmark" class="size-8 text-green-700" />
-      <span class="text-green-700 font-medium">Verified</span>
-    </div>
+    <div class="flex items-center gap-0.5"></div>
   </div>
 </a>
