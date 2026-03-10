@@ -4,6 +4,7 @@ import Layout from "../../layouts/Layout.astro";
 import Navbar from "../../components/Navbar.astro";
 import Footer from "../../components/Footer.astro";
 import {blogImages} from "../../lib/blogImages";
+import {cn} from "../../lib/utils";
 
 interface Props {
   title: string;
@@ -40,16 +41,19 @@ const formattedDate = date.toLocaleDateString(lang === "th" ? "th-TH" : "en-GB",
     </div>
 
     <div
-      class="prose prose-lg max-w-none text-body-text
-      prose-headings:text-primary prose-headings:font-bold
-      prose-h2:mt-10 prose-h2:mb-4 prose-h2:text-2xl
-      prose-h3:mt-8 prose-h3:mb-3 prose-h3:text-xl
-      prose-p:mb-4 prose-p:leading-7
-      prose-a:text-royal-blue prose-a:underline
-      prose-strong:text-primary
-      prose-ul:my-4 prose-ul:pl-6 prose-li:mb-2
-      prose-ol:my-4 prose-ol:pl-6
-      prose-img:rounded-lg prose-img:my-6"
+      class={cn(
+        "prose prose-lg max-w-none text-body-text",
+        "prose-headings:text-primary prose-headings:font-bold",
+        "prose-h2:mt-10 prose-h2:mb-1 prose-h2:text-2xl",
+        "prose-h3:mt-8 prose-h3:mb-1 prose-h3:text-xl",
+        "prose-p:mb-0 prose-p:leading-7 prose-p:text-base",
+        "prose-a:text-royal-blue prose-a:underline prose-a:text-base",
+        "prose-strong:text-primary",
+        "prose-ul:pl-6 prose-ul:my-0",
+        "prose-li:text-base prose-li:my-0",
+        "prose-ol:my-4 prose-ol:pl-6",
+        "prose-img:rounded-lg prose-img:my-6"
+      )}
     >
       <slot />
     </div>
