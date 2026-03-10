@@ -1,6 +1,8 @@
 ---
 title: "การรายงานตัว 90 วัน สำหรับชาวต่างชาติในประเทศไทย"
 date: 2024-06-08
+updatedDate: 2024-06-08
+author: "PT Services Agency"
 excerpt: "ค้นพบในบทความนี้ว่า PT Services สามารถช่วยคุณในการรายงานตัว 90 วันได้อย่างไร"
 slug: "thailand-90-days-report"
 image: "immigration-office"

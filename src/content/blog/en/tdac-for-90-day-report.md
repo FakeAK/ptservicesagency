@@ -1,6 +1,8 @@
 ---
 title: "Need To Do Your 90-Day Report? Don't Forget Your Arrival Card Number From TDAC!"
 date: 2025-07-20
+updatedDate: 2025-07-20
+author: "PT Services Agency"
 excerpt: "Foreigners who entered Thailand on or after May 1, 2025, must now include their TDAC Arrival Card Number when submitting the 90-day report (TM.47)."
 slug: "tdac-for-90-day-report"
 image: "tdac-review"

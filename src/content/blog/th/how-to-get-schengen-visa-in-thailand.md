@@ -1,6 +1,8 @@
 ---
 title: "การขอวีซ่าเชงเก้นในประเทศไทย"
 date: 2024-06-19
+updatedDate: 2024-06-19
+author: "PT Services Agency"
 excerpt: "ค้นพบในบทความนี้ว่า PT Services สามารถช่วยคุณในการขอวีซ่าเชงเก้นเพื่อเดินทางในยุโรปได้อย่างไร"
 slug: "how-to-get-schengen-visa-in-thailand"
 image: "schengen-visa"

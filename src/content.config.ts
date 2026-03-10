@@ -14,11 +14,13 @@ const blog = defineCollection({
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
     excerpt: z.string(),
     slug: z.string(),
     image: z.string(),
     heroAlt: z.string(),
     lang: z.enum(['th', 'en']),
+    author: z.string().default('PT Services Agency'),
   }),
 });
 

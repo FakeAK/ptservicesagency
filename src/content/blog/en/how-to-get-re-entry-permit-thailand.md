@@ -1,6 +1,8 @@
 ---
 title: "How To Get A Re-Entry Permit in Thailand"
 date: 2024-07-06
+updatedDate: 2024-07-06
+author: "PT Services Agency"
 excerpt: "Learn what a Thailand Re-Entry permit is, why it is important to have this permit as a foreigner, how to get one and how our agency can help you to get one."
 slug: "how-to-get-re-entry-permit-thailand"
 image: "re-entry-permit"

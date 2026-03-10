@@ -1,6 +1,8 @@
 ---
 title: "ผู้ถือวีซ่า DTV จำเป็นต้องยื่นรายงานตัวทุก 90 วันหรือไม่?"
 date: 2025-02-28
+updatedDate: 2025-02-28
+author: "PT Services Agency"
 excerpt: "ค้นหาคำตอบในบทความนี้ว่า ผู้ถือวีซ่า Destination Thailand Visa (DTV) จำเป็นต้องยื่นรายงานตัว 90 วันหรือไม่ เมื่อต้องพำนักอยู่ในประเทศไทยเกิน 90 วัน"
 slug: "do-dtv-visa-holders-need-to-file-the-90-report"
 image: "dtv-90-day"

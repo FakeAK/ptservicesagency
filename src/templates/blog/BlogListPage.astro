@@ -22,9 +22,50 @@ const title = lang === 'en' ? 'Blog - PT Services Agency' : 'บล็อก - P
 const description = lang === 'en'
   ? 'Read our latest articles about Thailand visas, immigration, and travel tips.'
   : 'อ่านบทความล่าสุดเกี่ยวกับวีซ่าไทย การตรวจคนเข้าเมือง และเคล็ดลับการเดินทาง';
+
+// SEO: BreadcrumbList structured data
+const siteUrl = "https://www.ptservicesagency.com";
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": lang === "th" ? "หน้าแรก" : "Home",
+      "item": lang === "th" ? siteUrl : `${siteUrl}/en/`,
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": lang === "th" ? `${siteUrl}/blog/` : `${siteUrl}/en/blog/`,
+    },
+  ],
+};
+
+// SEO: CollectionPage structured data
+const collectionJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": title,
+  "description": description,
+  "url": lang === "th" ? `${siteUrl}/blog/` : `${siteUrl}/en/blog/`,
+  "inLanguage": lang === "th" ? "th" : "en",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "PT Services Agency",
+    "url": siteUrl,
+  },
+};
 ---
 
 <Layout title={title} description={description} lang={lang}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
+    <script type="application/ld+json" set:html={JSON.stringify(collectionJsonLd)} />
+  </Fragment>
+
   <Navbar lang={lang} />
 
   <main class="mx-auto mt-16 max-w-[940px] px-5 pb-24">

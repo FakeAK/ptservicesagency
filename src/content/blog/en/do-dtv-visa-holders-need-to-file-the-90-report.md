@@ -1,6 +1,8 @@
 ---
 title: "Are Destination Thailand Visa Holders Required To Submit The 90-Day Report?"
 date: 2025-02-28
+updatedDate: 2025-02-28
+author: "PT Services Agency"
 excerpt: "Do holders of the Destination Thailand Visa (DTV) need to submit a 90-day report when staying in Thailand for more than 90 days?"
 slug: "do-dtv-visa-holders-need-to-file-the-90-report"
 image: "dtv-90-day"

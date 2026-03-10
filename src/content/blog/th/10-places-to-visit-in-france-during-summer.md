@@ -1,6 +1,8 @@
 ---
 title: "10 อันดับ สถานที่ท่องเที่ยวในฝรั่งเศสช่วงฤดูร้อน"
 date: 2024-07-04
+updatedDate: 2024-07-04
+author: "PT Services Agency"
 excerpt: "ชม 10 สถานที่ท่องเที่ยวในฝรั่งเศสช่วงฤดูร้อนและเรียนรู้วิธีที่ PT Services สามารถช่วยคุณในการขอวีซ่าเชงเก้นเพื่อเดินทางไปเยือนฝรั่งเศส"
 slug: "10-places-to-visit-in-france-during-summer"
 image: "mont-saint-michel"

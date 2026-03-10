@@ -1,6 +1,8 @@
 ---
 title: "90-Day Report for Foreigners in Thailand"
 date: 2024-06-08
+updatedDate: 2024-06-08
+author: "PT Services Agency"
 excerpt: "Discover in this article what the 90-Day report is, how to complete it and how PT Services can help you by doing the process on your behalf."
 slug: "thailand-90-days-report"
 image: "immigration-office"

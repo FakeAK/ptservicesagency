@@ -1,6 +1,8 @@
 ---
 title: "Thailand Digital Arrival Card (TDAC) - What is it and how to fill it?"
 date: 2025-04-30
+updatedDate: 2025-04-30
+author: "PT Services Agency"
 excerpt: "Learn what the Thailand Digital Arrival Card (TDAC) is, why it's required for travelers, and how to easily fill it out before entering Thailand."
 slug: "thailand-tdac"
 image: "tdac"

@@ -1,6 +1,8 @@
 ---
 title: "How to get a Schengen VISA in Thailand"
 date: 2024-06-19
+updatedDate: 2024-06-19
+author: "PT Services Agency"
 excerpt: "Discover in this article how PT Services can help you get your Schengen VISA to travel in Europe."
 slug: "how-to-get-schengen-visa-in-thailand"
 image: "schengen-visa"

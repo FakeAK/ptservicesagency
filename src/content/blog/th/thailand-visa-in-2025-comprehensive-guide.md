@@ -1,6 +1,8 @@
 ---
 title: "วีซ่าไหนเหมาะกับคุณในประเทศไทย ปี 2025? คู่มือฉบับครบถ้วนสำหรับชาวต่างชาติ"
 date: 2025-08-16
+updatedDate: 2025-08-16
+author: "PT Services Agency"
 excerpt: "อ่านคู่มือนี้แล้วค้นหาว่า ตามสถานการณ์และเป้าหมายของคุณ วีซ่าไทยแบบไหนเหมาะที่สุดสำหรับคุณในปี 2025"
 slug: "thailand-visa-in-2025-comprehensive-guide"
 image: "thailand-visa-guide"

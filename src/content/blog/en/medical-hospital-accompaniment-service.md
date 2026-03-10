@@ -1,6 +1,8 @@
 ---
 title: "How Our Service Agency Can Help People in Need for Medical Care"
 date: 2024-06-27
+updatedDate: 2024-06-27
+author: "PT Services Agency"
 excerpt: "Discover how our service agency provides essential support for those needing companionship and assistance in hospitals, ensuring seamless medical visits and hospital stays."
 slug: "medical-hospital-accompaniment-service"
 image: "medical-accompaniment"

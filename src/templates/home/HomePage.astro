@@ -17,9 +17,43 @@ interface Props {
 
 const { lang } = Astro.props;
 const t = getTranslations(lang);
+
+const siteUrl = "https://www.ptservicesagency.com";
+
+// SEO: Organization structured data
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "PT Services Agency",
+  "url": siteUrl,
+  "logo": `${siteUrl}/favicon.png`,
+  "description": lang === "en"
+    ? "Service agency based in Bangkok specialized in visa assistance, travel planning, flight tickets booking, accommodations booking, and immigration procedures."
+    : "บริษัทตัวแทนบริการในกรุงเทพฯ เชี่ยวชาญด้านวีซ่า การวางแผนการเดินทาง การจองตั๋วเครื่องบิน การจองที่พัก และขั้นตอนการตรวจคนเข้าเมือง",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bangkok",
+    "addressCountry": "TH",
+  },
+  "sameAs": [],
+};
+
+// SEO: WebSite structured data
+const webSiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "PT Services Agency",
+  "url": siteUrl,
+  "inLanguage": ["th", "en"],
+};
 ---
 
 <Layout title={t.meta.title} description={t.meta.description} lang={lang}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(organizationJsonLd)} />
+    <script type="application/ld+json" set:html={JSON.stringify(webSiteJsonLd)} />
+  </Fragment>
+
   <Navbar lang={lang} />
 
   <HeroBanner lang={lang} />

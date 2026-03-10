@@ -6,18 +6,43 @@ interface Props {
   title: string;
   description: string;
   lang: Lang;
+  image?: string;
+  ogType?: 'website' | 'article';
+  publishedDate?: string;
+  modifiedDate?: string;
 }
 
-const { title, description, lang } = Astro.props;
-const currentPath = Astro.url.pathname;
+const {
+  title,
+  description,
+  lang,
+  image,
+  ogType = 'website',
+  publishedDate,
+  modifiedDate,
+} = Astro.props;
 
-// Build alternate URL
+const siteUrl = 'https://www.ptservicesagency.com';
+const currentPath = Astro.url.pathname;
+const canonicalUrl = `${siteUrl}${currentPath}`;
+
+// Build alternate URLs for hreflang
 let altPath: string;
 if (lang === 'th') {
   altPath = `/en${currentPath}`;
 } else {
   altPath = currentPath.replace(/^\/en/, '') || '/';
 }
+
+const thUrl = `${siteUrl}${lang === 'th' ? currentPath : altPath}`;
+const enUrl = `${siteUrl}${lang === 'en' ? currentPath : altPath}`;
+
+// OG image: use provided image or fallback to default
+const ogImage = image || `${siteUrl}/images/og-default.jpg`;
+
+// OG locale mapping
+const ogLocale = lang === 'th' ? 'th_TH' : 'en_GB';
+const ogLocaleAlt = lang === 'th' ? 'en_GB' : 'th_TH';
 ---
 
 <!doctype html>
@@ -27,18 +52,42 @@ if (lang === 'th') {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href={canonicalUrl} />
 
     <!-- Open Graph -->
     <meta property="og:title" content={title} />
-    <meta property="twitter:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content={ogLocale} />
+    <meta property="og:locale:alternate" content={ogLocaleAlt} />
+    <meta property="og:site_name" content="PT Services Agency" />
+    {ogType === 'article' && publishedDate && (
+      <meta property="article:published_time" content={publishedDate} />
+    )}
+    {ogType === 'article' && modifiedDate && (
+      <meta property="article:modified_time" content={modifiedDate} />
+    )}
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
 
     <!-- Hreflang -->
-    <link rel="alternate" hreflang="x-default" href="https://www.ptservicesagency.com/" />
-    <link rel="alternate" hreflang="th" href={`https://www.ptservicesagency.com${lang === 'th' ? currentPath : altPath}`} />
-    <link rel="alternate" hreflang="en" href={`https://www.ptservicesagency.com${lang === 'en' ? currentPath : altPath}`} />
+    <link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
+    <link rel="alternate" hreflang="th" href={thUrl} />
+    <link rel="alternate" hreflang="en" href={enUrl} />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
     <!-- Generator -->
@@ -63,6 +112,9 @@ if (lang === 'th') {
       fbq('init', '436300629235229');
       fbq('track', 'PageView');
     </script>
+
+    <!-- Structured data slot (filled by individual pages) -->
+    <slot name="head" />
   </head>
   <body>
     <slot />

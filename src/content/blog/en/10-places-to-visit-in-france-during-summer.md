@@ -1,6 +1,8 @@
 ---
 title: "Top 10 Places to Visit in France During Summer"
 date: 2024-07-04
+updatedDate: 2024-07-04
+author: "PT Services Agency"
 excerpt: "See 10 places to visit while visiting France during summer and learn how PT Services can help you get a Schengen VISA to go visit France."
 slug: "10-places-to-visit-in-france-during-summer"
 image: "mont-saint-michel"

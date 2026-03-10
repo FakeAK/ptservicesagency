@@ -1,6 +1,8 @@
 ---
 title: "ต้องรายงานตัว 90 วันใช่ไหม? อย่าลืมกรอก Arrival Card No. จาก TDAC"
 date: 2025-07-20
+updatedDate: 2025-07-20
+author: "PT Services Agency"
 excerpt: "หากคุณเป็นชาวต่างชาติที่เดินทางเข้าประเทศไทย ตั้งแต่วันที่ 1 พฤษภาคม 2568 เป็นต้นไป และต้องรายงานตัว 90 วัน อย่าลืมว่า ระบบใหม่ ต้องใช้ หมายเลข Arrival Card No. จาก TDAC (Thailand Digital Arrival Card)"
 slug: "tdac-for-90-day-report"
 image: "tdac-review"

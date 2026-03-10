@@ -17,9 +17,12 @@ const { Content } = await render(post);
 <BlogArticlePage
   title={post.data.title}
   date={post.data.date}
+  updatedDate={post.data.updatedDate}
+  author={post.data.author}
   excerpt={post.data.excerpt}
   image={post.data.image}
   heroAlt={post.data.heroAlt}
+  slug={post.data.slug}
   lang="en"
 >
   <Content />
