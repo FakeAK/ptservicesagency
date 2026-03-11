@@ -29,7 +29,7 @@
     ]
   },
   "hero": {
-    "title": "Immigration & visa<br />services agency in Bangkok, Thailand",
+    "title": "Immigration & visa<br />services agency in Bangkok, Thailand <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 480\" style=\"display:inline-block;vertical-align:baseline;width:1.2em;height:0.8em;position:relative;top:0.04em;-webkit-text-fill-color:initial;\"><g fill-rule=\"evenodd\"><path fill=\"#f4f5f8\" d=\"M0 0h640v480H0z\"/><path fill=\"#2d2a4a\" d=\"M0 162.5h640v160H0z\"/><path fill=\"#a51931\" d=\"M0 0h640v82.5H0zm0 400h640v80H0z\"/></g></svg>",
     "description": "We are an agency specialized in visa and immigration assistance and personalized service in Bangkok, Thailand.",
     "ctaPrimary": "Contact us",
     "ctaSecondary": "Discover our services",
