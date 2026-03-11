@@ -5,7 +5,7 @@ import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 
-import Flag from '../../components/ui/Flag.astro';
+import Flag, { type FlagCode } from '../../components/ui/Flag.astro';
 
 interface Props {
   lang: Lang;
@@ -46,7 +46,7 @@ const breadcrumbJsonLd = {
           <div class="flex-1 p-5">
             <div class="flex items-center gap-2">
               <h2 class="font-calsans text-xl text-primary">{visa.title}</h2>
-              {visa.flag && <Flag code={visa.flag} class="w-6 aspect-4/3 rounded-xs object-cover" />}
+              {visa.flag && <Flag code={visa.flag as FlagCode} class="w-6 aspect-4/3 rounded-xs object-cover" />}
             </div>
             <p class="mt-2 text-sm text-body-text leading-relaxed">{visa.description}</p>
 

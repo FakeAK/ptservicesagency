@@ -22,7 +22,7 @@ const flagMap = {
   eu: flagEu,
 } as const;
 
-type FlagCode = keyof typeof flagMap;
+export type FlagCode = keyof typeof flagMap;
 
 interface Props {
   code: FlagCode;

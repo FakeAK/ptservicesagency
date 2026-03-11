@@ -1,7 +1,7 @@
 ---
 import type {Lang} from "../i18n";
 import {getLocalizedPath} from "../i18n";
-import Flag from "./ui/Flag.astro";
+import Flag, { type FlagCode } from "./ui/Flag.astro";
 
 interface Props {
   label: string;
@@ -31,7 +31,7 @@ const {label, items, lang, href, minWidth = "280px"} = Astro.props;
     {
       items.map(item => (
         <a href={getLocalizedPath(item.href, lang)} class="flex items-center gap-2.5 px-5 py-2.5 text-sm text-primary font-medium no-underline hover:bg-gray-50">
-          {item.flag && <Flag code={item.flag} />}
+          {item.flag && <Flag code={item.flag as FlagCode} />}
           {item.label}
         </a>
       ))
