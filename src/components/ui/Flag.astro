@@ -8,6 +8,7 @@ import flagEs from "../../assets/flags/es.svg";
 import flagIt from "../../assets/flags/it.svg";
 import flagBe from "../../assets/flags/be.svg";
 import flagEu from "../../assets/flags/eu.svg";
+import { cn } from "../../lib/utils";
 
 const flagMap: Record<string, ImageMetadata> = {
   th: flagTh,
@@ -30,4 +31,4 @@ const { code, class: className = "w-5 aspect-4/3 rounded-xs object-cover" } = As
 const flag = flagMap[code];
 ---
 
-{flag && <img src={flag.src} alt="" class={className} />}
+{flag && <img src={flag.src} alt="" class={cn("drag-none", className)} />}
