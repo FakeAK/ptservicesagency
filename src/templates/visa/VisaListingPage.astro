@@ -1,5 +1,5 @@
 ---
-import type { Lang } from '../../i18n';
+import type { Lang, VisaRegionKey } from '../../i18n';
 import { getTranslations, getLocalizedPath } from '../../i18n';
 import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar.astro';
@@ -9,7 +9,7 @@ import Flag from '../../components/ui/Flag.astro';
 
 interface Props {
   lang: Lang;
-  region: 'thailand' | 'europe';
+  region: VisaRegionKey;
 }
 
 const { lang, region } = Astro.props;

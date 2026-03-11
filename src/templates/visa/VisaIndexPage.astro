@@ -19,11 +19,11 @@ const s = t.visaPages.index;
 const siteUrl = "https://www.ptservicesagency.com";
 const canonicalPath = getLocalizedPath("/visa", lang);
 
-const images: Record<string, ImageMetadata> = {
+const images = {
   thailand: thailandImg,
   europe: europeImg,
   usa: usaImg,
-};
+} as const;
 
 const breadcrumbJsonLd = {
   "@context": "https://schema.org",
@@ -48,7 +48,7 @@ const breadcrumbJsonLd = {
         <div class="flex flex-col overflow-hidden rounded-xl border border-border bg-white shadow-sm">
           <div class="relative">
             <Image
-              src={images[cat.image]}
+              src={images[cat.image as keyof typeof images]}
               alt={cat.title}
               class="h-40 w-full object-cover"
               widths={[380, 480, 768]}

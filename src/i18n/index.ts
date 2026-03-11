@@ -5,7 +5,11 @@ export type Lang = 'th' | 'en';
 
 const translations = { en, th } as const;
 
-export function getTranslations(lang: Lang) {
+export type Translations = typeof en;
+export type VisaCountryKey = Exclude<keyof Translations['visaPages'], 'index' | 'thailand' | 'europe'>;
+export type VisaRegionKey = 'thailand' | 'europe';
+
+export function getTranslations(lang: Lang): Translations {
   return translations[lang];
 }
 

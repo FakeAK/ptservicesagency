@@ -6,7 +6,7 @@ import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import BlogCard from '../../components/BlogCard.astro';
-import { blogImages } from '../../lib/blogImages';
+import { blogImages, type BlogImageKey } from '../../lib/blogImages';
 
 interface Props {
   lang: Lang;
@@ -83,7 +83,7 @@ const collectionJsonLd = {
             year: 'numeric',
           })}
           excerpt={post.data.excerpt}
-          imageSrc={blogImages[post.data.image]?.src || ''}
+          imageSrc={blogImages[post.data.image as BlogImageKey]?.src || ''}
           imageAlt={post.data.heroAlt}
           href={`/blog/${post.data.slug}`}
           lang={lang}

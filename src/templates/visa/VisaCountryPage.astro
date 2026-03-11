@@ -1,5 +1,5 @@
 ---
-import type {Lang} from "../../i18n";
+import type {Lang, VisaCountryKey} from "../../i18n";
 import {getTranslations, getLocalizedPath} from "../../i18n";
 import Layout from "../../layouts/Layout.astro";
 import Navbar from "../../components/Navbar.astro";
@@ -10,7 +10,7 @@ import Icon from "../../components/ui/Icon.astro";
 
 interface Props {
   lang: Lang;
-  country: string;
+  country: VisaCountryKey;
   slug: string;
 }
 

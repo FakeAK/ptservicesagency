@@ -3,7 +3,7 @@ import type {Lang} from "../../i18n";
 import Layout from "../../layouts/Layout.astro";
 import Navbar from "../../components/Navbar.astro";
 import Footer from "../../components/Footer.astro";
-import {blogImages} from "../../lib/blogImages";
+import {blogImages, type BlogImageKey} from "../../lib/blogImages";
 import {cn} from "../../lib/utils";
 
 interface Props {
@@ -12,7 +12,7 @@ interface Props {
   updatedDate?: Date;
   author?: string;
   excerpt: string;
-  image: string;
+  image: BlogImageKey;
   heroAlt: string;
   slug: string;
   lang: Lang;

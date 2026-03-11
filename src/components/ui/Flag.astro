@@ -10,7 +10,7 @@ import flagBe from "../../assets/flags/be.svg";
 import flagEu from "../../assets/flags/eu.svg";
 import { cn } from "../../lib/utils";
 
-const flagMap: Record<string, ImageMetadata> = {
+const flagMap = {
   th: flagTh,
   en: flagEn,
   us: flagUs,
@@ -20,10 +20,12 @@ const flagMap: Record<string, ImageMetadata> = {
   it: flagIt,
   be: flagBe,
   eu: flagEu,
-};
+} as const;
+
+type FlagCode = keyof typeof flagMap;
 
 interface Props {
-  code: string;
+  code: FlagCode;
   class?: string;
 }
 

@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import type { Lang } from '../../../i18n';
 import { getTranslations } from '../../../i18n';
 import BlogCard from '../../../components/BlogCard.astro';
-import { blogImages } from '../../../lib/blogImages';
+import { blogImages, type BlogImageKey } from '../../../lib/blogImages';
 
 interface Props {
   lang: Lang;
@@ -33,7 +33,7 @@ const posts = allPosts
           year: 'numeric',
         })}
         excerpt={post.data.excerpt}
-        imageSrc={blogImages[post.data.image]?.src || ''}
+        imageSrc={blogImages[post.data.image as BlogImageKey]?.src || ''}
         imageAlt={post.data.heroAlt}
         href={`/blog/${post.data.slug}`}
         lang={lang}

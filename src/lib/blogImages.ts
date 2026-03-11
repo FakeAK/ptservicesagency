@@ -8,7 +8,7 @@ import tdacReview from '../assets/blog/tdac-review.png';
 import muayThaiFight from '../assets/blog/muay-thai-fight.webp';
 import thailandVisaGuide from '../assets/blog/thailand-visa-guide.webp';
 
-export const blogImages: Record<string, ImageMetadata> = {
+export const blogImages = {
   'tdac': tdac,
   'dtv-90-day': dtv90day,
   'schengen-visa': schengenVisa,
@@ -18,4 +18,6 @@ export const blogImages: Record<string, ImageMetadata> = {
   'tdac-review': tdacReview,
   'muay-thai-fight': muayThaiFight,
   'thailand-visa-guide': thailandVisaGuide,
-};
+} as const;
+
+export type BlogImageKey = keyof typeof blogImages;
