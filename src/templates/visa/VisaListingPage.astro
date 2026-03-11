@@ -1,0 +1,88 @@
+---
+import type { Lang } from '../../i18n';
+import { getTranslations, getLocalizedPath } from '../../i18n';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+
+interface Props {
+  lang: Lang;
+  region: 'thailand' | 'europe';
+}
+
+const { lang, region } = Astro.props;
+const t = getTranslations(lang);
+const s = t.visaPages[region];
+
+const siteUrl = "https://www.ptservicesagency.com";
+const slug = region === 'thailand' ? '/visa/thailand' : '/visa/europe';
+const canonicalPath = getLocalizedPath(slug, lang);
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": lang === "en" ? `${siteUrl}/en` : siteUrl },
+    { "@type": "ListItem", "position": 2, "name": "Visa", "item": `${siteUrl}${getLocalizedPath("/visa", lang)}` },
+    { "@type": "ListItem", "position": 3, "name": region === 'thailand' ? 'Thailand' : 'Europe', "item": `${siteUrl}${canonicalPath}` },
+  ],
+};
+---
+
+<Layout title={s.meta.title} description={s.meta.description} lang={lang}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
+  </Fragment>
+  <Navbar lang={lang} />
+  <main class="mx-auto max-w-6xl px-5 py-16">
+    <h1 class="mb-12 font-calsans text-3xl text-primary sm:text-4xl">{s.heading}</h1>
+
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {s.visaTypes.map((visa) => (
+        <div class="flex flex-col overflow-hidden rounded-xl border border-border bg-white shadow-sm">
+          {/* Content: title, description, features */}
+          <div class="flex-1 p-5">
+            <div class="flex items-center gap-2">
+              <h2 class="font-calsans text-xl text-primary">{visa.title}</h2>
+              <span class="text-xl">{visa.emoji}</span>
+            </div>
+            <p class="mt-2 text-sm text-body-text leading-relaxed">{visa.description}</p>
+
+            {visa.features && visa.features.length > 0 && (
+              <ul class="mt-3 list-disc space-y-1 pl-5">
+                {visa.features.map((f) => (
+                  <li class="text-sm text-body-text leading-relaxed">{f}</li>
+                ))}
+              </ul>
+            )}
+          </div>
+
+          {/* Pricing + buttons */}
+          <div class="border-t border-border bg-[#f8f8f8] px-5 py-4">
+            <p class="text-sm text-body-text">{visa.priceLabel}</p>
+            <p class="mt-0.5 text-lg font-bold text-primary">{visa.price}</p>
+            <p class="mt-1 text-xs text-body-text/70">{visa.priceNote}</p>
+
+            <div class="mt-3 flex flex-col gap-2">
+              {visa.learnMoreHref && (
+                <a
+                  href={getLocalizedPath(visa.learnMoreHref, lang)}
+                  class="inline-flex items-center justify-center rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary/90"
+                >
+                  {visa.learnMoreText}
+                </a>
+              )}
+              <a
+                href={getLocalizedPath(visa.contactHref, lang)}
+                class="inline-flex items-center justify-center rounded-lg border border-primary px-4 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary/5"
+              >
+                {visa.contactText}
+              </a>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </main>
+  <Footer lang={lang} />
+</Layout>

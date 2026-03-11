@@ -1,0 +1,85 @@
+---
+import type { Lang } from '../../i18n';
+import { getTranslations, getLocalizedPath } from '../../i18n';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import { Image } from 'astro:assets';
+
+import thailandImg from '../../assets/visa/thailand-visa-img.webp';
+import europeImg from '../../assets/visa/eiffel-tower.webp';
+import usaImg from '../../assets/visa/time-square.webp';
+
+interface Props { lang: Lang; }
+
+const { lang } = Astro.props;
+const t = getTranslations(lang);
+const s = t.visaPages.index;
+
+const siteUrl = "https://www.ptservicesagency.com";
+const canonicalPath = getLocalizedPath("/visa", lang);
+
+const images: Record<string, ImageMetadata> = {
+  thailand: thailandImg,
+  europe: europeImg,
+  usa: usaImg,
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": lang === "en" ? `${siteUrl}/en` : siteUrl },
+    { "@type": "ListItem", "position": 2, "name": "Visa", "item": `${siteUrl}${canonicalPath}` },
+  ],
+};
+---
+
+<Layout title={s.meta.title} description={s.meta.description} lang={lang}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
+  </Fragment>
+  <Navbar lang={lang} />
+  <main class="mx-auto max-w-6xl px-5 py-16">
+    <h1 class="font-calsans text-3xl text-primary sm:text-4xl">{s.heading}</h1>
+
+    <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {s.categories.map((cat) => (
+        <div class="flex flex-col overflow-hidden rounded-xl border border-border bg-white shadow-sm">
+          <div class="relative">
+            <Image
+              src={images[cat.image]}
+              alt={cat.title}
+              class="h-40 w-full object-cover"
+              widths={[380, 480, 768]}
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/10 to-black/30"></div>
+          </div>
+          <div class="flex flex-1 flex-col p-5">
+            <div class="flex items-center gap-2">
+              <h2 class="font-calsans text-xl text-primary">{cat.title}</h2>
+              <span class="text-xl">{cat.emoji}</span>
+            </div>
+            <p class="mt-2 text-sm text-body-text leading-relaxed">{cat.description}</p>
+            <div class="mt-auto flex flex-col gap-2 pt-5">
+              <a
+                href={getLocalizedPath(cat.learnMoreHref, lang)}
+                class="inline-flex items-center justify-center rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary/90"
+              >
+                {cat.learnMoreText}
+              </a>
+              <a
+                href={getLocalizedPath(cat.contactHref, lang)}
+                class="inline-flex items-center justify-center rounded-lg border border-primary px-4 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary/5"
+              >
+                {cat.contactText}
+              </a>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </main>
+  <Footer lang={lang} />
+</Layout>

@@ -1,0 +1,208 @@
+---
+import type {Lang} from "../../i18n";
+import {getTranslations, getLocalizedPath} from "../../i18n";
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../../components/Navbar.astro";
+import Footer from "../../components/Footer.astro";
+import TestimonialCard from "../../components/TestimonialCard.astro";
+import {getTestimonialsByAuthors} from "../../data/testimonials";
+import Icon from "../../components/ui/Icon.astro";
+
+interface Props {
+  lang: Lang;
+  country: string;
+  slug: string;
+}
+
+const {lang, country, slug} = Astro.props;
+const t = getTranslations(lang);
+const s = t.visaPages[country];
+
+const siteUrl = "https://www.ptservicesagency.com";
+const canonicalPath = getLocalizedPath(slug, lang);
+
+const testimonials = s.hasTestimonial ? getTestimonialsByAuthors(["Arthur K."]) : [];
+
+// Build breadcrumb
+const isEurope = slug.startsWith("/visa/europe/");
+const isThailandSub = slug.startsWith("/visa/thailand/");
+
+const breadcrumbItems = [
+  {"@type": "ListItem", position: 1, name: "Home", item: lang === "en" ? `${siteUrl}/en` : siteUrl},
+  {"@type": "ListItem", position: 2, name: "Visa", item: `${siteUrl}${getLocalizedPath("/visa", lang)}`}
+];
+
+if (isEurope) {
+  breadcrumbItems.push(
+    {"@type": "ListItem", position: 3, name: "Europe", item: `${siteUrl}${getLocalizedPath("/visa/europe", lang)}`},
+    {"@type": "ListItem", position: 4, name: s.title, item: `${siteUrl}${canonicalPath}`}
+  );
+} else if (isThailandSub) {
+  breadcrumbItems.push(
+    {"@type": "ListItem", position: 3, name: "Thailand", item: `${siteUrl}${getLocalizedPath("/visa/thailand", lang)}`},
+    {"@type": "ListItem", position: 4, name: s.title, item: `${siteUrl}${canonicalPath}`}
+  );
+} else {
+  breadcrumbItems.push({"@type": "ListItem", position: 3, name: s.title, item: `${siteUrl}${canonicalPath}`});
+}
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: breadcrumbItems
+};
+---
+
+<Layout title={s.meta.title} description={s.meta.description} lang={lang}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
+  </Fragment>
+  <Navbar lang={lang} />
+  <main class="mx-auto max-w-[940px] px-5 py-16">
+    <h1 class="font-calsans text-3xl text-primary sm:text-4xl">{s.title}</h1>
+
+    <p class="mt-6 text-body-text leading-relaxed">{s.intro}</p>
+
+    <!-- Documents Required -->
+    <section class="mt-10">
+      <h2 class="font-calsans text-2xl text-primary">{s.documentsHeading}</h2>
+      {s.documentsIntro && <p class="mt-3 text-body-text leading-relaxed">{s.documentsIntro}</p>}
+
+      {/* USA: two document sections */}
+      {s.documentsSubheading1 && <h3 class="mt-6 font-calsans text-lg text-primary">{s.documentsSubheading1}</h3>}
+      {
+        s.documents1 && (
+          <ul class="mt-3 list-disc space-y-2 pl-5">
+            {s.documents1.map(doc => (
+              <li class="text-body-text leading-relaxed" set:html={doc} />
+            ))}
+          </ul>
+        )
+      }
+      {s.documentsSubheading2 && <h3 class="mt-6 font-calsans text-lg text-primary">{s.documentsSubheading2}</h3>}
+      {
+        s.documents2 && (
+          <ul class="mt-3 list-disc space-y-2 pl-5">
+            {s.documents2.map(doc => (
+              <li class="text-body-text leading-relaxed" set:html={doc} />
+            ))}
+          </ul>
+        )
+      }
+      {s.documentsSubheading3 && <h3 class="mt-6 font-calsans text-lg text-primary">{s.documentsSubheading3}</h3>}
+      {
+        s.documents3 && (
+          <ul class="mt-3 list-disc space-y-2 pl-5">
+            {s.documents3.map(doc => (
+              <li class="text-body-text leading-relaxed" set:html={doc} />
+            ))}
+          </ul>
+        )
+      }
+
+      {/* Standard document list */}
+      {
+        s.documents && !s.documents1 && (
+          <ul class="mt-4 list-disc space-y-2 pl-5">
+            {s.documents.map(doc => (
+              <li class="text-body-text leading-relaxed" set:html={doc} />
+            ))}
+          </ul>
+        )
+      }
+
+      {s.documentsExtra && <p class="mt-4 text-body-text leading-relaxed" set:html={s.documentsExtra} />}
+
+      {/* Belgium: sponsor docs & ties */}
+      {s.documentsExtraSponsor && <div class="mt-4 text-body-text leading-relaxed" set:html={s.documentsExtraSponsor} />}
+      {s.documentsExtraTies && <div class="mt-4 text-body-text leading-relaxed" set:html={s.documentsExtraTies} />}
+    </section>
+
+    <!-- Processing Time (optional) -->
+    {
+      s.processingTimeHeading && (
+        <section class="mt-10">
+          <h2 class="font-calsans text-2xl text-primary">{s.processingTimeHeading}</h2>
+          <p class="mt-3 text-body-text leading-relaxed">{s.processingTimeContent}</p>
+        </section>
+      )
+    }
+
+    <!-- Visa Fees -->
+    <section class="mt-10">
+      <h2 class="font-calsans text-2xl text-primary">{s.feesHeading}</h2>
+      <div class="mt-3 text-body-text leading-relaxed" set:html={s.feesContent} />
+    </section>
+
+    <!-- Interview Prep (optional) -->
+    {
+      s.interviewHeading && (
+        <section class="mt-10">
+          <h2 class="font-calsans text-2xl text-primary">{s.interviewHeading}</h2>
+          <p class="mt-3 text-body-text leading-relaxed">{s.interviewContent}</p>
+        </section>
+      )
+    }
+
+    <!-- Free Consultation -->
+    <section class="mt-10">
+      <h2 class="font-calsans text-2xl text-primary">{s.consultationHeading}</h2>
+      <div class="mt-3 text-body-text leading-relaxed" set:html={s.consultationContent} />
+    </section>
+
+    <!-- Services & Pricing -->
+    <section class="mt-10">
+      <h2 class="font-calsans text-2xl text-primary">{s.servicesHeading}</h2>
+      <div class="mt-3 text-body-text leading-relaxed">
+        <p>{s.servicesIntro}</p>
+        {s.servicesItems.map((item: string) => <p class="mt-1">✅ {item}</p>)}
+        <div class="mt-4" set:html={s.pricing} />
+      </div>
+    </section>
+
+    <!-- Guarantee (optional) -->
+    {
+      s.guaranteeTitle && (
+        <div class="flex items-center mt-10 p-5 gap-2 rounded-xl bg-white border border-border">
+          <Icon name="checkmark" class="size-12 text-primary" />
+          <div class="flex flex-col space-y-[-6px]">
+            <p class="font-bold text-primary">{s.guaranteeTitle}</p>
+            <p class="mt-1 leading-relaxed text-primary">{s.guaranteeText}</p>
+          </div>
+        </div>
+      )
+    }
+
+    <!-- Special Guarantee for USA -->
+    {
+      s.specialGuaranteeTitle && (
+        <div class="mt-10 flex items-start gap-4 rounded-xl bg-blue-50 p-5">
+          <div class="flex-shrink-0 text-blue-600">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+          </div>
+          <div>
+            <p class="font-bold text-body-text">{s.specialGuaranteeTitle}</p>
+            <div class="mt-1 text-body-text leading-relaxed" set:html={s.specialGuaranteeText} />
+          </div>
+        </div>
+      )
+    }
+
+    <!-- Testimonial (Schengen only) -->
+    {
+      s.hasTestimonial && testimonials.length > 0 && (
+        <section class="mt-10">
+          <div class="max-w-md">
+            {testimonials.map(item => (
+              <TestimonialCard quote={item.quote} author={item.author} rating={item.rating} source={item.source} sourceURL={item.sourceURL} image={item.image} date={item.date} />
+            ))}
+          </div>
+        </section>
+      )
+    }
+  </main>
+  <Footer lang={lang} />
+</Layout>

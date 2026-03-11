@@ -31,7 +31,7 @@ export const buildFlag = (locale: Lang) => {
   </a>
 
   <NavDropdown label={t.nav.services} items={t.nav.servicesDropdown} lang={lang} />
-  <NavDropdown label={t.nav.visa} items={t.nav.visaDropdown} lang={lang} minWidth="220px" />
+  <NavDropdown label={t.nav.visa} items={t.nav.visaDropdown} lang={lang} href="/visa" minWidth="220px" />
 
   <a href={getLocalizedPath('/contact', lang)} class="px-5 py-2 text-[15px] font-semibold text-primary no-underline hover:text-nav-hover">
     {t.nav.contact}

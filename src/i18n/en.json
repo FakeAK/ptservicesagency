@@ -357,5 +357,644 @@
       ],
       "ctaFooter": "With our service, you can be confident that your paperwork will be accurate, fully compliant with official Thai government standards, and ready to use immediately without the hassle of handling the process yourself."
     }
+  },
+  "visaPages": {
+    "index": {
+      "meta": {
+        "title": "Visa - PT Services Agency",
+        "description": "Visa assistance services for Thailand, Europe and USA. Our expert team handles all paperwork, embassy submissions and interview preparation."
+      },
+      "heading": "Which visa do you need?",
+      "categories": [
+        {
+          "title": "VISA for Thailand",
+          "emoji": "\uD83C\uDDF9\uD83C\uDDED",
+          "description": "Do you wish to live in Thailand? Our team is here to help you get your Thailand VISA.",
+          "image": "thailand",
+          "learnMoreHref": "/visa/thailand",
+          "learnMoreText": "Learn more",
+          "contactHref": "/contact",
+          "contactText": "Contact us for free"
+        },
+        {
+          "title": "VISA for Europe",
+          "emoji": "\uD83C\uDDEA\uD83C\uDDFA",
+          "description": "Our team is expert in obtaining Schengen VISA and UK VISA.",
+          "image": "europe",
+          "learnMoreHref": "/visa/europe",
+          "learnMoreText": "Learn more",
+          "contactHref": "/contact",
+          "contactText": "Contact us for free"
+        },
+        {
+          "title": "VISA for USA",
+          "emoji": "\uD83C\uDDFA\uD83C\uDDF8",
+          "description": "Do you need to go the USA soon? Our team is here to help you get your VISA.",
+          "image": "usa",
+          "learnMoreHref": "/visa/usa",
+          "learnMoreText": "Learn more",
+          "contactHref": "/contact",
+          "contactText": "Contact us for free"
+        }
+      ]
+    },
+    "thailand": {
+      "meta": {
+        "title": "Thailand Visa Services – Fast, Reliable & 100% Refund",
+        "description": "Professional Thailand visa services including DTV, ED, Non-B, Non-O and LTR visas. Fast processing, transparent pricing and 100% refund guarantee."
+      },
+      "heading": "Which visa do you need?",
+      "visaTypes": [
+        {
+          "title": "DTV Visa",
+          "emoji": "\uD83C\uDDF9\uD83C\uDDED",
+          "description": "Suited for digital nomads or people wishing to practice Muay Thai or cook Thai dishes.",
+          "features": [
+            "We prepare, verify and translate your documents",
+            "We submit the application for you"
+          ],
+          "priceLabel": "Service fee",
+          "price": "THB 7,500",
+          "priceNote": "Price does not include documents translations if some are needed.",
+          "learnMoreHref": "/visa/thailand/dtv",
+          "learnMoreText": "Learn more about DTV visa",
+          "contactHref": "/contact",
+          "contactText": "Contact us for free"
+        },
+        {
+          "title": "ED Visa",
+          "emoji": "\uD83C\uDDF9\uD83C\uDDED",
+          "description": "Suited for people wishing to study in Thailand in a school or university.",
+          "features": [
+            "We prepare, verify and translate your documents",
+            "We submit the application for you"
+          ],
+          "priceLabel": "Service fee",
+          "price": "THB 8,500",
+          "priceNote": "Price does not include documents translations if some are needed.",
+          "contactHref": "/contact",
+          "contactText": "Contact us for free"
+        },
+        {
+          "title": "Non-B Visa",
+          "emoji": "\uD83C\uDDF9\uD83C\uDDED",
+          "description": "Suited for people wishing to run a business in Thailand or to work in Thailand.",
+          "features": [
+            "We prepare, verify and translate your documents",
+            "We submit the application for you"
+          ],
+          "priceLabel": "Service fee",
+          "price": "THB 8,500",
+          "priceNote": "Price does not include documents translations if some are needed.",
+          "contactHref": "/contact",
+          "contactText": "Contact us for free"
+        },
+        {
+          "title": "Non-O Visa",
+          "emoji": "\uD83C\uDDF9\uD83C\uDDED",
+          "description": "Suited for retired foreigners or foreigners married to a Thai citizen.",
+          "features": [
+            "We prepare, verify and translate your documents",
+            "We submit the application for you"
+          ],
+          "priceLabel": "Service fee",
+          "price": "THB 8,500",
+          "priceNote": "Price does not include documents translations if some are needed.",
+          "contactHref": "/contact",
+          "contactText": "Contact us for free"
+        },
+        {
+          "title": "LTR Visa",
+          "emoji": "\uD83C\uDDF9\uD83C\uDDED",
+          "description": "Suited for foreigners who wish to reside in Thailand for long term.",
+          "features": [
+            "We prepare, verify and translate your documents",
+            "We submit the application for you"
+          ],
+          "priceLabel": "Service fee",
+          "price": "THB 15,000",
+          "priceNote": "Price does not include documents translations if some are needed.",
+          "contactHref": "/contact",
+          "contactText": "Contact us for free"
+        }
+      ]
+    },
+    "europe": {
+      "meta": {
+        "title": "VISA Europe | PT Services Agency",
+        "description": "European visa assistance services including Schengen, UK, Germany, Spain, France, Italy and Belgium visas. Expert preparation and embassy submission."
+      },
+      "heading": "What do you need?",
+      "visaTypes": [
+        {
+          "title": "Schengen Visa",
+          "emoji": "\uD83C\uDDEA\uD83C\uDDFA",
+          "description": "Our team is expert in obtaining Schengen Visas.",
+          "features": [
+            "We help you prepare, verify and translate your documents",
+            "We submit the application for you",
+            "We coach you in case of an eventual interview with the embassy",
+            "We accompany you at your appointment with the embassy"
+          ],
+          "priceLabel": "Service fee",
+          "price": "THB 8,500",
+          "priceNote": "Price does not include documents translations if some are needed.",
+          "learnMoreHref": "/visa/europe/schengen",
+          "learnMoreText": "Learn more",
+          "contactHref": "/contact",
+          "contactText": "Contact us for free"
+        },
+        {
+          "title": "UK Visa",
+          "emoji": "\uD83C\uDDEC\uD83C\uDDE7",
+          "description": "Do you need to travel to the United Kingdom? Our team is expert in obtaining UK visas.",
+          "features": [
+            "We help you prepare, verify and translate your documents",
+            "We submit the application for you",
+            "We coach you in case of an eventual interview with the embassy",
+            "We accompany you at your appointment with the embassy"
+          ],
+          "priceLabel": "Service fee",
+          "price": "THB 8,500",
+          "priceNote": "Price does not include documents translations if some are needed.",
+          "learnMoreHref": "/visa/europe/uk",
+          "learnMoreText": "Learn more",
+          "contactHref": "/contact",
+          "contactText": "Contact us for free"
+        },
+        {
+          "title": "Germany Visa",
+          "emoji": "\uD83C\uDDE9\uD83C\uDDEA",
+          "description": "Do you need to travel to Germany? Our team is expert in obtaining German visas.",
+          "features": [
+            "We help you prepare, verify and translate your documents",
+            "We submit the application for you",
+            "We coach you in case of an eventual interview with the embassy",
+            "We accompany you at your appointment with the embassy"
+          ],
+          "priceLabel": "Service fee",
+          "price": "THB 8,500",
+          "priceNote": "Price does not include documents translations if some are needed.",
+          "learnMoreHref": "/visa/europe/germany",
+          "learnMoreText": "Learn more",
+          "contactHref": "/contact",
+          "contactText": "Contact us for free"
+        },
+        {
+          "title": "Spain Visa",
+          "emoji": "\uD83C\uDDEA\uD83C\uDDF8",
+          "description": "Do you need to travel to Spain? Our team is expert in obtaining Spain visas.",
+          "features": [
+            "We help you prepare, verify and translate your documents",
+            "We submit the application for you",
+            "We coach you in case of an eventual interview with the embassy",
+            "We accompany you at your appointment with the embassy"
+          ],
+          "priceLabel": "Service fee",
+          "price": "THB 8,500",
+          "priceNote": "Price does not include documents translations if some are needed.",
+          "learnMoreHref": "/visa/europe/spain",
+          "learnMoreText": "Learn more",
+          "contactHref": "/contact",
+          "contactText": "Contact us for free"
+        },
+        {
+          "title": "France Visa",
+          "emoji": "\uD83C\uDDEB\uD83C\uDDF7",
+          "description": "Do you need to travel to France? Our team is expert in obtaining French visas.",
+          "features": [
+            "We help you prepare, verify and translate your documents",
+            "We submit the application for you",
+            "We coach you in case of an eventual interview with the embassy",
+            "We accompany you at your appointment with the embassy"
+          ],
+          "priceLabel": "Service fee",
+          "price": "THB 8,500",
+          "priceNote": "Price does not include documents translations if some are needed.",
+          "learnMoreHref": "/visa/europe/france",
+          "learnMoreText": "Learn more",
+          "contactHref": "/contact",
+          "contactText": "Contact us for free"
+        },
+        {
+          "title": "Italy Visa",
+          "emoji": "\uD83C\uDDEE\uD83C\uDDF9",
+          "description": "Do you need to travel to Italy? Our team is expert in obtaining Italy visas.",
+          "features": [
+            "We help you prepare, verify and translate your documents",
+            "We submit the application for you",
+            "We coach you in case of an eventual interview with the embassy",
+            "We accompany you at your appointment with the embassy"
+          ],
+          "priceLabel": "Service fee",
+          "price": "THB 8,500",
+          "priceNote": "Price does not include documents translations if some are needed.",
+          "learnMoreHref": "/visa/europe/italy",
+          "learnMoreText": "Learn more",
+          "contactHref": "/contact",
+          "contactText": "Contact us for free"
+        },
+        {
+          "title": "Belgium Visa",
+          "emoji": "\uD83C\uDDE7\uD83C\uDDEA",
+          "description": "Do you need to travel to Belgium? Our team is expert in obtaining Belgium visas.",
+          "features": [
+            "We help you prepare, verify and translate your documents",
+            "We submit the application for you",
+            "We coach you in case of an eventual interview with the embassy",
+            "We accompany you at your appointment with the embassy"
+          ],
+          "priceLabel": "Service fee",
+          "price": "THB 8,500",
+          "priceNote": "Price does not include documents translations if some are needed.",
+          "learnMoreHref": "/visa/europe/belgium",
+          "learnMoreText": "Learn more",
+          "contactHref": "/contact",
+          "contactText": "Contact us for free"
+        }
+      ]
+    },
+    "schengen": {
+      "meta": {
+        "title": "Schengen Visa in Thailand",
+        "description": "Professional Schengen visa assistance in Thailand. Document preparation, embassy submission and interview coaching. THB 8,500 with 100% refund guarantee."
+      },
+      "title": "Schengen Visa",
+      "intro": "If you wish to travel to Europe, you will need a Schengen visa. The Schengen visa allows you to travel for 90 days maximum in any European country who is part of the Schengen area.",
+      "documentsHeading": "Documents Required For A Schengen Visa",
+      "documents": [
+        "<strong>Passport</strong> (must be valid for at least 3 months after the end of the planned stay)",
+        "<strong>Passport sized photography</strong> not older than 6 months (3.5cm x 4.5cm)",
+        "<strong>Visa application form</strong>",
+        "<strong>Confirmed reservation of flight tickets</strong>",
+        "<strong>Detailed itinerary</strong> (if the applicant plans to visit several countries)",
+        "<strong>Proof of accommodation</strong> (for example hotel reservations for the entire duration of stay in the Schengen countries)",
+        "<strong>If employed: employment proof</strong> (work certificate, monthly salary, position in the company etc)",
+        "<strong>Proof of sufficient funds</strong> (original bank statements with stamps)",
+        "<strong>Travel and health insurance</strong> (minimum coverage of Euro 30,000)",
+        "<strong>A sponsoring letter</strong> (if applicable)"
+      ],
+      "documentsExtra": "If the trip is sponsored, the applicant will have to provide a sponsoring letter. The sponsor will also have to provide documents such as a copy of the passport, bank statements for the last three months including the bank account movements and more.<br/><br/>If the applicant is a foreigner living in Thailand, the applicant will have to provide the original and copy of work permit (if applicable) and the re-entry stamp from Thai immigration, valid after coming back from the Schengen area.",
+      "processingTimeHeading": "Processing Time",
+      "processingTimeContent": "The usual processing time is between 4 days and 15 days for tourism purposes (visiting family, tourist visits etc). However, it can happen that the processing time can take up to 45 days, for example during high season.",
+      "feesHeading": "Visa Fees",
+      "feesContent": "The Schengen visa is free for children under 6 years old, costs \u20ac45 (around THB 1800) for children up to 11 years old and costs \u20ac90 (around THB 3,600) for adults. The fee is fixed in Euro but is payable in Thai baht only. Therefore the application fee may vary depending on the current exchange rate between the two currencies.<br/><br/>The visa fee shall be waived if the applicant belongs to a specific category. For example, the spouse of a German citizen will have their visa fee waived.",
+      "interviewHeading": "Prepare For The Interview",
+      "interviewContent": "In case the visa agency requires further details or clarification, you may need to participate in a phone interview. A badly handled interview can potentially lead to the failure of your visa application. PT Services can help you prepare for you interview to help you succeed and secure your visa.",
+      "consultationHeading": "Get A Free Consultation With Our Experts",
+      "consultationContent": "At PT Services, we understand that applying for a Schengen visa can be difficult and if the application is unsuccessful it can result in a loss of both time and money. This is why we offer a free consultation with our experts in order to correctly understand your needs and give you free advices on your application.",
+      "servicesHeading": "We Are Here To Help",
+      "servicesIntro": "Our service includes:",
+      "servicesItems": [
+        "Thorough understanding of your visa requirements to ensure the visa is suitable for you",
+        "Comprehensive review of your documents",
+        "Preparation and submission of your visa application to relevant government agencies",
+        "Guidance and preparation for the visa interview"
+      ],
+      "pricing": "Our pricing is transparent and we charge a fixed fee of <strong>THB 8,500</strong>.<br/>Our service fee does not include the translations of your documents.",
+      "guaranteeTitle": "PT Services Guarantee",
+      "guaranteeText": "If your visa application is denied, we will issue a full refund of our service fee.",
+      "hasTestimonial": true
+    },
+    "uk": {
+      "meta": {
+        "title": "UK VISA in Thailand - PT Services Agency",
+        "description": "Professional UK visa assistance in Thailand. Document preparation, embassy submission and interview coaching. THB 8,500 fixed service fee."
+      },
+      "title": "United Kingdom Visa",
+      "intro": "If you're planning to visit the United Kingdom (UK), you will need to apply for a UK Visa as Thai nationals are required to have a visa to enter the UK. The type of visa you need depends on the purpose of your trip and each visa category permits you to remain in the UK for a set duration. For example, a tourist visa typically allows you to stay for up to six months. Our agency can help you get your UK visa without hassle.",
+      "documentsHeading": "Documents Required For UK Visa",
+      "documentsIntro": "The list of documents required by UK Visas and Immigration is not comprehensive, and therefore the required documents may differ from case to case. Some of the documents commonly asked are:",
+      "documents": [
+        "Visa application form",
+        "Current and previous passports",
+        "Copy of Thai ID card",
+        "Name change certificates (if applicable)",
+        "Introduction letter",
+        "Proof of accommodation (for example hotel reservation)",
+        "Documents proving financial circumstances (bank statements covering the past 6 months etc)",
+        "Document stating purpose of the trip",
+        "Documents proving ties and responsibilities in Thailand",
+        "If employed, proof of employment, pay slips, confirmation letter etc. If business owner, registration documents, 6-12 bank statements etc."
+      ],
+      "documentsExtra": "The sponsor will also need to provide documentation, such as a copy of their passport, financial statements, proof of accommodation, and any additional evidence showing they can cover the applicant's stay. Contact us for more details about the documents needed.",
+      "feesHeading": "Visa Fees",
+      "feesContent": "The visa fee varies depending on the type of visa you apply for and its validity period. For example, a single or multiple-entry tourist visa that allows a stay of up to 6 months costs \u00a3127 (approximately 6,000 THB, subject to exchange rate fluctuations). You can check the most up-to-date fees on the official UK government website. Feel free to contact us for more information.",
+      "consultationHeading": "Get A Free Consultation With Our Experts",
+      "consultationContent": "At PT Services, we know that the UK visa application process can be complex, and an unsuccessful result may cost you both time and money. That's why we offer a free consultation with our experts to understand your specific needs and provide personalized advice on your application. And if you want to, our agency can then handle the entire process on your behalf to help you get your UK visa.",
+      "servicesHeading": "Let Our Agency Help You Get Your UK Visa",
+      "servicesIntro": "Our service includes:",
+      "servicesItems": [
+        "Thorough understanding of your situation and the visa requirements to ensure which visa is suitable for you",
+        "Comprehensive review and rigorous preparation of your documents",
+        "Preparation and submission of your visa application to relevant government agencies"
+      ],
+      "pricing": "Our pricing is transparent. We charge a fixed fee of <strong>THB 8,500</strong> for our service.<br/>Embassy fee: <strong>\u00a3127</strong> (approximately THB 6,000), paid separately.",
+      "guaranteeTitle": null,
+      "guaranteeText": null,
+      "hasTestimonial": false
+    },
+    "usa": {
+      "meta": {
+        "title": "Get your US VISA in Thailand - PT Services Agency",
+        "description": "Professional US visa assistance in Thailand. DS-160 completion, document preparation, interview coaching. THB 10,860 with unlimited retry guarantee."
+      },
+      "title": "U.S. B1/B2 Visa (Tourist and Business Visa)",
+      "intro": "If you are planning to travel to the United States (USA), you will need to apply for a U.S. visa, as Thai citizens are required to obtain a visa before entering the country. The type of visa you need will depend on the purpose of your visit. For example, the B1/B2 Tourist and Business Visa allows you to stay in the U.S. for a period determined by the immigration officer (typically up to 6 months). Our team is here to assist you throughout the entire U.S. visa application process\u2014quickly, professionally, and with ease.",
+      "documentsHeading": "Required Documents for U.S. Tourist/Business Visa (B1/B2)",
+      "documentsSubheading1": "Basic Documents Required",
+      "documents1": [
+        "<strong>Passport</strong> \u2013 Must be valid for at least 6 months beyond the date of entry into the United States. <strong>Previous Passports</strong> (if available) \u2013 Especially those containing past visas or travel history.",
+        "<strong>DS-160 Form</strong> \u2013 Complete the form online and print the confirmation page with the barcode.",
+        "<strong>Photo (2x2 inches / 5x5 cm)</strong> \u2013 White background, no eyeglasses, taken within the last 6 months.",
+        "<strong>Appointment Confirmation</strong> \u2013 Printed from the system after scheduling your interview appointment online.",
+        "<strong>Visa Fee Receipt</strong> \u2013 Proof of payment for the visa application fee (approximately USD 185; subject to change based on exchange rates)."
+      ],
+      "documentsSubheading2": "Additional Supporting Documents (to demonstrate ties to Thailand)",
+      "documents2": [
+        "<strong>Employment Certificate</strong> \u2013 Should state your job title, salary, start date, and confirm that you are authorized to take leave for travel.",
+        "<strong>Pay Slips (last 3 months)</strong> or <strong>Other Proof of Income</strong> \u2013 To demonstrate your financial stability.",
+        "<strong>Bank Statement</strong> \u2013 At least 3\u20136 months of recent statements to show sufficient financial means.",
+        "<strong>Copy of House Registration and National ID Card</strong> \u2013 To confirm your identity and permanent residence in Thailand.",
+        "<strong>Flight and Hotel Booking (Optional)</strong> \u2013 Not required to purchase in advance, but can be used to demonstrate your travel plans.",
+        "<strong>Invitation Letter (if applicable)</strong> \u2013 If you are visiting relatives or friends in the U.S., include an invitation letter along with a copy of the inviter's ID or visa.",
+        "<strong>Other Supporting Documents</strong> \u2013 Such as a marriage certificate, children's birth certificates, proof of business ownership, etc."
+      ],
+      "feesHeading": "Visa Fee",
+      "feesContent": "The visa fee for a U.S. B1/B2 visa depends on the visa type and the length of stay granted. Generally, this visa allows travel to the United States for tourism, visiting relatives, or short-term business purposes, with a maximum stay of up to 6 months per entry (subject to the discretion of the immigration officer). For Thai passport holders, the application fee for a B1/B2 visa is <strong>USD 185</strong> (approximately <strong>THB 6,660</strong>, subject to exchange rate fluctuations).<br/><br/>You can check the latest visa fee on the official website of the U.S. Embassy or the USTravelDocs Thailand website.",
+      "consultationHeading": "Consult with Our Visa Experts",
+      "consultationContent": "At <strong>PT Services</strong>, we understand that applying for a U.S. visa can be complicated and overwhelming. From preparing the required documents, completing the DS-160 form, and scheduling the interview, to the uncertainty of visa approval \u2014 it can be a time-consuming and costly process if not done correctly. That's why we offer <strong>professional consultation services</strong> to help assess the purpose of your trip and provide tailored advice to increase your chances of visa approval. If needed, our staff can assist you with every step: preparing the necessary documents, filling out the forms, booking the interview appointment, and even providing <strong>interview training</strong> \u2014 ensuring that your U.S. visa application is smooth, confident, and worry free.",
+      "servicesHeading": "Let Our Team Help You Apply for a U.S. Visa",
+      "servicesIntro": "Our service includes:",
+      "servicesItems": [
+        "Initial consultation",
+        "Review and preparation of all required documents",
+        "Accurate and complete DS-160 form completion",
+        "Embassy interview appointment scheduling",
+        "Interview coaching and preparation"
+      ],
+      "pricing": "Service Fee: <strong>THB 10,860</strong> (fixed and all-inclusive for processing).<br/>U.S. Embassy Fee: <strong>USD 185</strong> (approximately THB 6,660), to be paid separately.",
+      "specialGuaranteeTitle": "Special Guarantee",
+      "specialGuaranteeText": "If your visa application is rejected after the interview, you are welcome to return and use our service again <strong>unlimited times at no additional service charge</strong>. You will only be responsible for the <strong>U.S. Embassy visa fee</strong> for any future application rounds.",
+      "guaranteeTitle": null,
+      "guaranteeText": null,
+      "hasTestimonial": false
+    },
+    "france": {
+      "meta": {
+        "title": "France Visa in Thailand - PT Services Agency",
+        "description": "Professional France visa assistance in Thailand. Document preparation, embassy submission and interview coaching. THB 8,500 with 100% refund guarantee."
+      },
+      "title": "France Visa",
+      "intro": "If you are planning to visit France, you will need to obtain a visa prior to entry. The specific type of visa you will need depends on the purpose of your visit, with each category granting permission to stay in France for a defined period. For instance, a tourist visa generally allows a stay of up to 90 days in any 180-day period. Our agency offers comprehensive assistance to help you obtain your visa smoothly and without hassle.",
+      "documentsHeading": "Documents Required To Get A Visa For France",
+      "documents": [
+        "Passport (must be valid for at least 3 months after the end of the planned stay)",
+        "2 x Passport sized photography not older than 6 months, ISO/IEC format (3.5 cm x 4.5cm)",
+        "Visa application form",
+        "If you're not a Thai national, proof that you are legally resident in that country",
+        "Reservation of return ticket or itinerary",
+        "If you are employee: proof of registration of the company and a certificate of employment, indicating the number of days of leave granted, the position held in the company and the monthly salary. If you are self-employed: proof that she/he is the owner of the company. If you are retired, proof of pension.",
+        "Bank statements for the past three months from your personal or company account, or the last three payslips, or a pension certificate showing the monthly pension amount (with mandatory translation into French).",
+        "Proof of accommodation: either a 'Attestation d'accueil' (a document stating that you'll stay at a private place, if staying with a private individual), a hotel reservation, a rental agreement, or a property ownership certificate.",
+        "Travel health insurance certificate"
+      ],
+      "documentsExtra": "If the applicant have a sponsor, the sponsor will also need to provide documentation, such as a copy of their passport, financial statements, proof of accommodation, and any additional evidence showing they can cover the applicant's stay. Contact us for more details about the documents needed.",
+      "feesHeading": "France Visa Fees",
+      "feesContent": "The visa for France is free for children under 6 years old, costs \u20ac45 (around THB 1800) for children up to 11 years old and costs \u20ac90 (around THB 3,400 to THB 3,600) for adults. The fee is fixed in Euro but is payable in Thai baht only. Therefore the application fee may vary depending on the current exchange rate between the two currencies. Certain individual cases may give rise to different prices, in accordance with applicable regulations.",
+      "consultationHeading": "Get A Free Consultation With Our Experts",
+      "consultationContent": "At PT Services, we understand that applying for a French visa can be difficult and if the application is unsuccessful it can result in a loss of both time and money. This is why we offer a free consultation with our experts in order to correctly understand your needs and give you free advices on your application.",
+      "servicesHeading": "Let Our Agency Help You Get Your France Visa",
+      "servicesIntro": "Our service includes:",
+      "servicesItems": [
+        "Thorough understanding of your visa requirements to ensure the visa is suitable for you",
+        "Comprehensive review of your documents",
+        "Preparation and submission of your visa application to relevant government agencies",
+        "Guidance and preparation for the visa interview"
+      ],
+      "pricing": "Our pricing is transparent and we charge a fixed fee of <strong>THB 8,500</strong>.<br/>Our service does not include the translations of your documents.",
+      "guaranteeTitle": "PT Services Guarantee",
+      "guaranteeText": "If your visa application is denied, we will issue a full refund of our service fee.",
+      "hasTestimonial": false
+    },
+    "germany": {
+      "meta": {
+        "title": "Germany VISA in Thailand - PT Services Agency",
+        "description": "Professional Germany visa assistance in Thailand. Document preparation, embassy submission and interview coaching. THB 8,500 with 100% refund guarantee."
+      },
+      "title": "Germany Visa",
+      "intro": "If you plan to travel to Germany, you will need a Schengen visa, as Germany is part of the Schengen area. The specific type of visa required depends on the purpose of your visit. For instance, a Schengen tourist visa permits stays of up to 90 days within a 180-day period in Germany or any other Schengen member country.",
+      "documentsHeading": "Documents Required For A German Visa",
+      "documents": [
+        "Passport (must be valid for at least 3 months after the end of the planned stay)",
+        "Passport sized photography not older than 6 months (3.5cm x 4.5cm)",
+        "Visa application form completed",
+        "Confirmed reservation of flight tickets",
+        "Detailed itinerary (if the applicant plans to visit several countries)",
+        "Proof of accommodation (for example hotel reservations for the entire duration of stay in the Schengen countries)",
+        "If employed: employment proof (work certificate, monthly salary, position in the company etc)",
+        "Proof of sufficient funds (original bank statements with stamps)",
+        "Travel and health insurance (minimum coverage of Euro 30,000)",
+        "A sponsoring letter (if applicable)"
+      ],
+      "documentsExtra": "If the trip is sponsored, the applicant must submit a sponsorship letter. The sponsor is also required to provide supporting documents, including a copy of their passport and bank statements from the past three months, showing account activity.<br/><br/>For foreign applicants residing in Thailand, it is necessary to provide both the original and a copy of their work permit (if applicable), as well as a valid re-entry permit from Thai immigration, covering the return from the Schengen area.",
+      "processingTimeHeading": "Processing Time",
+      "processingTimeContent": "The usual processing time is between 4 days and 15 days for tourism purposes (visiting family, tourist visits etc). However, it can happen that the processing time can take up to 45 days, for example during high season.",
+      "feesHeading": "Visa Fees",
+      "feesContent": "The German visa is free for children under 6 years old, costs \u20ac45 (around THB 1800) for children up to 11 years old and costs \u20ac90 (around THB 3,400 to THB 3,600) for adults. The fee is fixed in Euro but is payable in Thai baht only. Therefore the application fee may vary depending on the current exchange rate between the two currencies.<br/><br/>The visa fee shall be waived if the applicant belongs to a specific category. For example, the spouse of a German citizen will have their visa fee waived.",
+      "interviewHeading": "Prepare For The Interview",
+      "interviewContent": "In case the visa agency requires further details or clarification, you may need to participate in a phone interview. A badly handled interview can potentially lead to the failure of your visa application. PT Services can help you prepare for you interview to help you succeed and secure your visa.",
+      "consultationHeading": "Get A Free Consultation With Our Experts",
+      "consultationContent": "At PT Services, we understand that applying for a German visa can be difficult and if the application is unsuccessful it can result in a loss of both time and money. This is why we offer a free consultation with our experts in order to correctly understand your needs and give you free advices on your application.",
+      "servicesHeading": "We Are Here To Help",
+      "servicesIntro": "Our service includes:",
+      "servicesItems": [
+        "Thorough understanding of your visa requirements to ensure the visa is suitable for you",
+        "Comprehensive review of your documents",
+        "Preparation and submission of your visa application to relevant government agencies",
+        "Guidance and preparation for the visa interview"
+      ],
+      "pricing": "Our pricing is transparent and we charge a fixed fee of <strong>THB 8,500</strong>.<br/>Our service fee does not include the translations of your documents.",
+      "guaranteeTitle": "PT Services Guarantee",
+      "guaranteeText": "If your visa application is denied, we will issue a full refund of our service fee.",
+      "hasTestimonial": false
+    },
+    "spain": {
+      "meta": {
+        "title": "Spain VISA in Thailand - PT Services Agency",
+        "description": "Professional Spain visa assistance in Thailand. Document preparation, embassy submission and interview coaching. THB 8,500 with 100% refund guarantee."
+      },
+      "title": "Spain Tourist Visa",
+      "intro": "If you are planning to visit Spain and you're not a national citizen from a European country, you will need to obtain a visa prior to entry. The specific type of visa you will need depends on the purpose of your visit, with each category granting permission to stay in Spain for a defined period. For instance, a tourist visa generally allows a stay of up to 90 days in any 180-day period. Our agency offers comprehensive assistance to help you obtain your visa smoothly and without hassle.",
+      "documentsHeading": "Documents Required To Get A Tourist Visa For Spain",
+      "documents": [
+        "A Spanish Schengen visa application form (completed)",
+        "<strong>Original Passport</strong> \u2013 issued within the last 10 years, valid for at least 3 months after the date of intended exit from the Schengen area, with at least 2 blank pages. Include a copy of the data page and copies of any Schengen, US, UK or Canada visas from the past 3 years.",
+        "Official passport photo (4.5cm x 3.5cm, white background, taken within the last 6 months)",
+        "Signed letter stating purpose of travel, trip dates, accommodation details, and entries/exits from each Schengen country",
+        "<strong>Means of transport:</strong> round-trip airline reservation with PNR, proof of internal transport. Do not use fake or cancelled bookings. You do not need to purchase tickets before the visa is granted.",
+        "<strong>Accommodation:</strong> hotel booking, tour invoice, invitation letter from Spanish National Police station for private accommodation, or proof of property ownership. Fake bookings may result in refusal.",
+        "<strong>Travel insurance</strong> \u2013 EU-compliant, minimum \u20ac30,000 coverage, valid for all Schengen countries",
+        "<strong>Employment letter</strong> (with salary, employment length). Self-employed: business registration. Retired: pension proof. Students: enrollment letter.",
+        "<strong>Financial means:</strong> original bank statements (3 months), minimum \u20ac118/day/person, minimum balance \u20ac1,065. Family sponsor with relationship proof. Employer sponsor.",
+        "For Thai nationals under 20: parental consent, birth certificate (legalized/translated), parent passport copies, application form signed by both parents, visa fee (free under 6, 50% off ages 6-12)"
+      ],
+      "documentsExtra": "Additional documents may be requested depending on the reason of the trip. Contact us for more details.",
+      "processingTimeHeading": "Processing Time",
+      "processingTimeContent": "The usual processing time is between 4 days and 15 days for tourism purposes (visiting family, tourist visits etc). However, it can happen that the processing time can take up to 45 days, for example during high season.",
+      "feesHeading": "Spain Visa Fee",
+      "feesContent": "The Schengen visa is free for children under 6 years old, costs \u20ac45 (around THB 1800) for children up to 11 years old and costs \u20ac90 (around THB 3,600) for adults. The fee is fixed in Euro but is payable in Thai baht only. Therefore the application fee may vary depending on the current exchange rate between the two currencies.<br/><br/>The visa fee shall be waived if the applicant belongs to a specific category. For example, the spouse of a Spain citizen will have their visa fee waived.",
+      "interviewHeading": "Prepare For The Interview",
+      "interviewContent": "In case the visa agency requires further details or clarification, you may need to participate in a phone interview. A badly handled interview can potentially lead to the failure of your visa application. PT Services can help you prepare for you interview to help you succeed and secure your visa.",
+      "consultationHeading": "Get A Free Consultation With Our Experts",
+      "consultationContent": "At PT Services, we understand that applying for a Spain visa can be difficult and if the application is unsuccessful it can result in a loss of both time and money. This is why we offer a free consultation with our experts in order to correctly understand your needs and give you free advices on your application.",
+      "servicesHeading": "Let Our Agency Help You Get Your Spain Visa",
+      "servicesIntro": "Our service includes:",
+      "servicesItems": [
+        "Thorough understanding of your visa requirements to ensure the visa is suitable for you",
+        "Comprehensive review of your documents",
+        "Preparation and submission of your visa application to relevant government agencies",
+        "Guidance and preparation for the visa interview"
+      ],
+      "pricing": "Our pricing is transparent and we charge a fixed fee of <strong>THB 8,500</strong>.<br/>Our service fee does not include the translations of your documents.",
+      "guaranteeTitle": "PT Services Guarantee",
+      "guaranteeText": "If your visa application is denied, we will issue a full refund of our service fee.",
+      "hasTestimonial": false
+    },
+    "italy": {
+      "meta": {
+        "title": "Italy Visa in Thailand - PT Services Agency",
+        "description": "Professional Italy visa assistance in Thailand. Document preparation, embassy submission and interview coaching. THB 8,500 with 100% refund guarantee."
+      },
+      "title": "Italy Visa",
+      "intro": "If you plan to travel to Italy, you will need a Schengen visa, as Italy is part of the Schengen area. The specific type of visa required depends on the purpose of your visit. For instance, a Schengen tourist visa permits stays of up to 90 days within a 180-day period in Italy or any other Schengen member country.",
+      "documentsHeading": "Documents Required To Get A Visa For Italy",
+      "documents": [
+        "Passport (valid for at least 3 months after the planned stay, with at least 2 blank pages)",
+        "One passport sized photography (ICAO specifications, 3.5cm x 4.5cm, taken within the last 6 months)",
+        "Visa application form completed",
+        "Confirmed reservation of round-trip airline tickets",
+        "Detailed itinerary in English or Italian",
+        "Proof of accommodation",
+        "Employed: employment proof. Business owner: business registration from Dept of Business Development / Ministry of Commerce",
+        "Student: original letter in English from school",
+        "Sponsor: signed sponsorship letter, copy of sponsor's ID, proof of family relationship (birth certificate, house registration, or marriage certificate with English translation), sponsor's bank statement, proof of employment",
+        "Name change: original and copy of certificate (in English)",
+        "Non-Thai nationals: re-entry stamps and work permit (original + copy)",
+        "Two copies of passport + one copy of Schengen/UK/USA/Canada visas from last 5 years",
+        "Travel and health insurance (\u20ac30,000 minimum, valid for the whole Schengen area)",
+        "Cover letter (1 page max, signed, English or Italian)",
+        "Minors: birth certificate (translated), consent letter from non-traveling parent(s), proof of sole custody or death certificate (with English translations)"
+      ],
+      "processingTimeHeading": "Processing Time",
+      "processingTimeContent": "The usual processing time is between 4 days and 15 days for tourism purposes (visiting family, tourist visits etc). However, it can happen that the processing time can take up to 45 days, for example during high season.",
+      "feesHeading": "Visa Fees",
+      "feesContent": "The Italy visa is free for children under 6 years old, costs \u20ac45 (around THB 1800) for children up to 11 years old and costs \u20ac90 (around THB 3,400 to THB 3,600) for adults. The fee is fixed in Euro but is payable in Thai baht only. Therefore the application fee may vary depending on the current exchange rate between the two currencies.<br/><br/>The visa fee shall be waived if the applicant belongs to a specific category. For example, the spouse of an Italian citizen will have their visa fee waived.",
+      "interviewHeading": "Prepare For The Interview",
+      "interviewContent": "In case the visa agency requires further details or clarification, you may need to participate in a phone interview. A badly handled interview can potentially lead to the failure of your visa application. PT Services can help you prepare for you interview to help you succeed and secure your visa.",
+      "consultationHeading": "Get A Free Consultation With Our Experts",
+      "consultationContent": "At PT Services, we understand that applying for an Italy visa can be difficult and if the application is unsuccessful it can result in a loss of both time and money. This is why we offer a free consultation with our experts in order to correctly understand your needs and give you free advices on your application.",
+      "servicesHeading": "We Are Here To Help",
+      "servicesIntro": "Our service includes:",
+      "servicesItems": [
+        "Thorough understanding of your visa requirements to ensure the visa is suitable for you",
+        "Comprehensive review of your documents",
+        "Preparation and submission of your visa application to relevant government agencies",
+        "Guidance and preparation for the visa interview"
+      ],
+      "pricing": "Our pricing is transparent and we charge a fixed fee of <strong>THB 8,500</strong>.<br/>Our service fee does not include the translations of your documents.",
+      "guaranteeTitle": "PT Services Guarantee",
+      "guaranteeText": "If your visa application is denied, we will issue a full refund of our service fee.",
+      "hasTestimonial": false
+    },
+    "belgium": {
+      "meta": {
+        "title": "Belgium Visa in Thailand - PT Services Agency",
+        "description": "Professional Belgium visa assistance in Thailand. Document preparation, embassy submission and interview coaching. THB 8,500 with 100% refund guarantee."
+      },
+      "title": "Belgium Visa",
+      "intro": "If you are planning to visit Belgium, you will need to obtain a visa prior to entry. The specific type of visa you will need depends on the purpose of your visit, with each category granting permission to stay in Belgium for a defined period. For instance, a tourist visa generally allows a stay of up to 90 days in any 180-day period. Our agency offers comprehensive assistance to help you obtain your visa smoothly and without hassle.",
+      "documentsHeading": "Documents Required To Get A Visa For Belgium",
+      "documents": [
+        "Visa application form (duly completed, dated and signed)",
+        "One recent color photo (3.5 x 4.5 cm, white background, not older than 6 months)",
+        "Passport (at least 2 blank pages, valid for at least 3 months after the planned departure from the Schengen area)",
+        "Copy of passport: photocopies of data page and all pages with visas/stamps, in order",
+        "Non-Thai nationals: Proof of legal residence in Thailand",
+        "Trip itinerary or organized tour booking",
+        "Hotel reservations, signed rental agreement, or host confirmation",
+        "Recent bank statements, salary slips, or tax documents. Credit card copies may be accepted",
+        "Medical insurance: all Schengen countries, \u20ac30,000 minimum, valid for full trip",
+        "Flight reservation: round-trip showing entry/exit dates",
+        "Other supporting documents"
+      ],
+      "documentsExtraSponsor": "<strong>Sponsor documents (if applicable):</strong><br/>\u2022 Annex 3bis (Formal Obligation from Belgian municipality)<br/>\u2022 Income proof of the guarantor (pay slips, tax return)<br/>\u2022 Guarantor's family composition document<br/>\u2022 Copy of guarantor's ID card or Belgian residence permit",
+      "documentsExtraTies": "<strong>Proof of ties to Thailand / return guarantee:</strong><br/>\u2022 Employees: employer letter<br/>\u2022 Students: school/university letter<br/>\u2022 Self-employed: business registration proof<br/>\u2022 Property ownership or proof of family dependents in Thailand<br/>\u2022 Any document showing strong social/economic ties",
+      "feesHeading": "Belgium Visa Fees",
+      "feesContent": "The visa for Belgium is free for children under 6 years old, costs \u20ac45 (around THB 1800) for children up to 11 years old and costs \u20ac90 (around THB 3,400 to THB 3,600) for adults. The fee is fixed in Euro but is payable in Thai baht only. Therefore the application fee may vary depending on the current exchange rate between the two currencies. Certain individual cases may give rise to different prices, in accordance with applicable regulations.",
+      "consultationHeading": "Get A Free Consultation With Our Experts",
+      "consultationContent": "At PT Services, we understand that applying for a Belgium visa can be difficult and if the application is unsuccessful it can result in a loss of both time and money. This is why we offer a free consultation with our experts in order to correctly understand your needs and give you free advices on your application.",
+      "servicesHeading": "Let Our Agency Help You Get Your Belgium Visa",
+      "servicesIntro": "Our service includes:",
+      "servicesItems": [
+        "Thorough understanding of your visa requirements to ensure the visa is suitable for you",
+        "Comprehensive review of your documents",
+        "Preparation and submission of your visa application to relevant government agencies",
+        "Guidance and preparation for the visa interview"
+      ],
+      "pricing": "Our pricing is transparent and we charge a fixed fee of <strong>THB 8,500</strong>.<br/>Our service does not include the translations of your documents.",
+      "guaranteeTitle": "PT Services Guarantee",
+      "guaranteeText": "If your visa application is denied, we will issue a full refund of our service fee.",
+      "hasTestimonial": false
+    },
+    "dtv": {
+      "meta": {
+        "title": "DTV Visa Thailand - PT Services Agency",
+        "description": "Professional DTV (Destination Thailand Visa) assistance. Document preparation, application submission. THB 7,500 with 100% refund guarantee."
+      },
+      "title": "DTV Visa (Destination Thailand Visa)",
+      "intro": "The Destination Thailand Visa (DTV) was introduced in 2024 by the Thai government to attract long-term visitors engaged in remote work, wellness, and cultural activities. It aims to support Thailand's soft power industries while boosting tourism and the digital economy.\n\nThis new visa aims to attract high-quality tourists, remote workers (Digital Nomads), and individuals interested in participating in cultural activities in Thailand such as Muay Thai, traditional Thai massage, Thai cooking, and other activities related to Thai soft power.\n\nApplicants must be at least 20 years old and provide proof of a bank deposit of no less than 500,000 THB maintained over the past 3 to 6 months prior to the visa application. The visa is valid for 5 years and allows multiple entries. Each stay in Thailand can last up to 180 days and can be extended once for another 180 days per entry.\n\nSpouses and children under 20 years old of the main visa holder are eligible to apply as dependents. However, the application must be submitted from outside Thailand via the official e-Visa system. Visa holders are not permitted to work for or receive income from Thai companies. Long-term residents may be subject to Thai tax regulations if their income meets the criteria for taxation in Thailand. This visa is ideal for individuals who wish to live in Thailand long term while working remotely for overseas companies or clients, without the need for a Thai work permit.",
+      "documentsHeading": "Who Is Eligible to Apply for the DTV Visa?",
+      "documentsIntro": "The Destination Thailand Visa (DTV) is designed for foreigners who wish to stay in Thailand for up to one year and engage in specific permitted activities under this visa type. If your purpose of stay matches any of the conditions listed below, you may be eligible to apply for the DTV Visa:",
+      "documentsSubheading1": "1. Workcation (Remote Work / Digital Nomad)",
+      "documents1": [
+        "Passport Biodata Page or Travel Document (must be valid within 6 months from travel date)",
+        "Official photo of the applicant, taken within the past six months",
+        "Document indicating current location (driving license, bank statement, proof of stay or passport stamp)",
+        "Employment contract or employment certificate in their country or professional portfolio showcasing digital nomad, remote worker, foreign talent or freelancer status",
+        "A copy of a recent saving or checking bank statement with an ending balance of no less than THB 500,000 that shows the applicant's name and date. In case of submitting a family bank statement, <strong>proof of relationship</strong> (i.e. birth certificate, marriage certificate) must be provided"
+      ],
+      "documentsSubheading2": "2. Cultural Activities and Thai Soft Power",
+      "documents2": [
+        "Passport Biodata Page or Travel Document (must be valid within 6 months from travel date)",
+        "Photograph of the applicant, taken within the past six months",
+        "Document indicating current location (driving license, bank statement, or proof of stay)",
+        "Letter of acceptance from institute or company organizing activities, letter of appointment from hospital/medical center",
+        "A copy of a recent saving or checking bank statement with an ending balance of no less than 500,000 THB that shows the applicant's name and date. In case of submitting a family bank statement, <strong>proof of relationship</strong> (i.e. birth certificate, marriage certificate) must be provided"
+      ],
+      "documentsSubheading3": "3. Spouse or Children of a DTV Visa Holder",
+      "documents3": [
+        "Passport Biodata Page or Travel Document (must be valid within 6 months from travel date)",
+        "Photograph of the applicant, taken within the past six months",
+        "Document indicating current location (driving license, bank statement, or proof of stay)",
+        "Personal details of a DTV visa holder: passport biodata page and the DTV visa approval of the DTV visa holder",
+        "A copy of a recent saving or checking bank statement with an ending balance of no less than 500,000 THB that shows the applicant's name and date. In case of submitting a family bank statement, <strong>proof of relationship</strong> (i.e. birth certificate, marriage certificate, or adoption certificate) must be provided"
+      ],
+      "feesHeading": "DTV Visa Fee",
+      "feesContent": "The standard fee for the Destination Thailand Visa (DTV) is <strong>10,000 THB</strong> for a 5-year multiple-entry visa issued by the Thai government. However, the actual fee may vary depending on the country of application due to exchange rates, embassy service fees, and additional charges.",
+      "consultationHeading": "Get a Free Consultation With Our Experts",
+      "consultationContent": "At PT Services, we understand that applying for the Destination Thailand Visa (DTV) can be complex, especially when it comes to preparing documents and meeting various requirements. An unsuccessful application may result in wasted time and unnecessary expenses. For this reason, we offer a <strong>free consultation</strong> with our experts to help you understand the specific conditions of the DTV visa and provide tailored advice based on your situation. If you need assistance, our team is ready to handle every step on your behalf — from document preparation to visa submission — ensuring a smooth and confident DTV visa application process.",
+      "servicesHeading": "Let Our Staff Assist You With Your DTV Visa Application",
+      "servicesIntro": "Our service includes:",
+      "servicesItems": [
+        "A thorough assessment of your situation to ensure the DTV visa is suitable and meets all requirements",
+        "Careful review and preparation of all documents, with guidance throughout the process",
+        "Preparation and submission of your DTV visa application to the relevant authorities, including follow-up on the application status"
+      ],
+      "pricing": "Our service fee is a fixed price of <strong>THB 7,500</strong> (VAT included).<br/>This does not include embassy fees or official visa charges, which vary depending on the country of application.<br/><br/><strong>TDAC Submission, TM30 Notification, and 90-Day Reporting Services for Foreigners in Thailand</strong><br/>After receiving approval for the DTV Visa, foreigners entering Thailand are required to submit the TDAC (Thailand Digital Arrival Card) at least 3 days prior to their arrival date.<br/><br/>Upon arrival in Thailand, foreigners must notify their place of residence by submitting the TM30 form within 24 hours. Additionally, foreigners are required to complete the 90-Day Reporting to the Immigration Bureau every 90 days.<br/><br/>PT Services offers comprehensive assistance including:<br/>- <strong>TDAC submission</strong> before entering Thailand: 300 THB per person<br/>- <strong>TM30 residence notification</strong> within 24 hours: 300 THB per person (1,000 THB for address updates)<br/>- <strong>90-Day Reporting</strong> service: 1,000 – 1,500 THB depending on the travel distance",
+      "guaranteeTitle": "PT Services Guarantee",
+      "guaranteeText": "If your visa application is denied, we will issue a full refund of our service fee.",
+      "hasTestimonial": false
+    }
   }
 }

@@ -47,10 +47,14 @@ export const buildFlag = (locale: Lang, className: string = "") => {
 
   <!-- Visa -->
   <div>
-    <button class="mobile-dropdown-toggle flex w-full items-center justify-between py-2 text-[15px] font-semibold text-primary">
-      {t.nav.visa}
-      <span class="transition-transform">&#9662;</span>
-    </button>
+    <div class="flex w-full items-center justify-between">
+      <a href={getLocalizedPath('/visa', lang)} class="py-2 text-[15px] font-semibold text-primary no-underline">
+        {t.nav.visa}
+      </a>
+      <button class="mobile-dropdown-toggle py-2 px-2 text-primary">
+        <span class="transition-transform">&#9662;</span>
+      </button>
+    </div>
     <div class="mobile-dropdown-content ml-4 hidden border-l-2 border-primary pl-3">
       {
         t.nav.visaDropdown.map(item => (
@@ -105,7 +109,8 @@ export const buildFlag = (locale: Lang, className: string = "") => {
   // Mobile dropdown toggles
   document.querySelectorAll(".mobile-dropdown-toggle").forEach(toggle => {
     toggle.addEventListener("click", () => {
-      const content = toggle.nextElementSibling;
+      const container = toggle.closest("div:has(> .mobile-dropdown-content)") ?? toggle.parentElement;
+      const content = container?.querySelector(".mobile-dropdown-content");
       const arrow = toggle.querySelector("span");
       content?.classList.toggle("hidden");
       arrow?.classList.toggle("rotate-180");
