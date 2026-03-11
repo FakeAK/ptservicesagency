@@ -112,7 +112,7 @@ const t = getTranslations(lang);
         <!-- LINE QR -->
         <div class="flex w-full flex-col items-center rounded-md border border-primary bg-white p-2.5" style="height: 300px;">
           <div class="flex items-center gap-2">
-            <img src={lineLogo.src} alt="LINE" class="size-10 drag-none" loading="lazy" />
+            <Image src={lineLogo} alt="LINE" class="size-10 drag-none" loading="lazy" />
             <p class="text-sm text-primary leading-4">{t.footer.lineQrText}</p>
           </div>
           <Image src={lineQrCode} alt="LINE QR Code" class="mt-2 size-full drag-none" width={256} height={256} loading="lazy" />
@@ -120,7 +120,7 @@ const t = getTranslations(lang);
         <!-- Messenger QR -->
         <div class="flex w-full flex-col items-center rounded-md border border-primary bg-white p-2.5" style="height: 300px;">
           <div class="flex items-center gap-2">
-            <img src={messengerLogo.src} alt="Messenger" class="size-10 drag-none" loading="lazy" />
+            <Image src={messengerLogo} alt="Messenger" class="size-10 drag-none" loading="lazy" />
             <p class="text-sm text-primary leading-4">{t.footer.messengerQrText}</p>
           </div>
           <Image src={messengerQrCode} alt="Messenger QR Code" class="mt-2 size-full p-2 drag-none" width={256} height={256} loading="lazy" />
@@ -130,11 +130,11 @@ const t = getTranslations(lang);
       <!-- Tap to Message (Tablet/Mobile only) -->
       <div class="hidden gap-2.5 max-[991px]:flex max-[479px]:flex-col max-[479px]:gap-1.5">
         <a href="https://lin.ee/95zA7Kl" target="_blank" rel="noopener noreferrer" class="flex flex-1 items-center gap-3 rounded-md border border-primary bg-white p-3 no-underline">
-          <img src={lineLogo.src} alt="LINE" class="h-[50px] w-[50px]" loading="lazy" />
+          <Image src={lineLogo} alt="LINE" class="h-[50px] w-[50px]" loading="lazy" />
           <p class="text-sm text-primary">{t.footer.lineTapText}</p>
         </a>
         <a href="https://m.me/322623954270790" target="_blank" rel="noopener noreferrer" class="flex flex-1 items-center gap-3 rounded-md border border-primary bg-white p-3 no-underline">
-          <img src={messengerLogo.src} alt="Messenger" class="h-[50px] w-[50px]" loading="lazy" />
+          <Image src={messengerLogo} alt="Messenger" class="h-[50px] w-[50px]" loading="lazy" />
           <p class="text-sm text-primary">{t.footer.messengerTapText}</p>
         </a>
       </div>
