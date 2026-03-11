@@ -33,7 +33,7 @@ const posts = allPosts
           year: 'numeric',
         })}
         excerpt={post.data.excerpt}
-        imageSrc={blogImages[post.data.image as BlogImageKey]?.src || ''}
+        image={blogImages[post.data.image as BlogImageKey]}
         imageAlt={post.data.heroAlt}
         href={`/blog/${post.data.slug}`}
         lang={lang}

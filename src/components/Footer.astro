@@ -1,6 +1,7 @@
 ---
 import type {Lang} from "../i18n";
 import {getTranslations} from "../i18n";
+import {Image} from "astro:assets";
 
 import logoSrc from "../assets/logo.png";
 import lineLogo from "../assets/line-logo.svg";
@@ -21,7 +22,7 @@ const t = getTranslations(lang);
     <div class="flex gap-6 max-[479px]:flex-col">
       <!-- Logo -->
       <div class="shrink-0">
-        <img src={logoSrc.src} alt="The logo of PT Services" class="h-20 drag-none" width="80" height="80" loading="lazy" />
+        <Image src={logoSrc} alt="The logo of PT Services" class="h-20 drag-none" width={80} height={80} loading="lazy" />
       </div>
 
       <!-- Contact Info -->
@@ -114,7 +115,7 @@ const t = getTranslations(lang);
             <img src={lineLogo.src} alt="LINE" class="size-10 drag-none" loading="lazy" />
             <p class="text-sm text-primary leading-4">{t.footer.lineQrText}</p>
           </div>
-          <img src={lineQrCode.src} alt="LINE QR Code" class="mt-2 size-full drag-none" loading="lazy" />
+          <Image src={lineQrCode} alt="LINE QR Code" class="mt-2 size-full drag-none" width={256} height={256} loading="lazy" />
         </div>
         <!-- Messenger QR -->
         <div class="flex w-full flex-col items-center rounded-md border border-primary bg-white p-2.5" style="height: 300px;">
@@ -122,7 +123,7 @@ const t = getTranslations(lang);
             <img src={messengerLogo.src} alt="Messenger" class="size-10 drag-none" loading="lazy" />
             <p class="text-sm text-primary leading-4">{t.footer.messengerQrText}</p>
           </div>
-          <img src={messengerQrCode.src} alt="Messenger QR Code" class="mt-2 size-full p-2 drag-none" loading="lazy" />
+          <Image src={messengerQrCode} alt="Messenger QR Code" class="mt-2 size-full p-2 drag-none" width={256} height={256} loading="lazy" />
         </div>
       </div>
 

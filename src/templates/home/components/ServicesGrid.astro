@@ -2,6 +2,7 @@
 import type { Lang } from '../../../i18n';
 import { getTranslations } from '../../../i18n';
 import ServiceCard from '../../../components/ServiceCard.astro';
+import {Image} from 'astro:assets';
 
 import immigrationOfficer from '../../../assets/immigration-officer.png';
 import personalAssistant from '../../../assets/personal-assistant.png';
@@ -42,7 +43,7 @@ const serviceAlts = [
       <ServiceCard
         title={item.title}
         description={item.description}
-        imageSrc={serviceImages[i].src}
+        image={serviceImages[i]}
         imageAlt={serviceAlts[i]}
         link={item.link}
         linkText={item.linkText}

@@ -2,6 +2,7 @@
 import type {Lang} from "../../../i18n";
 import {getTranslations, getLocalizedPath} from "../../../i18n";
 import {Button} from "../../../components/ui/Button";
+import {Image} from "astro:assets";
 
 import visaMan from "../../../assets/visa-man.jpg";
 import Icon from "../../../components/ui/Icon.astro";
@@ -15,7 +16,7 @@ const t = getTranslations(lang);
 ---
 
 <div class="flex flex-col md:flex-row items-center justify-center gap-8">
-  <img src={visaMan.src} alt="An image showing a man struggling to get his VISA to prepare his travel." class="w-auto max-w-[50%] rounded-lg object-cover" width="500" height="500" loading="lazy" />
+  <Image src={visaMan} alt="An image showing a man struggling to get his VISA to prepare his travel." class="w-auto max-w-[50%] rounded-lg object-cover" width={500} height={500} loading="lazy" />
   <div class="flex flex-1 flex-col max-[991px]:mt-6 max-[991px]:ml-0">
     <div class="flex flex-col gap-2">
       <h2 class="text-[28px] font-bold capitalize text-primary">
@@ -41,7 +42,7 @@ const t = getTranslations(lang);
 
     <!-- See More Button -->
     <div class="mt-6">
-      <Button href={getLocalizedPath("/visa", lang)} variant="secondary" className="w-full" aria-label={`${t.visa.seeMore} - ${t.visa.heading}`}>
+      <Button href={getLocalizedPath("/visa", lang)} variant="secondary" className="w-full">
         {t.visa.seeMore}
       </Button>
     </div>

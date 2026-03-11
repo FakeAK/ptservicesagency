@@ -1,6 +1,7 @@
 ---
 import type {Lang} from "../../../../i18n";
 import {getTranslations} from "../../../../i18n";
+import {Image} from "astro:assets";
 import happyCustomer from "../../../../assets/happy-customer.webp";
 
 interface Props {
@@ -15,7 +16,7 @@ const t = getTranslations(lang);
   <div class="flex flex-col items-center md:items-start justify-center md:justify-start">
     <p class="text-lg italic text-primary text-center md:text-left">"{t.hero.testimonialQuote}"</p>
     <a href="https://www.facebook.com/ptservicesagency/reviews" class="mt-2 flex items-center gap-2 no-underline">
-      <img src={happyCustomer.src} alt="Happy customer" class="size-10 rounded-full object-cover" loading="lazy" />
+      <Image src={happyCustomer} alt="Happy customer" class="size-10 rounded-full object-cover" width={40} height={40} loading="lazy" />
       <div>
         <div class="flex gap-0.5">
           {

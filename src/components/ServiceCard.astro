@@ -1,27 +1,31 @@
 ---
 import type { Lang } from '../i18n';
 import { getLocalizedPath } from '../i18n';
+import {Image} from 'astro:assets';
+import type {ImageMetadata} from 'astro';
 
 interface Props {
   title: string;
   description: string;
-  imageSrc: string;
+  image: ImageMetadata;
   imageAlt: string;
   link?: string;
   linkText?: string;
   lang: Lang;
 }
 
-const { title, description, imageSrc, imageAlt, link, linkText, lang } = Astro.props;
+const { title, description, image, imageAlt, link, linkText, lang } = Astro.props;
 ---
 
 <div class="flex flex-col items-start rounded-xl bg-card-bg p-3">
   <div class="flex w-full items-center justify-start gap-3">
     <h3 class="m-0 flex-1 text-lg text-primary font-semibold">{title}</h3>
-    <img
-      src={imageSrc}
+    <Image
+      src={image}
       alt={imageAlt}
       class="size-10 rounded-lg object-contain"
+      width={40}
+      height={40}
       loading="lazy"
     />
   </div>
@@ -30,7 +34,6 @@ const { title, description, imageSrc, imageAlt, link, linkText, lang } = Astro.p
     <a
       href={getLocalizedPath(link, lang)}
       class="mt-2 font-semibold text-primary no-underline hover:underline"
-      aria-label={`${linkText} - ${title}`}
     >
       {linkText}
     </a>
