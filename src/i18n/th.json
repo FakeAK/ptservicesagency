@@ -32,42 +32,15 @@
       }
     ],
     "visaDropdown": [
-      {
-        "label": "🇹🇭 Thailand Visa",
-        "href": "/visa/thailand"
-      },
-      {
-        "label": "🇪🇺 Schengen Visa",
-        "href": "/visa/europe/schengen"
-      },
-      {
-        "label": "🇬🇧 UK Visa",
-        "href": "/visa/europe/uk"
-      },
-      {
-        "label": "🇺🇸 USA Visa",
-        "href": "/visa/usa"
-      },
-      {
-        "label": "🇫🇷 France Visa",
-        "href": "/visa/europe/france"
-      },
-      {
-        "label": "🇩🇪 Germany Visa",
-        "href": "/visa/europe/germany"
-      },
-      {
-        "label": "🇪🇸 Spain Visa",
-        "href": "/visa/europe/spain"
-      },
-      {
-        "label": "🇮🇹 Italy Visa",
-        "href": "/visa/europe/italy"
-      },
-      {
-        "label": "🇧🇪 Belgium Visa",
-        "href": "/visa/europe/belgium"
-      }
+      {"label": "วีซ่าประเทศไทย", "href": "/visa/thailand", "flag": "th"},
+      {"label": "วีซ่าเชงเก้น", "href": "/visa/europe/schengen", "flag": "eu"},
+      {"label": "วีซ่าสหราชอาณาจักร", "href": "/visa/europe/uk", "flag": "en"},
+      {"label": "วีซ่าสหรัฐอเมริกา", "href": "/visa/usa", "flag": "us"},
+      {"label": "วีซ่าฝรั่งเศส", "href": "/visa/europe/france", "flag": "fr"},
+      {"label": "วีซ่าเยอรมนี", "href": "/visa/europe/germany", "flag": "de"},
+      {"label": "วีซ่าสเปน", "href": "/visa/europe/spain", "flag": "es"},
+      {"label": "วีซ่าอิตาลี", "href": "/visa/europe/italy", "flag": "it"},
+      {"label": "วีซ่าเบลเยียม", "href": "/visa/europe/belgium", "flag": "be"}
     ]
   },
   "hero": {
@@ -450,6 +423,7 @@
         {
           "title": "วีซ่า DTV",
           "emoji": "\uD83C\uDDF9\uD83C\uDDED",
+          "flag": "th",
           "description": "เหมาะสำหรับ Digital Nomad หรือผู้ที่ต้องการฝึกมวยไทยหรือเรียนทำอาหารไทย",
           "features": [
             "เราเตรียม ตรวจสอบ และแปลเอกสารให้คุณ",
@@ -466,6 +440,7 @@
         {
           "title": "วีซ่า ED (นักศึกษา)",
           "emoji": "\uD83C\uDDF9\uD83C\uDDED",
+          "flag": "th",
           "description": "เหมาะสำหรับผู้ที่ต้องการศึกษาในประเทศไทยในโรงเรียนหรือมหาวิทยาลัย",
           "features": [
             "เราเตรียม ตรวจสอบ และแปลเอกสารให้คุณ",
@@ -480,6 +455,7 @@
         {
           "title": "วีซ่า Non-B (ธุรกิจ)",
           "emoji": "\uD83C\uDDF9\uD83C\uDDED",
+          "flag": "th",
           "description": "เหมาะสำหรับผู้ที่ต้องการทำธุรกิจหรือทำงานในประเทศไทย",
           "features": [
             "เราเตรียม ตรวจสอบ และแปลเอกสารให้คุณ",
@@ -494,6 +470,7 @@
         {
           "title": "วีซ่า Non-O (ครอบครัว/เกษียณ)",
           "emoji": "\uD83C\uDDF9\uD83C\uDDED",
+          "flag": "th",
           "description": "เหมาะสำหรับชาวต่างชาติที่เกษียณอายุหรือสมรสกับคนไทย",
           "features": [
             "เราเตรียม ตรวจสอบ และแปลเอกสารให้คุณ",
@@ -508,6 +485,7 @@
         {
           "title": "วีซ่า LTR (ระยะยาว)",
           "emoji": "\uD83C\uDDF9\uD83C\uDDED",
+          "flag": "th",
           "description": "เหมาะสำหรับชาวต่างชาติที่ต้องการพำนักอาศัยในประเทศไทยระยะยาว",
           "features": [
             "เราเตรียม ตรวจสอบ และแปลเอกสารให้คุณ",
@@ -531,6 +509,7 @@
         {
           "title": "วีซ่าเชงเก้น",
           "emoji": "\uD83C\uDDEA\uD83C\uDDFA",
+          "flag": "eu",
           "description": "ทีมงานของเราเชี่ยวชาญในการขอวีซ่าเชงเก้น",
           "features": [
             "เราช่วยเตรียม ตรวจสอบ และแปลเอกสารให้คุณ",
@@ -549,6 +528,7 @@
         {
           "title": "วีซ่าสหราชอาณาจักร",
           "emoji": "\uD83C\uDDEC\uD83C\uDDE7",
+          "flag": "en",
           "description": "คุณต้องการเดินทางไปสหราชอาณาจักรหรือไม่? ทีมงานของเราเชี่ยวชาญในการขอวีซ่า UK",
           "features": [
             "เราช่วยเตรียม ตรวจสอบ และแปลเอกสารให้คุณ",
@@ -567,6 +547,7 @@
         {
           "title": "วีซ่าเยอรมนี",
           "emoji": "\uD83C\uDDE9\uD83C\uDDEA",
+          "flag": "de",
           "description": "คุณต้องการเดินทางไปเยอรมนีหรือไม่? ทีมงานของเราเชี่ยวชาญในการขอวีซ่าเยอรมนี",
           "features": [
             "เราช่วยเตรียม ตรวจสอบ และแปลเอกสารให้คุณ",
@@ -585,6 +566,7 @@
         {
           "title": "วีซ่าสเปน",
           "emoji": "\uD83C\uDDEA\uD83C\uDDF8",
+          "flag": "es",
           "description": "คุณต้องการเดินทางไปสเปนหรือไม่? ทีมงานของเราเชี่ยวชาญในการขอวีซ่าสเปน",
           "features": [
             "เราช่วยเตรียม ตรวจสอบ และแปลเอกสารให้คุณ",
@@ -603,6 +585,7 @@
         {
           "title": "วีซ่าฝรั่งเศส",
           "emoji": "\uD83C\uDDEB\uD83C\uDDF7",
+          "flag": "fr",
           "description": "คุณต้องการเดินทางไปฝรั่งเศสหรือไม่? ทีมงานของเราเชี่ยวชาญในการขอวีซ่าฝรั่งเศส",
           "features": [
             "เราช่วยเตรียม ตรวจสอบ และแปลเอกสารให้คุณ",
@@ -621,6 +604,7 @@
         {
           "title": "วีซ่าอิตาลี",
           "emoji": "\uD83C\uDDEE\uD83C\uDDF9",
+          "flag": "it",
           "description": "คุณต้องการเดินทางไปอิตาลีหรือไม่? ทีมงานของเราเชี่ยวชาญในการขอวีซ่าอิตาลี",
           "features": [
             "เราช่วยเตรียม ตรวจสอบ และแปลเอกสารให้คุณ",
@@ -639,6 +623,7 @@
         {
           "title": "วีซ่าเบลเยียม",
           "emoji": "\uD83C\uDDE7\uD83C\uDDEA",
+          "flag": "be",
           "description": "คุณต้องการเดินทางไปเบลเยียมหรือไม่? ทีมงานของเราเชี่ยวชาญในการขอวีซ่าเบลเยียม",
           "features": [
             "เราช่วยเตรียม ตรวจสอบ และแปลเอกสารให้คุณ",

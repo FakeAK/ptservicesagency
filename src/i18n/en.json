@@ -17,15 +17,15 @@
       {"label": "Document Translation and Consular Legalization for Marriage Registration", "href": "/services/marriage-registration-translation-service"}
     ],
     "visaDropdown": [
-      {"label": "\uD83C\uDDF9\uD83C\uDDED Thailand Visa", "href": "/visa/thailand"},
-      {"label": "\uD83C\uDDEA\uD83C\uDDFA Schengen Visa", "href": "/visa/europe/schengen"},
-      {"label": "\uD83C\uDDEC\uD83C\uDDE7 UK Visa", "href": "/visa/europe/uk"},
-      {"label": "\uD83C\uDDFA\uD83C\uDDF8 USA Visa", "href": "/visa/usa"},
-      {"label": "\uD83C\uDDEB\uD83C\uDDF7 France Visa", "href": "/visa/europe/france"},
-      {"label": "\uD83C\uDDE9\uD83C\uDDEA Germany Visa", "href": "/visa/europe/germany"},
-      {"label": "\uD83C\uDDEA\uD83C\uDDF8 Spain Visa", "href": "/visa/europe/spain"},
-      {"label": "\uD83C\uDDEE\uD83C\uDDF9 Italy Visa", "href": "/visa/europe/italy"},
-      {"label": "\uD83C\uDDE7\uD83C\uDDEA Belgium Visa", "href": "/visa/europe/belgium"}
+      {"label": "Thailand Visa", "href": "/visa/thailand", "flag": "th"},
+      {"label": "Schengen Visa", "href": "/visa/europe/schengen", "flag": "eu"},
+      {"label": "UK Visa", "href": "/visa/europe/uk", "flag": "en"},
+      {"label": "USA Visa", "href": "/visa/usa", "flag": "us"},
+      {"label": "France Visa", "href": "/visa/europe/france", "flag": "fr"},
+      {"label": "Germany Visa", "href": "/visa/europe/germany", "flag": "de"},
+      {"label": "Spain Visa", "href": "/visa/europe/spain", "flag": "es"},
+      {"label": "Italy Visa", "href": "/visa/europe/italy", "flag": "it"},
+      {"label": "Belgium Visa", "href": "/visa/europe/belgium", "flag": "be"}
     ]
   },
   "hero": {
@@ -408,6 +408,7 @@
         {
           "title": "DTV Visa",
           "emoji": "\uD83C\uDDF9\uD83C\uDDED",
+          "flag": "th",
           "description": "Suited for digital nomads or people wishing to practice Muay Thai or cook Thai dishes.",
           "features": [
             "We prepare, verify and translate your documents",
@@ -424,6 +425,7 @@
         {
           "title": "ED Visa",
           "emoji": "\uD83C\uDDF9\uD83C\uDDED",
+          "flag": "th",
           "description": "Suited for people wishing to study in Thailand in a school or university.",
           "features": [
             "We prepare, verify and translate your documents",
@@ -438,6 +440,7 @@
         {
           "title": "Non-B Visa",
           "emoji": "\uD83C\uDDF9\uD83C\uDDED",
+          "flag": "th",
           "description": "Suited for people wishing to run a business in Thailand or to work in Thailand.",
           "features": [
             "We prepare, verify and translate your documents",
@@ -452,6 +455,7 @@
         {
           "title": "Non-O Visa",
           "emoji": "\uD83C\uDDF9\uD83C\uDDED",
+          "flag": "th",
           "description": "Suited for retired foreigners or foreigners married to a Thai citizen.",
           "features": [
             "We prepare, verify and translate your documents",
@@ -466,6 +470,7 @@
         {
           "title": "LTR Visa",
           "emoji": "\uD83C\uDDF9\uD83C\uDDED",
+          "flag": "th",
           "description": "Suited for foreigners who wish to reside in Thailand for long term.",
           "features": [
             "We prepare, verify and translate your documents",
@@ -489,6 +494,7 @@
         {
           "title": "Schengen Visa",
           "emoji": "\uD83C\uDDEA\uD83C\uDDFA",
+          "flag": "eu",
           "description": "Our team is expert in obtaining Schengen Visas.",
           "features": [
             "We help you prepare, verify and translate your documents",
@@ -507,6 +513,7 @@
         {
           "title": "UK Visa",
           "emoji": "\uD83C\uDDEC\uD83C\uDDE7",
+          "flag": "en",
           "description": "Do you need to travel to the United Kingdom? Our team is expert in obtaining UK visas.",
           "features": [
             "We help you prepare, verify and translate your documents",
@@ -525,6 +532,7 @@
         {
           "title": "Germany Visa",
           "emoji": "\uD83C\uDDE9\uD83C\uDDEA",
+          "flag": "de",
           "description": "Do you need to travel to Germany? Our team is expert in obtaining German visas.",
           "features": [
             "We help you prepare, verify and translate your documents",
@@ -543,6 +551,7 @@
         {
           "title": "Spain Visa",
           "emoji": "\uD83C\uDDEA\uD83C\uDDF8",
+          "flag": "es",
           "description": "Do you need to travel to Spain? Our team is expert in obtaining Spain visas.",
           "features": [
             "We help you prepare, verify and translate your documents",
@@ -561,6 +570,7 @@
         {
           "title": "France Visa",
           "emoji": "\uD83C\uDDEB\uD83C\uDDF7",
+          "flag": "fr",
           "description": "Do you need to travel to France? Our team is expert in obtaining French visas.",
           "features": [
             "We help you prepare, verify and translate your documents",
@@ -579,6 +589,7 @@
         {
           "title": "Italy Visa",
           "emoji": "\uD83C\uDDEE\uD83C\uDDF9",
+          "flag": "it",
           "description": "Do you need to travel to Italy? Our team is expert in obtaining Italy visas.",
           "features": [
             "We help you prepare, verify and translate your documents",
@@ -597,6 +608,7 @@
         {
           "title": "Belgium Visa",
           "emoji": "\uD83C\uDDE7\uD83C\uDDEA",
+          "flag": "be",
           "description": "Do you need to travel to Belgium? Our team is expert in obtaining Belgium visas.",
           "features": [
             "We help you prepare, verify and translate your documents",

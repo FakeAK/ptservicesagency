@@ -15,6 +15,25 @@ const enHref = lang === "en" ? currentPath : `/en${currentPath}`.replace(/\/$/, 
 
 import thailandFlag from "../assets/flags/th.svg";
 import ukFlag from "../assets/flags/en.svg";
+import flagUs from "../assets/flags/us.svg";
+import flagFr from "../assets/flags/fr.svg";
+import flagDe from "../assets/flags/de.svg";
+import flagEs from "../assets/flags/es.svg";
+import flagIt from "../assets/flags/it.svg";
+import flagBe from "../assets/flags/be.svg";
+import flagEu from "../assets/flags/eu.svg";
+
+const flagMap: Record<string, ImageMetadata> = {
+  th: thailandFlag,
+  en: ukFlag,
+  us: flagUs,
+  fr: flagFr,
+  de: flagDe,
+  es: flagEs,
+  it: flagIt,
+  be: flagBe,
+  eu: flagEu,
+};
 
 export const buildFlag = (locale: Lang, className: string = "") => {
   const flag = locale === "th" ? thailandFlag : ukFlag;
@@ -58,7 +77,10 @@ export const buildFlag = (locale: Lang, className: string = "") => {
     <div class="mobile-dropdown-content ml-4 hidden border-l-2 border-primary pl-3">
       {
         t.nav.visaDropdown.map(item => (
-          <a href={getLocalizedPath(item.href, lang)} class="block py-1.5 text-sm text-primary no-underline">
+          <a href={getLocalizedPath(item.href, lang)} class="flex items-center gap-2 py-1.5 text-sm text-primary no-underline">
+            {item.flag && flagMap[item.flag] && (
+              <img src={flagMap[item.flag].src} alt="" class="h-auto w-4 rounded-sm object-cover" />
+            )}
             {item.label}
           </a>
         ))
