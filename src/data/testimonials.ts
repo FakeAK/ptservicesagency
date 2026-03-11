@@ -64,7 +64,7 @@ export const testimonials: Testimonial[] = [
   {
     quote: "Their staff was nice and they handled my marriage registration with my Thai partner as well as my visa perfectly. Thank you!",
     author: "Gérard D.",
-    image: "/images/testimonials/gerard.png",
+    image: "/images/testimonials/gerard.webp",
     date: "November 2025",
     rating: 5,
     source: "Google",
@@ -84,7 +84,7 @@ export const testimonials: Testimonial[] = [
     quote:
       "Thank you for your excellent service! PT Service agency helped us to make 90 days reports on time. This is surely the easiest way to deal with it. The process was smooth and pleasant, no need to go anywhere and wait queues. We will definitely use your service next time 👍",
     author: "Evgenia Z.",
-    image: "/images/testimonials/evgenia.png",
+    image: "/images/testimonials/evgenia.webp",
     date: "January 2026",
     rating: 5,
     source: "Google",
