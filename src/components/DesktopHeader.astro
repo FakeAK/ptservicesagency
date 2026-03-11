@@ -16,13 +16,7 @@ const altLang: Lang = lang === "th" ? "en" : "th";
 const currentPath = Astro.url.pathname;
 const altHref = lang === "th" ? `/en${currentPath}`.replace(/\/$/, '') : currentPath.replace(/^\/en/, "") || "/";
 
-import thailandFlag from "../assets/flags/th.svg";
-import ukFlag from "../assets/flags/en.svg";
-
-export const buildFlag = (locale: Lang) => {
-  const flag = locale === "th" ? thailandFlag : ukFlag;
-  return `<img src="${flag.src}" alt="" class="h-auto w-full object-cover rounded-sm" />`;
-};
+import Flag from "./ui/Flag.astro";
 ---
 
 <div class="hidden items-center gap-0 tablet:flex">
@@ -43,7 +37,7 @@ export const buildFlag = (locale: Lang) => {
   <!-- Language Switcher -->
   <div class="group relative ml-2 w-[30px]">
     <button class="flex items-center cursor-pointer">
-      <Fragment set:html={buildFlag(lang)} />
+      <Flag code={lang} class="h-auto w-full object-cover rounded-sm" />
     </button>
     <div
       class={cn(
@@ -56,7 +50,7 @@ export const buildFlag = (locale: Lang) => {
       )}
     >
       <a href={altHref} class="block size-full h-auto w-full">
-        <Fragment set:html={buildFlag(altLang)} />
+        <Flag code={altLang} class="h-auto w-full object-cover rounded-sm" />
       </a>
     </div>
   </div>

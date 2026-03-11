@@ -1,28 +1,7 @@
 ---
 import type {Lang} from "../i18n";
 import {getLocalizedPath} from "../i18n";
-
-import flagTh from "../assets/flags/th.svg";
-import flagEn from "../assets/flags/en.svg";
-import flagUs from "../assets/flags/us.svg";
-import flagFr from "../assets/flags/fr.svg";
-import flagDe from "../assets/flags/de.svg";
-import flagEs from "../assets/flags/es.svg";
-import flagIt from "../assets/flags/it.svg";
-import flagBe from "../assets/flags/be.svg";
-import flagEu from "../assets/flags/eu.svg";
-
-const flagMap: Record<string, ImageMetadata> = {
-  th: flagTh,
-  en: flagEn,
-  us: flagUs,
-  fr: flagFr,
-  de: flagDe,
-  es: flagEs,
-  it: flagIt,
-  be: flagBe,
-  eu: flagEu,
-};
+import Flag from "./ui/Flag.astro";
 
 interface Props {
   label: string;
@@ -52,9 +31,7 @@ const {label, items, lang, href, minWidth = "280px"} = Astro.props;
     {
       items.map(item => (
         <a href={getLocalizedPath(item.href, lang)} class="flex items-center gap-2.5 px-5 py-2.5 text-sm text-primary font-medium no-underline hover:bg-gray-50">
-          {item.flag && flagMap[item.flag] && (
-            <img src={flagMap[item.flag].src} alt="" class="w-5 aspect-4/3 rounded-xs object-cover" />
-          )}
+          {item.flag && <Flag code={item.flag} />}
           {item.label}
         </a>
       ))
