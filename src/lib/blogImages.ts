@@ -4,7 +4,7 @@ import schengenVisa from '../assets/blog/schengen-visa.jpg';
 import immigrationOffice from '../assets/blog/immigration-office.jpg';
 import montSaintMichel from '../assets/blog/mont-saint-michel.jpeg';
 import reEntryPermit from '../assets/blog/re-entry-permit.webp';
-import tdacReview from '../assets/blog/tdac-review.png';
+import tdacReview from '../assets/blog/tdac-review.webp';
 import muayThaiFight from '../assets/blog/muay-thai-fight.webp';
 import thailandVisaGuide from '../assets/blog/thailand-visa-guide.webp';
 
