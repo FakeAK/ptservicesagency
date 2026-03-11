@@ -4,12 +4,16 @@ import { getTranslations, getLocalizedPath } from '../../i18n';
 import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
+import TestimonialCard from '../../components/TestimonialCard.astro';
+import { getTestimonialsByAuthors } from '../../data/testimonials';
 
 interface Props { lang: Lang; }
 
 const { lang } = Astro.props;
 const t = getTranslations(lang);
 const s = t.servicePages.marriageTranslation;
+
+const testimonials = getTestimonialsByAuthors(["Gérard D.", "Jan S."]);
 
 const siteUrl = "https://www.ptservicesagency.com";
 const canonicalPath = getLocalizedPath("/services/marriage-registration-translation-service", lang);
@@ -74,6 +78,14 @@ const breadcrumbJsonLd = {
         {s.ctaSteps.map((step: string) => <li class="text-body-text">✅ {step}</li>)}
       </ul>
       <p class="mt-4 text-body-text leading-relaxed">{s.ctaFooter}</p>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="mt-12">
+      <h2 class="font-calsans text-2xl text-primary">{t.testimonials.heading}</h2>
+      <div class="mt-6 grid grid-cols-2 gap-4 max-[479px]:grid-cols-1">
+        {testimonials.map(item => <TestimonialCard quote={item.quote} author={item.author} rating={item.rating} source={item.source} sourceURL={item.sourceURL} image={item.image} date={item.date} />)}
+      </div>
     </section>
   </main>
 

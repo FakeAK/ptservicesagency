@@ -1,0 +1,102 @@
+export type TestimonialSource = "Google" | "Facebook";
+
+export const GOOGLE_URL = "https://share.google/VZ0ndSIGOJW0aHXuE";
+export const FACEBOOK_URL = "https://www.facebook.com/ptservicesagency/reviews";
+
+export interface Testimonial {
+  quote: string;
+  author: string;
+  rating: number;
+  source: TestimonialSource;
+  sourceURL: string;
+  image?: string;
+  date?: string;
+}
+
+export const testimonials: Testimonial[] = [
+  {
+    quote: "Very good service, great information, quick and reliable. Helped us register our marriage, getting marriage visa and bank account. Comes highly recommended!",
+    author: "Jan S.",
+    image: "/images/testimonials/svedlund.webp",
+    date: "October 2025",
+    rating: 5,
+    source: "Facebook",
+    sourceURL: FACEBOOK_URL
+  },
+  {
+    quote: "Got my Muay Thai DTV with this agency and it has been super easy. Communication was fast and professional from start to finish and I'm also very happy with the gym they partner with 👌",
+    author: "Quentin K.",
+    image: "/images/testimonials/quentin.webp",
+    date: "February 2026",
+    rating: 5,
+    source: "Google",
+    sourceURL: GOOGLE_URL
+  },
+  {
+    quote:
+      "i used this agency for my 90 day report. i would highly recommend their services and will definitely be using them again for both myself and my partner, they were very efficient at dealing with a few issues that came up and extremely helpful with sorting all the correct documents, and very thorough with explaining the process also 😊 thank you for the help 🙏",
+    author: "Callie I.",
+    image: "/images/testimonials/callie.webp",
+    date: "September 2025",
+    rating: 5,
+    source: "Facebook",
+    sourceURL: FACEBOOK_URL
+  },
+  {
+    quote:
+      "Excellent service. The staff was able to walk me through all of the complexities and personally guide me around the immigration building when my physical presence was required. They coordinated everything dates, times, translations, locations and made it as easy as possible. Highly recommend.",
+    author: "Payton S.",
+    image: "/images/testimonials/payton.webp",
+    date: "February 2026",
+    rating: 5,
+    source: "Google",
+    sourceURL: GOOGLE_URL
+  },
+  {
+    quote: "Used for my Non-O renewal. great service at a great price. highly recommended",
+    author: "Richard A.",
+    image: "/images/testimonials/richard.webp",
+    date: "September 2025",
+    rating: 5,
+    source: "Facebook",
+    sourceURL: FACEBOOK_URL
+  },
+  {
+    quote: "Their staff was nice and they handled my marriage registration with my Thai partner as well as my visa perfectly. Thank you!",
+    author: "Gérard D.",
+    image: "/images/testimonials/gerard.png",
+    date: "November 2025",
+    rating: 5,
+    source: "Google",
+    sourceURL: GOOGLE_URL
+  },
+  {
+    quote:
+      "This agency helped my girlfriend get her schengen visa for our summer holiday and service was top notch. And prices are very good compared to some other companies in Bangkok who tried to squeeze every baht they can out of me.",
+    author: "Arthur K.",
+    image: "/images/testimonials/arthur.webp",
+    date: "June 2025",
+    rating: 5,
+    source: "Facebook",
+    sourceURL: FACEBOOK_URL
+  },
+  {
+    quote:
+      "Thank you for your excellent service! PT Service agency helped us to make 90 days reports on time. This is surely the easiest way to deal with it. The process was smooth and pleasant, no need to go anywhere and wait queues. We will definitely use your service next time 👍",
+    author: "Evgenia Z.",
+    image: "/images/testimonials/evgenia.png",
+    date: "January 2026",
+    rating: 5,
+    source: "Google",
+    sourceURL: GOOGLE_URL
+  }
+];
+
+/**
+ * Get testimonials filtered by author name.
+ */
+export function getTestimonialsByAuthors(authors: string[]): Testimonial[] {
+  return authors
+    .map(name => testimonials.find(t => t.author === name))
+    .filter((t): t is Testimonial => t !== undefined);
+}
