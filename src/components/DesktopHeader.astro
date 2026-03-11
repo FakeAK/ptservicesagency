@@ -36,7 +36,7 @@ import Flag from "./ui/Flag.astro";
 
   <!-- Language Switcher -->
   <div class="group relative ml-2 w-[30px]">
-    <button class="flex items-center cursor-pointer">
+    <button class="flex items-center cursor-pointer" aria-label="Change language">
       <Flag code={lang} class="h-auto w-full object-cover rounded-sm" />
     </button>
     <div
@@ -49,7 +49,7 @@ import Flag from "./ui/Flag.astro";
         "pointer-events-none opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
       )}
     >
-      <a href={altHref} class="block size-full h-auto w-full">
+      <a href={altHref} class="block size-full h-auto w-full" aria-label={altLang === "th" ? "ภาษาไทย" : "English"}>
         <Flag code={altLang} class="h-auto w-full object-cover rounded-sm" />
       </a>
     </div>

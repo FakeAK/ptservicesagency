@@ -70,10 +70,10 @@ import Flag, { type FlagCode } from "./ui/Flag.astro";
 
   <!-- Language Switcher Mobile -->
   <div class="mt-2 flex gap-3 border-t border-border-light pt-3">
-    <a href={thHref}>
+    <a href={thHref} aria-label="ภาษาไทย">
       <Flag code="th" class="h-auto w-[30px] object-contain" />
     </a>
-    <a href={enHref}>
+    <a href={enHref} aria-label="English">
       <Flag code="en" class="h-auto w-[30px] object-contain" />
     </a>
   </div>
