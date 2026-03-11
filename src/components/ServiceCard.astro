@@ -30,6 +30,7 @@ const { title, description, imageSrc, imageAlt, link, linkText, lang } = Astro.p
     <a
       href={getLocalizedPath(link, lang)}
       class="mt-2 font-semibold text-primary no-underline hover:underline"
+      aria-label={`${linkText} - ${title}`}
     >
       {linkText}
     </a>

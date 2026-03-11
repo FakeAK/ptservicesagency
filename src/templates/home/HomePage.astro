@@ -56,30 +56,32 @@ const webSiteJsonLd = {
 
   <Navbar lang={lang} />
 
-  <HeroBanner lang={lang} />
+  <main>
+    <HeroBanner lang={lang} />
 
-  <!-- Services Container -->
-  <div id="services-container" class="mx-auto mt-24 md:mt-[200px] max-w-[940px]">
-    <VisaAssistance lang={lang} />
+    <!-- Services Container -->
+    <div id="services-container" class="mx-auto mt-24 md:mt-[200px] max-w-[940px]">
+      <VisaAssistance lang={lang} />
 
-    <div class="mt-24">
-      <ImmigrationAssistance lang={lang} />
+      <div class="mt-24">
+        <ImmigrationAssistance lang={lang} />
+      </div>
+
+      <div class="mt-[200px] max-[991px]:mt-24">
+        <ServicesGrid lang={lang} />
+      </div>
     </div>
 
-    <div class="mt-[200px] max-[991px]:mt-24">
-      <ServicesGrid lang={lang} />
+    <!-- Testimonials -->
+    <div class="mt-64 max-[991px]:mt-24">
+      <TestimonialsSection lang={lang} />
     </div>
-  </div>
 
-  <!-- Testimonials -->
-  <div class="mt-64 max-[991px]:mt-24">
-    <TestimonialsSection lang={lang} />
-  </div>
-
-  <!-- Latest Blog -->
-  <div id="home-blog-container" class="mt-64 max-[991px]:mt-24">
-    <LatestBlog lang={lang} />
-  </div>
+    <!-- Latest Blog -->
+    <div id="home-blog-container" class="mt-64 max-[991px]:mt-24">
+      <LatestBlog lang={lang} />
+    </div>
+  </main>
 
   <!-- Footer -->
   <div id="footer">

@@ -119,6 +119,7 @@ const breadcrumbJsonLd = {
 
   <Navbar lang={lang} />
 
+  <main>
   <article class="mx-auto mt-12 max-w-[940px] px-5 mb-12">
     {heroImage && <img src={heroImage.src} alt={heroAlt} class="mb-8 w-full rounded-4xl object-cover aspect-16/9" />}
 
@@ -165,6 +166,7 @@ const breadcrumbJsonLd = {
       <slot />
     </div>
   </article>
+  </main>
 
   <Footer lang={lang} />
 </Layout>
