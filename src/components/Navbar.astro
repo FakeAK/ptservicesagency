@@ -1,10 +1,11 @@
 ---
 import type { Lang } from '../i18n';
-import {Image} from 'astro:assets';
+import { Image } from 'astro:assets';
 
 import logo from '../assets/logo.webp';
 import DesktopHeader from './DesktopHeader.astro';
 import MobileHeader from './MobileHeader.astro';
+import MobileLangSelector from './MobileLangSelector.astro';
 
 interface Props {
   lang: Lang;
@@ -17,23 +18,28 @@ const { lang } = Astro.props;
   <div class="mx-auto flex max-w-[940px] items-center justify-between px-5">
     <!-- Logo -->
     <a href={lang === 'th' ? '/' : '/en'} class="flex items-center justify-center gap-3 no-underline">
-      <Image src={logo} alt="The logo of PT Services" class="h-12 w-12" width={96} height={96} />
+      <Image src={logo} alt="The logo of PT Services" class="size-12" width={96} height={96} />
       <span class="font-calsans text-xl text-primary">PT SERVICES</span>
     </a>
 
     <!-- Desktop Navigation -->
     <DesktopHeader lang={lang} />
 
-    <!-- Mobile Hamburger (visible below 992px) -->
-    <button
-      id="mobile-menu-btn"
-      class="flex flex-col gap-1.5 tablet:hidden"
-      aria-label="Toggle menu"
-    >
-      <span class="block h-0.5 w-6 bg-primary transition-transform" id="hamburger-top"></span>
-      <span class="block h-0.5 w-6 bg-primary transition-opacity" id="hamburger-mid"></span>
-      <span class="block h-0.5 w-6 bg-primary transition-transform" id="hamburger-bot"></span>
-    </button>
+    <!-- Mobile: Language Selector + Hamburger (visible below 992px) -->
+    <div class="flex items-center gap-3 tablet:hidden">
+      <MobileLangSelector lang={lang} />
+
+      <!-- Hamburger -->
+      <button
+        id="mobile-menu-btn"
+        class="flex flex-col gap-1.5"
+        aria-label="Toggle menu"
+      >
+        <span class="block h-0.5 w-6 bg-primary transition-transform" id="hamburger-top"></span>
+        <span class="block h-0.5 w-6 bg-primary transition-opacity" id="hamburger-mid"></span>
+        <span class="block h-0.5 w-6 bg-primary transition-transform" id="hamburger-bot"></span>
+      </button>
+    </div>
   </div>
 
   <!-- Mobile Menu -->

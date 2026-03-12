@@ -9,10 +9,6 @@ interface Props {
 const {lang} = Astro.props;
 const t = getTranslations(lang);
 
-const currentPath = Astro.url.pathname;
-const thHref = lang === "th" ? currentPath : currentPath.replace(/^\/en/, "") || "/";
-const enHref = lang === "en" ? currentPath : `/en${currentPath}`.replace(/\/$/, '');
-
 import Flag, { type FlagCode } from "./ui/Flag.astro";
 ---
 
@@ -68,15 +64,6 @@ import Flag, { type FlagCode } from "./ui/Flag.astro";
     {t.nav.blog}
   </a>
 
-  <!-- Language Switcher Mobile -->
-  <div class="mt-2 flex gap-3 border-t border-border-light pt-3">
-    <a href={thHref} aria-label="ภาษาไทย">
-      <Flag code="th" class="h-auto w-[30px] object-contain" />
-    </a>
-    <a href={enHref} aria-label="English">
-      <Flag code="en" class="h-auto w-[30px] object-contain" />
-    </a>
-  </div>
 </div>
 
 <script>
