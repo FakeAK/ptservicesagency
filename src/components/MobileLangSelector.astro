@@ -1,5 +1,6 @@
 ---
 import type { Lang } from "../i18n";
+import { getLocalizedPath, getPathWithoutLocale } from "../i18n";
 import Flag from "./ui/Flag.astro";
 
 interface Props {
@@ -8,9 +9,9 @@ interface Props {
 
 const { lang } = Astro.props;
 
-const currentPath = Astro.url.pathname;
-const thHref = lang === "th" ? currentPath : currentPath.replace(/^\/en/, "") || "/";
-const enHref = lang === "en" ? currentPath : `/en${currentPath}`.replace(/\/$/, "");
+const basePath = getPathWithoutLocale(Astro.url.pathname);
+const thHref = getLocalizedPath(basePath, "th");
+const enHref = getLocalizedPath(basePath, "en");
 
 const languages = [
   { code: "th" as const, label: "ภาษาไทย", href: thHref },

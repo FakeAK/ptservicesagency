@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import type {Lang} from "../i18n";
+import {getLocalizedPath, getPathWithoutLocale, type Lang} from "../i18n";
 
 interface Props {
   title: string;
@@ -16,19 +16,10 @@ interface Props {
 const {title, description, lang, image, ogType = "website", publishedDate, modifiedDate, noIndex = false} = Astro.props;
 
 const siteUrl = "https://www.ptservicesagency.com";
-const currentPath = Astro.url.pathname;
-const canonicalUrl = `${siteUrl}${currentPath}`;
-
-// Build alternate URLs for hreflang
-let altPath: string;
-if (lang === "th") {
-  altPath = `/en${currentPath}`.replace(/\/$/, "");
-} else {
-  altPath = currentPath.replace(/^\/en/, "") || "/";
-}
-
-const thUrl = `${siteUrl}${lang === "th" ? currentPath : altPath}`;
-const enUrl = `${siteUrl}${lang === "en" ? currentPath : altPath}`;
+const basePath = getPathWithoutLocale(Astro.url.pathname);
+const thUrl = `${siteUrl}${basePath}`;
+const enUrl = `${siteUrl}${getLocalizedPath(basePath, "en")}`;
+const canonicalUrl = lang === "th" ? thUrl : enUrl;
 
 // OG image: use provided image or fallback to default
 const ogImage = image || `${siteUrl}/images/og-default.png`;

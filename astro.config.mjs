@@ -8,6 +8,9 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://www.ptservicesagency.com',
   trailingSlash: 'never',
+  build: {
+    format: 'file',
+  },
   redirects: {
     '/services/90-day-report-service-pathum-thani-thailand': '/services/90-day-report-thailand',
     '/services/90-day-report-service-samut-prakan-thailand': '/services/90-day-report-thailand',

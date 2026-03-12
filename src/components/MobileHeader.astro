@@ -14,7 +14,7 @@ import Flag, {type FlagCode} from "./ui/Flag.astro";
 
 <!-- Mobile Menu Panel (toggled by hamburger in Navbar) -->
 <div id="mobile-menu" class="hidden bg-white px-5 py-4 tablet:hidden">
-  <a href={lang === "th" ? "/" : "/en"} class="block py-2 text-[15px] font-semibold text-primary no-underline">
+  <a href={getLocalizedPath("/", lang)} class="block py-2 text-[15px] font-semibold text-primary no-underline">
     {t.nav.home}
   </a>
 

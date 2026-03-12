@@ -1,5 +1,6 @@
 ---
 import type {Lang} from "../../i18n";
+import {getLocalizedPath} from "../../i18n";
 import Layout from "../../layouts/Layout.astro";
 import Navbar from "../../components/Navbar.astro";
 import Footer from "../../components/Footer.astro";
@@ -44,8 +45,10 @@ const publishedISO = date.toISOString();
 const modifiedISO = updatedDate ? updatedDate.toISOString() : publishedISO;
 
 // SEO: Canonical URL for this article
-const articlePath = lang === "th" ? `/blog/${slug}` : `/en/blog/${slug}`;
+const articlePath = getLocalizedPath(`/blog/${slug}`, lang);
 const canonicalUrl = `${siteUrl}${articlePath}`;
+const homePath = getLocalizedPath("/", lang);
+const blogIndexPath = getLocalizedPath("/blog", lang);
 
 // SEO: JSON-LD BlogPosting structured data
 const jsonLd = {
@@ -86,13 +89,13 @@ const breadcrumbJsonLd = {
       "@type": "ListItem",
       "position": 1,
       "name": lang === "th" ? "หน้าแรก" : "Home",
-      "item": lang === "th" ? siteUrl : `${siteUrl}/en/`,
+      "item": `${siteUrl}${homePath}`,
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Blog",
-      "item": lang === "th" ? `${siteUrl}/blog/` : `${siteUrl}/en/blog/`,
+      "item": `${siteUrl}${blogIndexPath}`,
     },
     {
       "@type": "ListItem",
