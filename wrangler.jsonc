@@ -2,6 +2,7 @@
   "name": "pt-services-agency",
   "compatibility_date": "2026-03-11", // Update to the day you deploy
   "assets": {
-    "directory": "./dist"
+    "directory": "./dist",
+    "not_found_handling": "404-page"
   }
 }
