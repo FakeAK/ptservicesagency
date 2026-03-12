@@ -27,7 +27,7 @@ const currentLang = languages.find(l => l.code === lang)!;
     aria-haspopup="listbox"
     aria-expanded="false"
     aria-label="Change language"
-    class="flex items-center gap-1.5 rounded-full border border-border-light bg-white px-2.5 py-1.5 shadow-sm transition-colors hover:bg-gray-50 active:bg-gray-100"
+    class="flex items-center gap-1.5 rounded-full cursor-pointer border border-border-light bg-white px-2.5 py-1.5 shadow-sm transition-colors hover:bg-gray-50 active:bg-gray-100"
   >
     <Flag code={currentLang.code} class="h-auto w-[18px] rounded-sm object-cover" />
     <span class="text-[12px] font-semibold text-primary">{currentLang.label}</span>

@@ -9,12 +9,12 @@ interface Props {
 const {lang} = Astro.props;
 const t = getTranslations(lang);
 
-import Flag, { type FlagCode } from "./ui/Flag.astro";
+import Flag, {type FlagCode} from "./ui/Flag.astro";
 ---
 
 <!-- Mobile Menu Panel (toggled by hamburger in Navbar) -->
-<div id="mobile-menu" class="hidden border-t border-border-light bg-white px-5 py-4 tablet:hidden">
-  <a href={lang === 'th' ? '/' : '/en'} class="block py-2 text-[15px] font-semibold text-primary no-underline">
+<div id="mobile-menu" class="hidden bg-white px-5 py-4 tablet:hidden">
+  <a href={lang === "th" ? "/" : "/en"} class="block py-2 text-[15px] font-semibold text-primary no-underline">
     {t.nav.home}
   </a>
 
@@ -37,33 +37,30 @@ import Flag, { type FlagCode } from "./ui/Flag.astro";
 
   <!-- Visa -->
   <div>
-    <div class="flex w-full items-center justify-between">
-      <a href={getLocalizedPath('/visa', lang)} class="py-2 text-[15px] font-semibold text-primary no-underline">
-        {t.nav.visa}
-      </a>
-      <button class="mobile-dropdown-toggle py-2 px-2 text-primary">
-        <span class="transition-transform">&#9662;</span>
-      </button>
-    </div>
+    <button class="mobile-dropdown-toggle flex w-full items-center justify-between py-2 text-[15px] font-semibold text-primary">
+      {t.nav.visa}
+      <span class="transition-transform">&#9662;</span>
+    </button>
     <div class="mobile-dropdown-content ml-4 hidden border-l-2 border-primary pl-3">
       {
         t.nav.visaDropdown.map(item => (
-          <a href={getLocalizedPath(item.href, lang)} class="flex items-center gap-2 py-1.5 text-sm text-primary no-underline">
-            {item.flag && <Flag code={item.flag as FlagCode} class="h-auto w-4 rounded-sm object-cover" />}
-            {item.label}
-          </a>
+          <div class="flex items-center gap-2 py-1.5">
+            {item.flag && <Flag code={item.flag as FlagCode} class="h-auto w-5 aspect-4/3 object-cover" />}
+            <a href={getLocalizedPath(item.href, lang)} class="text-sm text-primary no-underline">
+              {item.label}
+            </a>
+          </div>
         ))
       }
     </div>
   </div>
 
-  <a href={getLocalizedPath('/contact', lang)} class="block py-2 text-[15px] font-semibold text-primary no-underline">
+  <a href={getLocalizedPath("/contact", lang)} class="block py-2 text-[15px] font-semibold text-primary no-underline">
     {t.nav.contact}
   </a>
-  <a href={getLocalizedPath('/blog', lang)} class="block py-2 text-[15px] font-semibold text-primary no-underline">
+  <a href={getLocalizedPath("/blog", lang)} class="block py-2 text-[15px] font-semibold text-primary no-underline">
     {t.nav.blog}
   </a>
-
 </div>
 
 <script>
